@@ -1,0 +1,20 @@
+# GLiNER MultiLingual PII/PHI Extraction Service
+# Install: uv pip install -r requirements.txt
+
+# Core ML packages
+gliner==0.2.24
+torch==2.5.1
+transformers==4.47.0
+huggingface-hub==0.27.0
+sentencepiece==0.2.0
+onnxruntime==1.20.1
+
+# FastAPI service
+fastapi==0.115.6
+uvicorn[standard]==0.34.0
+pydantic==2.10.3
+python-multipart==0.0.20
+
+# Testing
+pytest==8.3.4
+httpx==0.28.1
