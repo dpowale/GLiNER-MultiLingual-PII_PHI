@@ -9,6 +9,7 @@ A FastAPI service for extracting Personally Identifiable Information (PII) and P
 - ⚡ **Fast API** - RESTful endpoints with automatic documentation
 - 🎯 **Configurable Threshold** - Adjust confidence levels for entity detection
 - 🖥️ **Cross-Platform** - Works on Windows, Linux, and macOS
+- 🎨 **Streamlit UI** - Interactive web interface for testing and visualization
 
 ## Supported Entity Types
 
@@ -116,6 +117,60 @@ $body = '{"text":"John Smith email is john@test.com and phone is 555-123-4567"}'
 Invoke-RestMethod -Uri "http://127.0.0.1:8000/extract" -Method Post -Body $body -ContentType "application/json"
 ```
 
+**Option D: Streamlit Web UI**
+
+For an interactive web interface, run the Streamlit app:
+
+```bash
+# Make sure the FastAPI service is running first, then:
+streamlit run streamlit_app.py
+```
+
+Open http://localhost:8501 in your browser.
+
+## Streamlit UI
+
+The Streamlit app provides an interactive interface for testing the PII extraction service:
+
+### Features
+
+- **Service Health Check** - Real-time connection status to the FastAPI backend
+- **Configurable Threshold** - Slider to adjust detection sensitivity (0.0-1.0)
+- **Entity Type Selection** - Choose specific PII/PHI types or select all
+- **Sample Texts** - Pre-loaded examples (Medical Record, Financial Document, Business Contact, International Document)
+- **Results Display** - Summary metrics, entity breakdown, and detailed entity list with confidence scores
+- **Highlighted Text View** - Visual color-coded highlighting of detected entities
+- **Raw JSON Output** - Expandable section with the full API response
+
+### Running the Streamlit App
+
+**Windows:**
+```powershell
+# Terminal 1: Start FastAPI service
+.venv\Scripts\python.exe -m uvicorn main_service:app --reload
+
+# Terminal 2: Start Streamlit app
+.venv\Scripts\python.exe -m streamlit run streamlit_app.py
+```
+
+**Linux/macOS:**
+```bash
+# Terminal 1: Start FastAPI service
+source .venv/bin/activate
+uvicorn main_service:app --reload
+
+# Terminal 2: Start Streamlit app
+source .venv/bin/activate
+streamlit run streamlit_app.py
+```
+
+### Screenshot
+
+The UI includes:
+- Left panel: Input text area with sample text selector
+- Right panel: Extraction results with entity details
+- Bottom: Highlighted text with color-coded entities and legend
+
 ## API Endpoints
 
 | Method | Endpoint | Description |
@@ -179,6 +234,7 @@ pytest test_extraction.py -v --tb=short
 ```
 GLiNER_MultiLingual_PII_PHI/
 ├── main_service.py      # FastAPI service
+├── streamlit_app.py     # Streamlit web UI for testing
 ├── test_extraction.py   # Pytest test cases
 ├── requirements.txt     # Python dependencies
 ├── README.md            # This file
@@ -252,4 +308,5 @@ MIT License
 - [GLiNER GitHub](https://github.com/urchade/GLiNER)
 - [GLiNER Multi-PII Model](https://huggingface.co/urchade/gliner_multi_pii-v1)
 - [FastAPI Documentation](https://fastapi.tiangolo.com/)
+- [Streamlit Documentation](https://docs.streamlit.io/)
 - [uv Documentation](https://github.com/astral-sh/uv)
