@@ -314,7 +314,7 @@ python -m streamlit run src/streamlit_app.py
 
 #### Screenshot
 
-![Streamlit PII Extraction UI](screenshots/streamlit_app.png)
+![Streamlit PII Extraction UI](screenshots/Streamlit App.png)
 
 The UI includes:
 - Left panel: Input text area with sample text selector
@@ -544,6 +544,7 @@ MIT License
 - [FastAPI Documentation](https://fastapi.tiangolo.com/)
 - [Streamlit Documentation](https://docs.streamlit.io/)
 - [uv Documentation](https://github.com/astral-sh/uv)
+
 
 
 
