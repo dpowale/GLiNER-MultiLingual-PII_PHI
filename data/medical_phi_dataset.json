@@ -1,0 +1,2462 @@
+[
+  {
+    "text": "Patient John Smith, a 67-year-old male, was admitted to Massachusetts General Hospital on January 15, 2026. Dr. Sarah Johnson diagnosed him with Type 2 diabetes and prescribed Metformin 500mg twice daily.",
+    "language": "English",
+    "entities": [
+      {
+        "text": "John Smith",
+        "label": "person",
+        "start": 8,
+        "end": 18
+      },
+      {
+        "text": "Massachusetts General Hospital",
+        "label": "organization",
+        "start": 54,
+        "end": 84
+      },
+      {
+        "text": "January 15, 2026",
+        "label": "date",
+        "start": 88,
+        "end": 104
+      },
+      {
+        "text": "Dr. Sarah Johnson",
+        "label": "person",
+        "start": 106,
+        "end": 123
+      },
+      {
+        "text": "Type 2 diabetes",
+        "label": "medical_condition",
+        "start": 145,
+        "end": 160
+      },
+      {
+        "text": "Metformin",
+        "label": "medication",
+        "start": 176,
+        "end": 185
+      }
+    ],
+    "source": "medical"
+  },
+  {
+    "text": "Mrs. Elizabeth Martinez, DOB 03/15/1958, presented to the emergency department at Johns Hopkins Hospital in Baltimore with acute chest pain. Her cardiologist, Dr. Michael Chen, ordered an ECG.",
+    "language": "English",
+    "entities": [
+      {
+        "text": "Elizabeth Martinez",
+        "label": "person",
+        "start": 5,
+        "end": 23
+      },
+      {
+        "text": "03/15/1958",
+        "label": "date",
+        "start": 29,
+        "end": 39
+      },
+      {
+        "text": "Johns Hopkins Hospital",
+        "label": "organization",
+        "start": 82,
+        "end": 104
+      },
+      {
+        "text": "Baltimore",
+        "label": "location",
+        "start": 108,
+        "end": 117
+      },
+      {
+        "text": "acute chest pain",
+        "label": "medical_condition",
+        "start": 123,
+        "end": 139
+      },
+      {
+        "text": "Dr. Michael Chen",
+        "label": "person",
+        "start": 158,
+        "end": 174
+      }
+    ],
+    "source": "medical"
+  },
+  {
+    "text": "The patient, Robert Williams, MRN 4857623, was transferred from Boston Medical Center to Cleveland Clinic on February 20, 2026 for cardiac surgery under Dr. James Anderson.",
+    "language": "English",
+    "entities": [
+      {
+        "text": "Robert Williams",
+        "label": "person",
+        "start": 13,
+        "end": 28
+      },
+      {
+        "text": "Boston Medical Center",
+        "label": "organization",
+        "start": 64,
+        "end": 85
+      },
+      {
+        "text": "Cleveland Clinic",
+        "label": "organization",
+        "start": 89,
+        "end": 105
+      },
+      {
+        "text": "February 20, 2026",
+        "label": "date",
+        "start": 109,
+        "end": 126
+      },
+      {
+        "text": "cardiac surgery",
+        "label": "medical_condition",
+        "start": 131,
+        "end": 146
+      }
+    ],
+    "source": "medical"
+  },
+  {
+    "text": "Case report: Emily Thompson, a 45-year-old female from Seattle, was diagnosed with stage III breast cancer at Memorial Sloan Kettering Cancer Center. Her oncologist, Dr. Lisa Park, recommended chemotherapy.",
+    "language": "English",
+    "entities": [
+      {
+        "text": "Emily Thompson",
+        "label": "person",
+        "start": 13,
+        "end": 27
+      },
+      {
+        "text": "Seattle",
+        "label": "location",
+        "start": 55,
+        "end": 62
+      },
+      {
+        "text": "stage III breast cancer",
+        "label": "medical_condition",
+        "start": 82,
+        "end": 105
+      },
+      {
+        "text": "Memorial Sloan Kettering Cancer Center",
+        "label": "organization",
+        "start": 109,
+        "end": 147
+      },
+      {
+        "text": "Dr. Lisa Park",
+        "label": "person",
+        "start": 166,
+        "end": 179
+      },
+      {
+        "text": "chemotherapy",
+        "label": "medication",
+        "start": 193,
+        "end": 205
+      }
+    ],
+    "source": "medical"
+  },
+  {
+    "text": "Mr. David Johnson, SSN 123-45-6789, was seen at Mayo Clinic in Rochester, Minnesota on March 3, 2026. Dr. Patricia Brown prescribed Lisinopril for hypertension.",
+    "language": "English",
+    "entities": [
+      {
+        "text": "David Johnson",
+        "label": "person",
+        "start": 4,
+        "end": 17
+      },
+      {
+        "text": "Mayo Clinic",
+        "label": "organization",
+        "start": 42,
+        "end": 53
+      },
+      {
+        "text": "Rochester",
+        "label": "location",
+        "start": 57,
+        "end": 66
+      },
+      {
+        "text": "Minnesota",
+        "label": "location",
+        "start": 68,
+        "end": 77
+      },
+      {
+        "text": "March 3, 2026",
+        "label": "date",
+        "start": 81,
+        "end": 94
+      },
+      {
+        "text": "Dr. Patricia Brown",
+        "label": "person",
+        "start": 96,
+        "end": 114
+      },
+      {
+        "text": "Lisinopril",
+        "label": "medication",
+        "start": 126,
+        "end": 136
+      },
+      {
+        "text": "hypertension",
+        "label": "medical_condition",
+        "start": 141,
+        "end": 153
+      }
+    ],
+    "source": "medical"
+  },
+  {
+    "text": "Pediatric patient Sophia Miller, age 8, was brought to Children's Hospital of Philadelphia by her mother. Dr. Thomas Wright diagnosed her with asthma and prescribed an inhaler.",
+    "language": "English",
+    "entities": [
+      {
+        "text": "Sophia Miller",
+        "label": "person",
+        "start": 18,
+        "end": 31
+      },
+      {
+        "text": "Children's Hospital of Philadelphia",
+        "label": "organization",
+        "start": 55,
+        "end": 90
+      },
+      {
+        "text": "Dr. Thomas Wright",
+        "label": "person",
+        "start": 106,
+        "end": 123
+      },
+      {
+        "text": "asthma",
+        "label": "medical_condition",
+        "start": 144,
+        "end": 150
+      },
+      {
+        "text": "inhaler",
+        "label": "medication",
+        "start": 169,
+        "end": 176
+      }
+    ],
+    "source": "medical"
+  },
+  {
+    "text": "Ms. Jennifer Davis, a 52-year-old patient at Stanford University Medical Center in Palo Alto, underwent hip replacement surgery on December 12, 2025. Her surgeon was Dr. Richard Lee.",
+    "language": "English",
+    "entities": [
+      {
+        "text": "Jennifer Davis",
+        "label": "person",
+        "start": 4,
+        "end": 18
+      },
+      {
+        "text": "Stanford University Medical Center",
+        "label": "organization",
+        "start": 44,
+        "end": 78
+      },
+      {
+        "text": "Palo Alto",
+        "label": "location",
+        "start": 82,
+        "end": 91
+      },
+      {
+        "text": "December 12, 2025",
+        "label": "date",
+        "start": 131,
+        "end": 148
+      },
+      {
+        "text": "Dr. Richard Lee",
+        "label": "person",
+        "start": 167,
+        "end": 182
+      },
+      {
+        "text": "hip replacement surgery",
+        "label": "medical_condition",
+        "start": 103,
+        "end": 126
+      }
+    ],
+    "source": "medical"
+  },
+  {
+    "text": "Patient Charles Brown, policy number BC-789456, was admitted to Mount Sinai Hospital in New York City with pneumonia. Dr. Amanda White initiated antibiotic therapy.",
+    "language": "English",
+    "entities": [
+      {
+        "text": "Charles Brown",
+        "label": "person",
+        "start": 8,
+        "end": 21
+      },
+      {
+        "text": "Mount Sinai Hospital",
+        "label": "organization",
+        "start": 64,
+        "end": 84
+      },
+      {
+        "text": "New York City",
+        "label": "location",
+        "start": 88,
+        "end": 101
+      },
+      {
+        "text": "Dr. Amanda White",
+        "label": "person",
+        "start": 119,
+        "end": 135
+      },
+      {
+        "text": "pneumonia",
+        "label": "medical_condition",
+        "start": 107,
+        "end": 116
+      },
+      {
+        "text": "antibiotic therapy",
+        "label": "medication",
+        "start": 146,
+        "end": 164
+      }
+    ],
+    "source": "medical"
+  },
+  {
+    "text": "A 78-year-old woman, Margaret Wilson, was transferred to UCLA Medical Center in Los Angeles from Cedars-Sinai. Dr. Kevin Harris managed her stroke recovery program.",
+    "language": "English",
+    "entities": [
+      {
+        "text": "Margaret Wilson",
+        "label": "person",
+        "start": 21,
+        "end": 36
+      },
+      {
+        "text": "UCLA Medical Center",
+        "label": "organization",
+        "start": 58,
+        "end": 77
+      },
+      {
+        "text": "Los Angeles",
+        "label": "location",
+        "start": 81,
+        "end": 92
+      },
+      {
+        "text": "Cedars-Sinai",
+        "label": "organization",
+        "start": 98,
+        "end": 110
+      },
+      {
+        "text": "Dr. Kevin Harris",
+        "label": "person",
+        "start": 112,
+        "end": 128
+      },
+      {
+        "text": "stroke",
+        "label": "medical_condition",
+        "start": 142,
+        "end": 148
+      }
+    ],
+    "source": "medical"
+  },
+  {
+    "text": "Clinical note: Patient Michael Garcia, born April 22, 1980, presented to Houston Methodist Hospital with severe abdominal pain. Dr. Nancy Taylor performed emergency appendectomy.",
+    "language": "English",
+    "entities": [
+      {
+        "text": "Michael Garcia",
+        "label": "person",
+        "start": 24,
+        "end": 38
+      },
+      {
+        "text": "April 22, 1980",
+        "label": "date",
+        "start": 45,
+        "end": 59
+      },
+      {
+        "text": "Houston Methodist Hospital",
+        "label": "organization",
+        "start": 74,
+        "end": 100
+      },
+      {
+        "text": "Dr. Nancy Taylor",
+        "label": "person",
+        "start": 128,
+        "end": 144
+      },
+      {
+        "text": "abdominal pain",
+        "label": "medical_condition",
+        "start": 112,
+        "end": 126
+      },
+      {
+        "text": "appendectomy",
+        "label": "medical_condition",
+        "start": 166,
+        "end": 178
+      }
+    ],
+    "source": "medical"
+  },
+  {
+    "text": "Le patient Jean-Pierre Dupont, né le 14 mars 1955, a été admis à l'Hôpital Pitié-Salpêtrière à Paris le 20 janvier 2026. Le Dr. Marie Lefebvre a diagnostiqué une insuffisance cardiaque.",
+    "language": "French",
+    "entities": [
+      {
+        "text": "Jean-Pierre Dupont",
+        "label": "person",
+        "start": 11,
+        "end": 29
+      },
+      {
+        "text": "14 mars 1955",
+        "label": "date",
+        "start": 37,
+        "end": 49
+      },
+      {
+        "text": "Hôpital Pitié-Salpêtrière",
+        "label": "organization",
+        "start": 67,
+        "end": 92
+      },
+      {
+        "text": "Paris",
+        "label": "location",
+        "start": 96,
+        "end": 101
+      },
+      {
+        "text": "20 janvier 2026",
+        "label": "date",
+        "start": 105,
+        "end": 120
+      },
+      {
+        "text": "Dr. Marie Lefebvre",
+        "label": "person",
+        "start": 125,
+        "end": 143
+      },
+      {
+        "text": "insuffisance cardiaque",
+        "label": "medical_condition",
+        "start": 163,
+        "end": 185
+      }
+    ],
+    "source": "medical"
+  },
+  {
+    "text": "Mme Isabelle Martin, 72 ans, a consulté le Dr. Philippe Bernard à l'Hôpital Européen Georges-Pompidou pour des douleurs thoraciques. Son cardiologue a prescrit de l'aspirine.",
+    "language": "French",
+    "entities": [
+      {
+        "text": "Isabelle Martin",
+        "label": "person",
+        "start": 4,
+        "end": 19
+      },
+      {
+        "text": "Dr. Philippe Bernard",
+        "label": "person",
+        "start": 43,
+        "end": 63
+      },
+      {
+        "text": "Hôpital Européen Georges-Pompidou",
+        "label": "organization",
+        "start": 69,
+        "end": 102
+      },
+      {
+        "text": "douleurs thoraciques",
+        "label": "medical_condition",
+        "start": 111,
+        "end": 131
+      },
+      {
+        "text": "aspirine",
+        "label": "medication",
+        "start": 165,
+        "end": 173
+      }
+    ],
+    "source": "medical"
+  },
+  {
+    "text": "M. François Lambert, dossier médical 456789, a été transféré de l'Hôpital Necker à Lyon le 5 février 2026. Le Dr. Sophie Girard a pris en charge son traitement oncologique.",
+    "language": "French",
+    "entities": [
+      {
+        "text": "François Lambert",
+        "label": "person",
+        "start": 3,
+        "end": 19
+      },
+      {
+        "text": "Hôpital Necker",
+        "label": "organization",
+        "start": 66,
+        "end": 80
+      },
+      {
+        "text": "Lyon",
+        "label": "location",
+        "start": 84,
+        "end": 88
+      },
+      {
+        "text": "5 février 2026",
+        "label": "date",
+        "start": 92,
+        "end": 106
+      },
+      {
+        "text": "Dr. Sophie Girard",
+        "label": "person",
+        "start": 111,
+        "end": 128
+      },
+      {
+        "text": "traitement oncologique",
+        "label": "medication",
+        "start": 149,
+        "end": 171
+      }
+    ],
+    "source": "medical"
+  },
+  {
+    "text": "La patiente Catherine Moreau, née le 8 juin 1968, a subi une intervention chirurgicale à l'Institut Curie de Paris. Le chirurgien Dr. Laurent Petit a effectué une mastectomie.",
+    "language": "French",
+    "entities": [
+      {
+        "text": "Catherine Moreau",
+        "label": "person",
+        "start": 12,
+        "end": 28
+      },
+      {
+        "text": "8 juin 1968",
+        "label": "date",
+        "start": 37,
+        "end": 48
+      },
+      {
+        "text": "Institut Curie",
+        "label": "organization",
+        "start": 91,
+        "end": 105
+      },
+      {
+        "text": "Paris",
+        "label": "location",
+        "start": 109,
+        "end": 114
+      },
+      {
+        "text": "Dr. Laurent Petit",
+        "label": "person",
+        "start": 130,
+        "end": 147
+      },
+      {
+        "text": "mastectomie",
+        "label": "medical_condition",
+        "start": 163,
+        "end": 174
+      }
+    ],
+    "source": "medical"
+  },
+  {
+    "text": "M. Pierre Durand, 65 ans, domicilié à Marseille, a été hospitalisé à l'Hôpital de la Timone pour un AVC. Le neurologue Dr. Anne Rousseau a supervisé sa rééducation.",
+    "language": "French",
+    "entities": [
+      {
+        "text": "Pierre Durand",
+        "label": "person",
+        "start": 3,
+        "end": 16
+      },
+      {
+        "text": "Marseille",
+        "label": "location",
+        "start": 38,
+        "end": 47
+      },
+      {
+        "text": "Hôpital de la Timone",
+        "label": "organization",
+        "start": 71,
+        "end": 91
+      },
+      {
+        "text": "Dr. Anne Rousseau",
+        "label": "person",
+        "start": 119,
+        "end": 136
+      },
+      {
+        "text": "AVC",
+        "label": "medical_condition",
+        "start": 100,
+        "end": 103
+      }
+    ],
+    "source": "medical"
+  },
+  {
+    "text": "Rapport clinique: Mme Hélène Bonnet, numéro de sécurité sociale 1 68 05 75 108 234 56, a été admise au CHU de Bordeaux le 10 mars 2026. Dr. Jacques Martin a prescrit du Doliprane.",
+    "language": "French",
+    "entities": [
+      {
+        "text": "Hélène Bonnet",
+        "label": "person",
+        "start": 22,
+        "end": 35
+      },
+      {
+        "text": "CHU de Bordeaux",
+        "label": "organization",
+        "start": 102,
+        "end": 117
+      },
+      {
+        "text": "10 mars 2026",
+        "label": "date",
+        "start": 121,
+        "end": 133
+      },
+      {
+        "text": "Dr. Jacques Martin",
+        "label": "person",
+        "start": 135,
+        "end": 153
+      },
+      {
+        "text": "Doliprane",
+        "label": "medication",
+        "start": 169,
+        "end": 178
+      }
+    ],
+    "source": "medical"
+  },
+  {
+    "text": "Le jeune patient Thomas Leroy, 12 ans, a été examiné à l'Hôpital Robert-Debré par le pédiatre Dr. Christine Morel. Un diagnostic d'asthme a été établi.",
+    "language": "French",
+    "entities": [
+      {
+        "text": "Thomas Leroy",
+        "label": "person",
+        "start": 17,
+        "end": 29
+      },
+      {
+        "text": "Hôpital Robert-Debré",
+        "label": "organization",
+        "start": 57,
+        "end": 77
+      },
+      {
+        "text": "Dr. Christine Morel",
+        "label": "person",
+        "start": 94,
+        "end": 113
+      },
+      {
+        "text": "asthme",
+        "label": "medical_condition",
+        "start": 131,
+        "end": 137
+      }
+    ],
+    "source": "medical"
+  },
+  {
+    "text": "Mme Nicole Dubois, 58 ans, a été opérée à la Clinique du Parc à Toulouse le 15 décembre 2025. Le Dr. Michel Faure a réalisé une prothèse de hanche.",
+    "language": "French",
+    "entities": [
+      {
+        "text": "Nicole Dubois",
+        "label": "person",
+        "start": 4,
+        "end": 17
+      },
+      {
+        "text": "Clinique du Parc",
+        "label": "organization",
+        "start": 45,
+        "end": 61
+      },
+      {
+        "text": "Toulouse",
+        "label": "location",
+        "start": 65,
+        "end": 73
+      },
+      {
+        "text": "15 décembre 2025",
+        "label": "date",
+        "start": 77,
+        "end": 93
+      },
+      {
+        "text": "Dr. Michel Faure",
+        "label": "person",
+        "start": 98,
+        "end": 114
+      },
+      {
+        "text": "prothèse de hanche",
+        "label": "medical_condition",
+        "start": 128,
+        "end": 146
+      }
+    ],
+    "source": "medical"
+  },
+  {
+    "text": "M. Antoine Richard, patient diabétique de 70 ans, a été suivi au Centre Hospitalier de Nice par le Dr. Émilie Blanc pour ajuster son traitement à l'insuline.",
+    "language": "French",
+    "entities": [
+      {
+        "text": "Antoine Richard",
+        "label": "person",
+        "start": 3,
+        "end": 18
+      },
+      {
+        "text": "Centre Hospitalier de Nice",
+        "label": "organization",
+        "start": 62,
+        "end": 88
+      },
+      {
+        "text": "Dr. Émilie Blanc",
+        "label": "person",
+        "start": 96,
+        "end": 112
+      },
+      {
+        "text": "diabétique",
+        "label": "medical_condition",
+        "start": 28,
+        "end": 38
+      },
+      {
+        "text": "insuline",
+        "label": "medication",
+        "start": 148,
+        "end": 156
+      }
+    ],
+    "source": "medical"
+  },
+  {
+    "text": "Observation médicale: M. Bernard Roux, né le 22 septembre 1960, a été admis en urgence à l'Hôpital Saint-Louis à Paris pour une hémorragie digestive. Dr. Pauline Mercier a pratiqué une endoscopie.",
+    "language": "French",
+    "entities": [
+      {
+        "text": "Bernard Roux",
+        "label": "person",
+        "start": 22,
+        "end": 34
+      },
+      {
+        "text": "22 septembre 1960",
+        "label": "date",
+        "start": 43,
+        "end": 60
+      },
+      {
+        "text": "Hôpital Saint-Louis",
+        "label": "organization",
+        "start": 91,
+        "end": 110
+      },
+      {
+        "text": "Paris",
+        "label": "location",
+        "start": 114,
+        "end": 119
+      },
+      {
+        "text": "Dr. Pauline Mercier",
+        "label": "person",
+        "start": 149,
+        "end": 168
+      }
+    ],
+    "source": "medical"
+  },
+  {
+    "text": "El paciente Juan García López, de 68 años, fue ingresado en el Hospital Universitario La Paz de Madrid el 12 de enero de 2026. El Dr. Carlos Martínez diagnosticó diabetes tipo 2.",
+    "language": "Spanish",
+    "entities": [
+      {
+        "text": "Juan García López",
+        "label": "person",
+        "start": 12,
+        "end": 29
+      },
+      {
+        "text": "Hospital Universitario La Paz",
+        "label": "organization",
+        "start": 63,
+        "end": 92
+      },
+      {
+        "text": "Madrid",
+        "label": "location",
+        "start": 96,
+        "end": 102
+      },
+      {
+        "text": "12 de enero de 2026",
+        "label": "date",
+        "start": 106,
+        "end": 125
+      },
+      {
+        "text": "Dr. Carlos Martínez",
+        "label": "person",
+        "start": 130,
+        "end": 149
+      },
+      {
+        "text": "diabetes tipo 2",
+        "label": "medical_condition",
+        "start": 162,
+        "end": 177
+      }
+    ],
+    "source": "medical"
+  },
+  {
+    "text": "La Sra. María Fernández, nacida el 5 de abril de 1962, acudió a urgencias del Hospital Clínic de Barcelona con dolor torácico. El cardiólogo Dr. Antonio Ruiz ordenó un electrocardiograma.",
+    "language": "Spanish",
+    "entities": [
+      {
+        "text": "María Fernández",
+        "label": "person",
+        "start": 8,
+        "end": 23
+      },
+      {
+        "text": "5 de abril de 1962",
+        "label": "date",
+        "start": 35,
+        "end": 53
+      },
+      {
+        "text": "Hospital Clínic",
+        "label": "organization",
+        "start": 78,
+        "end": 93
+      },
+      {
+        "text": "Barcelona",
+        "label": "location",
+        "start": 97,
+        "end": 106
+      },
+      {
+        "text": "Dr. Antonio Ruiz",
+        "label": "person",
+        "start": 141,
+        "end": 157
+      }
+    ],
+    "source": "medical"
+  },
+  {
+    "text": "Sr. Pedro Sánchez Moreno, número de historia clínica 234567, fue transferido del Hospital 12 de Octubre a la Clínica Navarra en Pamplona el 20 de febrero de 2026.",
+    "language": "Spanish",
+    "entities": [
+      {
+        "text": "Pedro Sánchez Moreno",
+        "label": "person",
+        "start": 4,
+        "end": 24
+      },
+      {
+        "text": "Hospital 12 de Octubre",
+        "label": "organization",
+        "start": 81,
+        "end": 103
+      },
+      {
+        "text": "Clínica Navarra",
+        "label": "organization",
+        "start": 109,
+        "end": 124
+      },
+      {
+        "text": "Pamplona",
+        "label": "location",
+        "start": 128,
+        "end": 136
+      },
+      {
+        "text": "20 de febrero de 2026",
+        "label": "date",
+        "start": 140,
+        "end": 161
+      }
+    ],
+    "source": "medical"
+  },
+  {
+    "text": "Informe clínico: La paciente Ana Torres Vega, de 55 años de Sevilla, fue diagnosticada con cáncer de mama en el Hospital Virgen del Rocío. Su oncóloga, Dra. Laura García, recomendó quimioterapia.",
+    "language": "Spanish",
+    "entities": [
+      {
+        "text": "Ana Torres Vega",
+        "label": "person",
+        "start": 29,
+        "end": 44
+      },
+      {
+        "text": "Sevilla",
+        "label": "location",
+        "start": 60,
+        "end": 67
+      },
+      {
+        "text": "Hospital Virgen del Rocío",
+        "label": "organization",
+        "start": 112,
+        "end": 137
+      },
+      {
+        "text": "Dra. Laura García",
+        "label": "person",
+        "start": 152,
+        "end": 169
+      },
+      {
+        "text": "cáncer de mama",
+        "label": "medical_condition",
+        "start": 91,
+        "end": 105
+      },
+      {
+        "text": "quimioterapia",
+        "label": "medication",
+        "start": 181,
+        "end": 194
+      }
+    ],
+    "source": "medical"
+  },
+  {
+    "text": "El Sr. Miguel Rodríguez, DNI 12345678-A, fue atendido en el Hospital Gregorio Marañón de Madrid el 3 de marzo de 2026. El Dr. Francisco López prescribió Enalapril para la hipertensión.",
+    "language": "Spanish",
+    "entities": [
+      {
+        "text": "Miguel Rodríguez",
+        "label": "person",
+        "start": 7,
+        "end": 23
+      },
+      {
+        "text": "Hospital Gregorio Marañón",
+        "label": "organization",
+        "start": 60,
+        "end": 85
+      },
+      {
+        "text": "Madrid",
+        "label": "location",
+        "start": 89,
+        "end": 95
+      },
+      {
+        "text": "3 de marzo de 2026",
+        "label": "date",
+        "start": 99,
+        "end": 117
+      },
+      {
+        "text": "Dr. Francisco López",
+        "label": "person",
+        "start": 122,
+        "end": 141
+      },
+      {
+        "text": "hipertensión",
+        "label": "medical_condition",
+        "start": 171,
+        "end": 183
+      },
+      {
+        "text": "Enalapril",
+        "label": "medication",
+        "start": 153,
+        "end": 162
+      }
+    ],
+    "source": "medical"
+  },
+  {
+    "text": "La niña Lucía Hernández, de 7 años, fue llevada al Hospital Infantil Niño Jesús por sus padres. El pediatra Dr. José Ramírez diagnosticó asma bronquial.",
+    "language": "Spanish",
+    "entities": [
+      {
+        "text": "Lucía Hernández",
+        "label": "person",
+        "start": 8,
+        "end": 23
+      },
+      {
+        "text": "Hospital Infantil Niño Jesús",
+        "label": "organization",
+        "start": 51,
+        "end": 79
+      },
+      {
+        "text": "Dr. José Ramírez",
+        "label": "person",
+        "start": 108,
+        "end": 124
+      },
+      {
+        "text": "asma",
+        "label": "medical_condition",
+        "start": 137,
+        "end": 141
+      }
+    ],
+    "source": "medical"
+  },
+  {
+    "text": "Dña. Carmen Díaz, paciente de 60 años del Hospital Vall d'Hebron de Barcelona, se sometió a una cirugía de cadera el 15 de diciembre de 2025. El cirujano fue el Dr. Pablo Navarro.",
+    "language": "Spanish",
+    "entities": [
+      {
+        "text": "Carmen Díaz",
+        "label": "person",
+        "start": 5,
+        "end": 16
+      },
+      {
+        "text": "Hospital Vall d'Hebron",
+        "label": "organization",
+        "start": 42,
+        "end": 64
+      },
+      {
+        "text": "Barcelona",
+        "label": "location",
+        "start": 68,
+        "end": 77
+      },
+      {
+        "text": "15 de diciembre de 2025",
+        "label": "date",
+        "start": 117,
+        "end": 140
+      },
+      {
+        "text": "Dr. Pablo Navarro",
+        "label": "person",
+        "start": 161,
+        "end": 178
+      }
+    ],
+    "source": "medical"
+  },
+  {
+    "text": "El paciente Alberto Gómez, de 75 años, fue ingresado en el Hospital de Sant Pau en Barcelona con neumonía. La Dra. Elena Martín inició tratamiento con antibióticos.",
+    "language": "Spanish",
+    "entities": [
+      {
+        "text": "Alberto Gómez",
+        "label": "person",
+        "start": 12,
+        "end": 25
+      },
+      {
+        "text": "Hospital de Sant Pau",
+        "label": "organization",
+        "start": 58,
+        "end": 78
+      },
+      {
+        "text": "Barcelona",
+        "label": "location",
+        "start": 82,
+        "end": 91
+      },
+      {
+        "text": "Dra. Elena Martín",
+        "label": "person",
+        "start": 110,
+        "end": 127
+      },
+      {
+        "text": "neumonía",
+        "label": "medical_condition",
+        "start": 97,
+        "end": 105
+      },
+      {
+        "text": "antibióticos",
+        "label": "medication",
+        "start": 151,
+        "end": 163
+      }
+    ],
+    "source": "medical"
+  },
+  {
+    "text": "Sra. Rosa Molina, una mujer de 82 años, fue trasladada al Hospital Ramón y Cajal desde Valencia el 8 de enero de 2026. El Dr. Manuel Serrano supervisó su rehabilitación tras el ictus.",
+    "language": "Spanish",
+    "entities": [
+      {
+        "text": "Rosa Molina",
+        "label": "person",
+        "start": 5,
+        "end": 16
+      },
+      {
+        "text": "Hospital Ramón y Cajal",
+        "label": "organization",
+        "start": 58,
+        "end": 80
+      },
+      {
+        "text": "Valencia",
+        "label": "location",
+        "start": 87,
+        "end": 95
+      },
+      {
+        "text": "8 de enero de 2026",
+        "label": "date",
+        "start": 99,
+        "end": 117
+      },
+      {
+        "text": "Dr. Manuel Serrano",
+        "label": "person",
+        "start": 122,
+        "end": 140
+      },
+      {
+        "text": "ictus",
+        "label": "medical_condition",
+        "start": 177,
+        "end": 182
+      }
+    ],
+    "source": "medical"
+  },
+  {
+    "text": "Historia clínica: Sr. Fernando Ortiz, nacido el 18 de julio de 1978, acudió al Hospital Puerta de Hierro de Madrid con dolor abdominal severo. El Dr. Andrés Blanco realizó una apendicectomía de urgencia.",
+    "language": "Spanish",
+    "entities": [
+      {
+        "text": "Fernando Ortiz",
+        "label": "person",
+        "start": 22,
+        "end": 36
+      },
+      {
+        "text": "18 de julio de 1978",
+        "label": "date",
+        "start": 48,
+        "end": 67
+      },
+      {
+        "text": "Hospital Puerta de Hierro",
+        "label": "organization",
+        "start": 79,
+        "end": 104
+      },
+      {
+        "text": "Madrid",
+        "label": "location",
+        "start": 108,
+        "end": 114
+      },
+      {
+        "text": "Dr. Andrés Blanco",
+        "label": "person",
+        "start": 146,
+        "end": 163
+      },
+      {
+        "text": "dolor abdominal",
+        "label": "medical_condition",
+        "start": 119,
+        "end": 134
+      },
+      {
+        "text": "apendicectomía",
+        "label": "medical_condition",
+        "start": 176,
+        "end": 190
+      }
+    ],
+    "source": "medical"
+  },
+  {
+    "text": "O paciente João Silva Santos, de 70 anos, foi internado no Hospital das Clínicas de São Paulo em 15 de janeiro de 2026. O Dr. Carlos Oliveira diagnosticou insuficiência cardíaca.",
+    "language": "Portuguese",
+    "entities": [
+      {
+        "text": "João Silva Santos",
+        "label": "person",
+        "start": 11,
+        "end": 28
+      },
+      {
+        "text": "Hospital das Clínicas",
+        "label": "organization",
+        "start": 59,
+        "end": 80
+      },
+      {
+        "text": "São Paulo",
+        "label": "location",
+        "start": 84,
+        "end": 93
+      },
+      {
+        "text": "15 de janeiro de 2026",
+        "label": "date",
+        "start": 97,
+        "end": 118
+      },
+      {
+        "text": "Dr. Carlos Oliveira",
+        "label": "person",
+        "start": 123,
+        "end": 142
+      },
+      {
+        "text": "insuficiência cardíaca",
+        "label": "medical_condition",
+        "start": 155,
+        "end": 177
+      }
+    ],
+    "source": "medical"
+  },
+  {
+    "text": "A Sra. Maria Souza, nascida em 10 de março de 1960, foi atendida no Hospital Albert Einstein em São Paulo com dor torácica. O cardiologista Dr. Pedro Lima solicitou um eletrocardiograma.",
+    "language": "Portuguese",
+    "entities": [
+      {
+        "text": "Maria Souza",
+        "label": "person",
+        "start": 7,
+        "end": 18
+      },
+      {
+        "text": "10 de março de 1960",
+        "label": "date",
+        "start": 31,
+        "end": 50
+      },
+      {
+        "text": "Hospital Albert Einstein",
+        "label": "organization",
+        "start": 68,
+        "end": 92
+      },
+      {
+        "text": "São Paulo",
+        "label": "location",
+        "start": 96,
+        "end": 105
+      },
+      {
+        "text": "Dr. Pedro Lima",
+        "label": "person",
+        "start": 140,
+        "end": 154
+      },
+      {
+        "text": "dor torácica",
+        "label": "medical_condition",
+        "start": 110,
+        "end": 122
+      }
+    ],
+    "source": "medical"
+  },
+  {
+    "text": "Sr. Paulo Ferreira, prontuário 789456, foi transferido do Hospital Sírio-Libanês para o INCA no Rio de Janeiro em 20 de fevereiro de 2026. A Dra. Ana Costa iniciou o tratamento oncológico.",
+    "language": "Portuguese",
+    "entities": [
+      {
+        "text": "Paulo Ferreira",
+        "label": "person",
+        "start": 4,
+        "end": 18
+      },
+      {
+        "text": "Hospital Sírio-Libanês",
+        "label": "organization",
+        "start": 57,
+        "end": 79
+      },
+      {
+        "text": "INCA",
+        "label": "organization",
+        "start": 87,
+        "end": 91
+      },
+      {
+        "text": "Rio de Janeiro",
+        "label": "location",
+        "start": 95,
+        "end": 109
+      },
+      {
+        "text": "20 de fevereiro de 2026",
+        "label": "date",
+        "start": 113,
+        "end": 136
+      },
+      {
+        "text": "Dra. Ana Costa",
+        "label": "person",
+        "start": 140,
+        "end": 154
+      },
+      {
+        "text": "tratamento oncológico",
+        "label": "medication",
+        "start": 166,
+        "end": 187
+      }
+    ],
+    "source": "medical"
+  },
+  {
+    "text": "Relatório clínico: A paciente Fernanda Almeida, de 48 anos de Belo Horizonte, foi diagnosticada com câncer de mama no Hospital Mater Dei. O oncologista Dr. Ricardo Santos recomendou quimioterapia.",
+    "language": "Portuguese",
+    "entities": [
+      {
+        "text": "Fernanda Almeida",
+        "label": "person",
+        "start": 30,
+        "end": 46
+      },
+      {
+        "text": "Belo Horizonte",
+        "label": "location",
+        "start": 62,
+        "end": 76
+      },
+      {
+        "text": "Hospital Mater Dei",
+        "label": "organization",
+        "start": 117,
+        "end": 135
+      },
+      {
+        "text": "Dr. Ricardo Santos",
+        "label": "person",
+        "start": 152,
+        "end": 170
+      },
+      {
+        "text": "câncer de mama",
+        "label": "medical_condition",
+        "start": 100,
+        "end": 114
+      }
+    ],
+    "source": "medical"
+  },
+  {
+    "text": "O Sr. Marcos Ribeiro, CPF 123.456.789-00, foi atendido no Hospital Beneficência Portuguesa de Porto Alegre em 3 de março de 2026. O Dr. Fernando Martins prescreveu Losartana para hipertensão.",
+    "language": "Portuguese",
+    "entities": [
+      {
+        "text": "Marcos Ribeiro",
+        "label": "person",
+        "start": 6,
+        "end": 20
+      },
+      {
+        "text": "Hospital Beneficência Portuguesa",
+        "label": "organization",
+        "start": 57,
+        "end": 89
+      },
+      {
+        "text": "Porto Alegre",
+        "label": "location",
+        "start": 93,
+        "end": 105
+      },
+      {
+        "text": "3 de março de 2026",
+        "label": "date",
+        "start": 109,
+        "end": 127
+      },
+      {
+        "text": "Dr. Fernando Martins",
+        "label": "person",
+        "start": 132,
+        "end": 152
+      },
+      {
+        "text": "hipertensão",
+        "label": "medical_condition",
+        "start": 179,
+        "end": 190
+      },
+      {
+        "text": "Losartana",
+        "label": "medication",
+        "start": 164,
+        "end": 173
+      }
+    ],
+    "source": "medical"
+  },
+  {
+    "text": "A criança Lucas Pereira, de 9 anos, foi levada ao Hospital Pequeno Príncipe em Curitiba pelos pais. O pediatra Dr. Roberto Carvalho diagnosticou asma brônquica.",
+    "language": "Portuguese",
+    "entities": [
+      {
+        "text": "Lucas Pereira",
+        "label": "person",
+        "start": 10,
+        "end": 23
+      },
+      {
+        "text": "Hospital Pequeno Príncipe",
+        "label": "organization",
+        "start": 50,
+        "end": 75
+      },
+      {
+        "text": "Curitiba",
+        "label": "location",
+        "start": 79,
+        "end": 87
+      },
+      {
+        "text": "Dr. Roberto Carvalho",
+        "label": "person",
+        "start": 111,
+        "end": 131
+      },
+      {
+        "text": "asma",
+        "label": "medical_condition",
+        "start": 145,
+        "end": 149
+      }
+    ],
+    "source": "medical"
+  },
+  {
+    "text": "D. Júlia Mendes, paciente de 62 anos do Hospital Copa Star no Rio de Janeiro, realizou cirurgia de quadril em 15 de dezembro de 2025. O cirurgião foi o Dr. André Gomes.",
+    "language": "Portuguese",
+    "entities": [
+      {
+        "text": "Júlia Mendes",
+        "label": "person",
+        "start": 3,
+        "end": 15
+      },
+      {
+        "text": "Hospital Copa Star",
+        "label": "organization",
+        "start": 40,
+        "end": 58
+      },
+      {
+        "text": "Rio de Janeiro",
+        "label": "location",
+        "start": 62,
+        "end": 76
+      },
+      {
+        "text": "15 de dezembro de 2025",
+        "label": "date",
+        "start": 110,
+        "end": 132
+      },
+      {
+        "text": "Dr. André Gomes",
+        "label": "person",
+        "start": 153,
+        "end": 168
+      }
+    ],
+    "source": "medical"
+  },
+  {
+    "text": "O paciente Antônio Castro, de 78 anos, foi internado no Hospital Santa Casa de Recife com pneumonia. A Dra. Patrícia Nunes iniciou antibioticoterapia.",
+    "language": "Portuguese",
+    "entities": [
+      {
+        "text": "Antônio Castro",
+        "label": "person",
+        "start": 11,
+        "end": 25
+      },
+      {
+        "text": "Hospital Santa Casa",
+        "label": "organization",
+        "start": 55,
+        "end": 74
+      },
+      {
+        "text": "Recife",
+        "label": "location",
+        "start": 78,
+        "end": 84
+      },
+      {
+        "text": "Dra. Patrícia Nunes",
+        "label": "person",
+        "start": 102,
+        "end": 121
+      },
+      {
+        "text": "pneumonia",
+        "label": "medical_condition",
+        "start": 90,
+        "end": 99
+      }
+    ],
+    "source": "medical"
+  },
+  {
+    "text": "A Sra. Beatriz Rocha, uma senhora de 85 anos, foi transferida do Hospital Samaritano para o Hospital Israelita Albert Einstein em São Paulo. O Dr. Gustavo Freitas coordenou sua reabilitação pós-AVC.",
+    "language": "Portuguese",
+    "entities": [
+      {
+        "text": "Beatriz Rocha",
+        "label": "person",
+        "start": 7,
+        "end": 20
+      },
+      {
+        "text": "Hospital Samaritano",
+        "label": "organization",
+        "start": 65,
+        "end": 84
+      },
+      {
+        "text": "Hospital Israelita Albert Einstein",
+        "label": "organization",
+        "start": 91,
+        "end": 125
+      },
+      {
+        "text": "São Paulo",
+        "label": "location",
+        "start": 129,
+        "end": 138
+      },
+      {
+        "text": "Dr. Gustavo Freitas",
+        "label": "person",
+        "start": 143,
+        "end": 162
+      },
+      {
+        "text": "AVC",
+        "label": "medical_condition",
+        "start": 194,
+        "end": 197
+      }
+    ],
+    "source": "medical"
+  },
+  {
+    "text": "Prontuário médico: O Sr. Gabriel Cardoso, nascido em 25 de agosto de 1975, deu entrada no Hospital Municipal de Salvador com dor abdominal intensa. O Dr. Marcelo Teixeira realizou apendicectomia de emergência.",
+    "language": "Portuguese",
+    "entities": [
+      {
+        "text": "Gabriel Cardoso",
+        "label": "person",
+        "start": 24,
+        "end": 39
+      },
+      {
+        "text": "25 de agosto de 1975",
+        "label": "date",
+        "start": 53,
+        "end": 73
+      },
+      {
+        "text": "Hospital Municipal",
+        "label": "organization",
+        "start": 89,
+        "end": 107
+      },
+      {
+        "text": "Salvador",
+        "label": "location",
+        "start": 111,
+        "end": 119
+      },
+      {
+        "text": "Dr. Marcelo Teixeira",
+        "label": "person",
+        "start": 150,
+        "end": 170
+      },
+      {
+        "text": "dor abdominal",
+        "label": "medical_condition",
+        "start": 125,
+        "end": 138
+      },
+      {
+        "text": "apendicectomia",
+        "label": "medical_condition",
+        "start": 180,
+        "end": 194
+      }
+    ],
+    "source": "medical"
+  },
+  {
+    "text": "Il paziente Marco Rossi, di 65 anni, è stato ricoverato all'Ospedale San Raffaele di Milano il 18 gennaio 2026. Il Dott. Giuseppe Bianchi ha diagnosticato il diabete di tipo 2.",
+    "language": "Italian",
+    "entities": [
+      {
+        "text": "Marco Rossi",
+        "label": "person",
+        "start": 12,
+        "end": 23
+      },
+      {
+        "text": "Ospedale San Raffaele",
+        "label": "organization",
+        "start": 60,
+        "end": 81
+      },
+      {
+        "text": "Milano",
+        "label": "location",
+        "start": 85,
+        "end": 91
+      },
+      {
+        "text": "18 gennaio 2026",
+        "label": "date",
+        "start": 95,
+        "end": 110
+      },
+      {
+        "text": "Dott. Giuseppe Bianchi",
+        "label": "person",
+        "start": 115,
+        "end": 137
+      },
+      {
+        "text": "diabete di tipo 2",
+        "label": "medical_condition",
+        "start": 158,
+        "end": 175
+      }
+    ],
+    "source": "medical"
+  },
+  {
+    "text": "La Sig.ra Anna Conti, nata il 12 aprile 1958, si è presentata al Pronto Soccorso del Policlinico Gemelli di Roma con dolore toracico. Il cardiologo Dott. Francesco Verdi ha prescritto un ECG.",
+    "language": "Italian",
+    "entities": [
+      {
+        "text": "Anna Conti",
+        "label": "person",
+        "start": 10,
+        "end": 20
+      },
+      {
+        "text": "12 aprile 1958",
+        "label": "date",
+        "start": 30,
+        "end": 44
+      },
+      {
+        "text": "Policlinico Gemelli",
+        "label": "organization",
+        "start": 85,
+        "end": 104
+      },
+      {
+        "text": "Roma",
+        "label": "location",
+        "start": 108,
+        "end": 112
+      },
+      {
+        "text": "Dott. Francesco Verdi",
+        "label": "person",
+        "start": 148,
+        "end": 169
+      },
+      {
+        "text": "dolore toracico",
+        "label": "medical_condition",
+        "start": 117,
+        "end": 132
+      }
+    ],
+    "source": "medical"
+  },
+  {
+    "text": "Il Sig. Paolo Ferrari, cartella clinica 567890, è stato trasferito dall'Ospedale Niguarda al Centro Cardiologico Monzino a Milano il 22 febbraio 2026.",
+    "language": "Italian",
+    "entities": [
+      {
+        "text": "Paolo Ferrari",
+        "label": "person",
+        "start": 8,
+        "end": 21
+      },
+      {
+        "text": "Ospedale Niguarda",
+        "label": "organization",
+        "start": 72,
+        "end": 89
+      },
+      {
+        "text": "Centro Cardiologico Monzino",
+        "label": "organization",
+        "start": 93,
+        "end": 120
+      },
+      {
+        "text": "Milano",
+        "label": "location",
+        "start": 124,
+        "end": 130
+      },
+      {
+        "text": "22 febbraio 2026",
+        "label": "date",
+        "start": 134,
+        "end": 150
+      }
+    ],
+    "source": "medical"
+  },
+  {
+    "text": "Referto clinico: La paziente Giulia Ricci, 52 anni di Firenze, è stata diagnosticata con tumore al seno presso l'Istituto Oncologico Europeo. L'oncologa Dott.ssa Maria Romano ha consigliato la chemioterapia.",
+    "language": "Italian",
+    "entities": [
+      {
+        "text": "Giulia Ricci",
+        "label": "person",
+        "start": 29,
+        "end": 41
+      },
+      {
+        "text": "Firenze",
+        "label": "location",
+        "start": 54,
+        "end": 61
+      },
+      {
+        "text": "Istituto Oncologico Europeo",
+        "label": "organization",
+        "start": 112,
+        "end": 139
+      },
+      {
+        "text": "Dott.ssa Maria Romano",
+        "label": "person",
+        "start": 153,
+        "end": 174
+      },
+      {
+        "text": "tumore al seno",
+        "label": "medical_condition",
+        "start": 89,
+        "end": 103
+      },
+      {
+        "text": "chemioterapia",
+        "label": "medication",
+        "start": 193,
+        "end": 206
+      }
+    ],
+    "source": "medical"
+  },
+  {
+    "text": "Il Sig. Luigi Esposito, codice fiscale SPSLGU55P15H501X, è stato visitato all'Ospedale Sant'Orsola di Bologna il 5 marzo 2026. Il Dott. Andrea Colombo ha prescritto Ramipril per l'ipertensione.",
+    "language": "Italian",
+    "entities": [
+      {
+        "text": "Luigi Esposito",
+        "label": "person",
+        "start": 8,
+        "end": 22
+      },
+      {
+        "text": "Ospedale Sant'Orsola",
+        "label": "organization",
+        "start": 78,
+        "end": 98
+      },
+      {
+        "text": "Bologna",
+        "label": "location",
+        "start": 102,
+        "end": 109
+      },
+      {
+        "text": "5 marzo 2026",
+        "label": "date",
+        "start": 113,
+        "end": 125
+      },
+      {
+        "text": "Dott. Andrea Colombo",
+        "label": "person",
+        "start": 130,
+        "end": 150
+      },
+      {
+        "text": "ipertensione",
+        "label": "medical_condition",
+        "start": 180,
+        "end": 192
+      },
+      {
+        "text": "Ramipril",
+        "label": "medication",
+        "start": 165,
+        "end": 173
+      }
+    ],
+    "source": "medical"
+  },
+  {
+    "text": "La bambina Sofia Martinelli, 8 anni, è stata portata all'Ospedale Pediatrico Bambino Gesù dai genitori. Il pediatra Dott. Roberto Greco ha diagnosticato l'asma bronchiale.",
+    "language": "Italian",
+    "entities": [
+      {
+        "text": "Sofia Martinelli",
+        "label": "person",
+        "start": 11,
+        "end": 27
+      },
+      {
+        "text": "Ospedale Pediatrico Bambino Gesù",
+        "label": "organization",
+        "start": 57,
+        "end": 89
+      },
+      {
+        "text": "Dott. Roberto Greco",
+        "label": "person",
+        "start": 116,
+        "end": 135
+      },
+      {
+        "text": "asma",
+        "label": "medical_condition",
+        "start": 155,
+        "end": 159
+      }
+    ],
+    "source": "medical"
+  },
+  {
+    "text": "La Sig.ra Teresa Moretti, paziente di 63 anni dell'Ospedale Molinette di Torino, è stata sottoposta a intervento di protesi d'anca il 18 dicembre 2025. Il chirurgo è stato il Dott. Stefano Galli.",
+    "language": "Italian",
+    "entities": [
+      {
+        "text": "Teresa Moretti",
+        "label": "person",
+        "start": 10,
+        "end": 24
+      },
+      {
+        "text": "Ospedale Molinette",
+        "label": "organization",
+        "start": 51,
+        "end": 69
+      },
+      {
+        "text": "Torino",
+        "label": "location",
+        "start": 73,
+        "end": 79
+      },
+      {
+        "text": "18 dicembre 2025",
+        "label": "date",
+        "start": 134,
+        "end": 150
+      },
+      {
+        "text": "Dott. Stefano Galli",
+        "label": "person",
+        "start": 175,
+        "end": 194
+      }
+    ],
+    "source": "medical"
+  },
+  {
+    "text": "Il paziente Antonio Bruno, di 76 anni, è stato ricoverato all'Ospedale Civile di Padova con polmonite. La Dott.ssa Laura Fontana ha iniziato la terapia antibiotica.",
+    "language": "Italian",
+    "entities": [
+      {
+        "text": "Antonio Bruno",
+        "label": "person",
+        "start": 12,
+        "end": 25
+      },
+      {
+        "text": "Ospedale Civile",
+        "label": "organization",
+        "start": 62,
+        "end": 77
+      },
+      {
+        "text": "Padova",
+        "label": "location",
+        "start": 81,
+        "end": 87
+      },
+      {
+        "text": "Dott.ssa Laura Fontana",
+        "label": "person",
+        "start": 106,
+        "end": 128
+      },
+      {
+        "text": "polmonite",
+        "label": "medical_condition",
+        "start": 92,
+        "end": 101
+      }
+    ],
+    "source": "medical"
+  },
+  {
+    "text": "La Sig.ra Carla Mancini, una donna di 80 anni, è stata trasferita dall'Ospedale San Paolo al Policlinico di Milano. Il Dott. Luca Santini ha coordinato il suo programma di riabilitazione post-ictus.",
+    "language": "Italian",
+    "entities": [
+      {
+        "text": "Carla Mancini",
+        "label": "person",
+        "start": 10,
+        "end": 23
+      },
+      {
+        "text": "Ospedale San Paolo",
+        "label": "organization",
+        "start": 71,
+        "end": 89
+      },
+      {
+        "text": "Policlinico",
+        "label": "organization",
+        "start": 93,
+        "end": 104
+      },
+      {
+        "text": "Milano",
+        "label": "location",
+        "start": 108,
+        "end": 114
+      },
+      {
+        "text": "Dott. Luca Santini",
+        "label": "person",
+        "start": 119,
+        "end": 137
+      },
+      {
+        "text": "ictus",
+        "label": "medical_condition",
+        "start": 192,
+        "end": 197
+      }
+    ],
+    "source": "medical"
+  },
+  {
+    "text": "Cartella clinica: Il Sig. Massimo Lombardi, nato il 30 settembre 1972, è stato ammesso d'urgenza all'Ospedale Maggiore di Parma con dolore addominale acuto. Il Dott. Davide Rizzo ha eseguito un'appendicectomia d'emergenza.",
+    "language": "Italian",
+    "entities": [
+      {
+        "text": "Massimo Lombardi",
+        "label": "person",
+        "start": 26,
+        "end": 42
+      },
+      {
+        "text": "30 settembre 1972",
+        "label": "date",
+        "start": 52,
+        "end": 69
+      },
+      {
+        "text": "Ospedale Maggiore",
+        "label": "organization",
+        "start": 101,
+        "end": 118
+      },
+      {
+        "text": "Parma",
+        "label": "location",
+        "start": 122,
+        "end": 127
+      },
+      {
+        "text": "Dott. Davide Rizzo",
+        "label": "person",
+        "start": 161,
+        "end": 179
+      },
+      {
+        "text": "dolore addominale",
+        "label": "medical_condition",
+        "start": 132,
+        "end": 149
+      },
+      {
+        "text": "appendicectomia",
+        "label": "medical_condition",
+        "start": 194,
+        "end": 209
+      }
+    ],
+    "source": "medical"
+  },
+  {
+    "text": "Der Patient Hans Müller, 68 Jahre alt, wurde am 15. Januar 2026 in die Charité Berlin aufgenommen. Dr. Klaus Schmidt diagnostizierte Typ-2-Diabetes und verschrieb Metformin.",
+    "language": "German",
+    "entities": [
+      {
+        "text": "Hans Müller",
+        "label": "person",
+        "start": 12,
+        "end": 23
+      },
+      {
+        "text": "15. Januar 2026",
+        "label": "date",
+        "start": 48,
+        "end": 63
+      },
+      {
+        "text": "Charité Berlin",
+        "label": "organization",
+        "start": 71,
+        "end": 85
+      },
+      {
+        "text": "Dr. Klaus Schmidt",
+        "label": "person",
+        "start": 98,
+        "end": 115
+      },
+      {
+        "text": "Typ-2-Diabetes",
+        "label": "medical_condition",
+        "start": 133,
+        "end": 147
+      },
+      {
+        "text": "Metformin",
+        "label": "medication",
+        "start": 163,
+        "end": 172
+      }
+    ],
+    "source": "medical"
+  },
+  {
+    "text": "Frau Maria Weber, geboren am 3. April 1960, stellte sich in der Notaufnahme des Universitätsklinikums München mit Brustschmerzen vor. Der Kardiologe Dr. Thomas Braun ordnete ein EKG an.",
+    "language": "German",
+    "entities": [
+      {
+        "text": "Maria Weber",
+        "label": "person",
+        "start": 5,
+        "end": 16
+      },
+      {
+        "text": "3. April 1960",
+        "label": "date",
+        "start": 29,
+        "end": 42
+      },
+      {
+        "text": "Universitätsklinikum München",
+        "label": "organization",
+        "start": 80,
+        "end": 108
+      },
+      {
+        "text": "Dr. Thomas Braun",
+        "label": "person",
+        "start": 149,
+        "end": 165
+      },
+      {
+        "text": "Brustschmerzen",
+        "label": "medical_condition",
+        "start": 114,
+        "end": 128
+      }
+    ],
+    "source": "medical"
+  },
+  {
+    "text": "Herr Peter Fischer, Krankenaktennummer 456789, wurde vom Klinikum Stuttgart zur Universitätsmedizin Heidelberg am 20. Februar 2026 verlegt. Dr. Anna Hoffmann übernahm die onkologische Behandlung.",
+    "language": "German",
+    "entities": [
+      {
+        "text": "Peter Fischer",
+        "label": "person",
+        "start": 5,
+        "end": 18
+      },
+      {
+        "text": "Klinikum Stuttgart",
+        "label": "organization",
+        "start": 57,
+        "end": 75
+      },
+      {
+        "text": "Universitätsmedizin Heidelberg",
+        "label": "organization",
+        "start": 80,
+        "end": 110
+      },
+      {
+        "text": "20. Februar 2026",
+        "label": "date",
+        "start": 114,
+        "end": 130
+      },
+      {
+        "text": "Dr. Anna Hoffmann",
+        "label": "person",
+        "start": 140,
+        "end": 157
+      }
+    ],
+    "source": "medical"
+  },
+  {
+    "text": "Klinischer Bericht: Die Patientin Emma Wagner, 55 Jahre aus Frankfurt, wurde mit Brustkrebs im Universitätsklinikum Frankfurt diagnostiziert. Die Onkologin Dr. Lisa Bauer empfahl eine Chemotherapie.",
+    "language": "German",
+    "entities": [
+      {
+        "text": "Emma Wagner",
+        "label": "person",
+        "start": 34,
+        "end": 45
+      },
+      {
+        "text": "Frankfurt",
+        "label": "location",
+        "start": 61,
+        "end": 70
+      },
+      {
+        "text": "Universitätsklinikum Frankfurt",
+        "label": "organization",
+        "start": 95,
+        "end": 125
+      },
+      {
+        "text": "Dr. Lisa Bauer",
+        "label": "person",
+        "start": 157,
+        "end": 171
+      },
+      {
+        "text": "Brustkrebs",
+        "label": "medical_condition",
+        "start": 81,
+        "end": 91
+      },
+      {
+        "text": "Chemotherapie",
+        "label": "medication",
+        "start": 184,
+        "end": 197
+      }
+    ],
+    "source": "medical"
+  },
+  {
+    "text": "Herr Michael Becker, Versicherungsnummer 123456789, wurde am 3. März 2026 im Klinikum Nürnberg behandelt. Dr. Stefan Wolf verschrieb Ramipril gegen Bluthochdruck.",
+    "language": "German",
+    "entities": [
+      {
+        "text": "Michael Becker",
+        "label": "person",
+        "start": 5,
+        "end": 19
+      },
+      {
+        "text": "3. März 2026",
+        "label": "date",
+        "start": 61,
+        "end": 73
+      },
+      {
+        "text": "Klinikum Nürnberg",
+        "label": "organization",
+        "start": 77,
+        "end": 94
+      },
+      {
+        "text": "Dr. Stefan Wolf",
+        "label": "person",
+        "start": 106,
+        "end": 121
+      },
+      {
+        "text": "Bluthochdruck",
+        "label": "medical_condition",
+        "start": 148,
+        "end": 161
+      },
+      {
+        "text": "Ramipril",
+        "label": "medication",
+        "start": 133,
+        "end": 141
+      }
+    ],
+    "source": "medical"
+  },
+  {
+    "text": "Das Kind Sophie Klein, 9 Jahre alt, wurde von den Eltern ins Dr. von Haunersches Kinderspital in München gebracht. Der Kinderarzt Dr. Martin Zimmermann diagnostizierte Asthma bronchiale.",
+    "language": "German",
+    "entities": [
+      {
+        "text": "Sophie Klein",
+        "label": "person",
+        "start": 10,
+        "end": 22
+      },
+      {
+        "text": "Dr. von Haunersches Kinderspital",
+        "label": "organization",
+        "start": 61,
+        "end": 93
+      },
+      {
+        "text": "München",
+        "label": "location",
+        "start": 97,
+        "end": 104
+      },
+      {
+        "text": "Dr. Martin Zimmermann",
+        "label": "person",
+        "start": 130,
+        "end": 151
+      },
+      {
+        "text": "Asthma",
+        "label": "medical_condition",
+        "start": 168,
+        "end": 174
+      }
+    ],
+    "source": "medical"
+  },
+  {
+    "text": "Frau Christina Schneider, 62 Jahre, Patientin im Krankenhaus Köln-Merheim, unterzog sich am 15. Dezember 2025 einer Hüftoperation. Der Chirurg war Dr. Frank Meyer.",
+    "language": "German",
+    "entities": [
+      {
+        "text": "Christina Schneider",
+        "label": "person",
+        "start": 5,
+        "end": 24
+      },
+      {
+        "text": "Krankenhaus Köln-Merheim",
+        "label": "organization",
+        "start": 49,
+        "end": 73
+      },
+      {
+        "text": "15. Dezember 2025",
+        "label": "date",
+        "start": 92,
+        "end": 109
+      },
+      {
+        "text": "Dr. Frank Meyer",
+        "label": "person",
+        "start": 148,
+        "end": 163
+      }
+    ],
+    "source": "medical"
+  },
+  {
+    "text": "Der Patient Wolfgang Hartmann, 78 Jahre alt, wurde mit Lungenentzündung ins Universitätsklinikum Hamburg-Eppendorf eingeliefert. Dr. Julia Richter begann die Antibiotikatherapie.",
+    "language": "German",
+    "entities": [
+      {
+        "text": "Wolfgang Hartmann",
+        "label": "person",
+        "start": 12,
+        "end": 29
+      },
+      {
+        "text": "Universitätsklinikum Hamburg-Eppendorf",
+        "label": "organization",
+        "start": 76,
+        "end": 114
+      },
+      {
+        "text": "Dr. Julia Richter",
+        "label": "person",
+        "start": 128,
+        "end": 145
+      },
+      {
+        "text": "Lungenentzündung",
+        "label": "medical_condition",
+        "start": 55,
+        "end": 71
+      },
+      {
+        "text": "Antibiotika",
+        "label": "medication",
+        "start": 158,
+        "end": 169
+      }
+    ],
+    "source": "medical"
+  },
+  {
+    "text": "Frau Helga Krause, eine 83-jährige Frau, wurde vom Klinikum Bremen-Mitte ins Krankenhaus Links der Weser in Bremen verlegt. Dr. Andreas Lang koordinierte ihr Schlaganfall-Rehabilitationsprogramm.",
+    "language": "German",
+    "entities": [
+      {
+        "text": "Helga Krause",
+        "label": "person",
+        "start": 5,
+        "end": 17
+      },
+      {
+        "text": "Klinikum Bremen-Mitte",
+        "label": "organization",
+        "start": 51,
+        "end": 72
+      },
+      {
+        "text": "Krankenhaus Links der Weser",
+        "label": "organization",
+        "start": 77,
+        "end": 104
+      },
+      {
+        "text": "Bremen",
+        "label": "location",
+        "start": 108,
+        "end": 114
+      },
+      {
+        "text": "Dr. Andreas Lang",
+        "label": "person",
+        "start": 124,
+        "end": 140
+      },
+      {
+        "text": "Schlaganfall",
+        "label": "medical_condition",
+        "start": 158,
+        "end": 170
+      }
+    ],
+    "source": "medical"
+  },
+  {
+    "text": "Krankenakte: Herr Dieter Schulz, geboren am 22. September 1975, wurde mit starken Bauchschmerzen ins Universitätsklinikum Essen eingeliefert. Dr. Markus Krüger führte eine Notfall-Appendektomie durch.",
+    "language": "German",
+    "entities": [
+      {
+        "text": "Dieter Schulz",
+        "label": "person",
+        "start": 18,
+        "end": 31
+      },
+      {
+        "text": "22. September 1975",
+        "label": "date",
+        "start": 44,
+        "end": 62
+      },
+      {
+        "text": "Universitätsklinikum Essen",
+        "label": "organization",
+        "start": 101,
+        "end": 127
+      },
+      {
+        "text": "Dr. Markus Krüger",
+        "label": "person",
+        "start": 141,
+        "end": 158
+      },
+      {
+        "text": "Bauchschmerzen",
+        "label": "medical_condition",
+        "start": 82,
+        "end": 96
+      }
+    ],
+    "source": "medical"
+  }
+]
