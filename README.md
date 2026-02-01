@@ -355,7 +355,7 @@ python evals/evaluation_service.py --dataset data/ner_evaluation_dataset.json --
 <details>
 <summary><strong> Datasets Generation</strong></summary>
 
-This project includes tools for generating synthetic test datasets.
+This project includes tool to generate synthetic test dataset.
 
 #### Data Generation (`data_gen.py`)
 
@@ -544,3 +544,4 @@ MIT License
 - [FastAPI Documentation](https://fastapi.tiangolo.com/)
 - [Streamlit Documentation](https://docs.streamlit.io/)
 - [uv Documentation](https://github.com/astral-sh/uv)
+
