@@ -280,6 +280,7 @@ python -m pytest tests/test_extraction.py -v --tb=short
 
 The Streamlit app provides an interactive interface for testing the PII extraction service:
 
+![Streamlit PII Extraction UI](screenshots/streamlit_app.png)
 #### Features
 
 - **Service Health Check** - Real-time connection status to the FastAPI backend
@@ -543,6 +544,7 @@ MIT License
 - [FastAPI Documentation](https://fastapi.tiangolo.com/)
 - [Streamlit Documentation](https://docs.streamlit.io/)
 - [uv Documentation](https://github.com/astral-sh/uv)
+
 
 
 
