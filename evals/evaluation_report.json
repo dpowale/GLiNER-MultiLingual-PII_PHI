@@ -1,0 +1,663 @@
+{
+  "total_samples": 360,
+  "overall_metrics": {
+    "true_positives": 1027,
+    "false_positives": 168,
+    "false_negatives": 72,
+    "partial_matches": 34,
+    "label_mismatches": 95,
+    "precision": 0.8594142259414226,
+    "recall": 0.9344858962693358,
+    "f1_score": 0.8953792502179599
+  },
+  "language_metrics": {
+    "English": {
+      "total_samples": 60,
+      "precision": 0.8712871287128713,
+      "recall": 0.9263157894736842,
+      "f1_score": 0.8979591836734693,
+      "true_positives": 176,
+      "false_positives": 26,
+      "false_negatives": 14
+    },
+    "Italian": {
+      "total_samples": 60,
+      "precision": 0.8415841584158416,
+      "recall": 0.9444444444444444,
+      "f1_score": 0.8900523560209423,
+      "true_positives": 170,
+      "false_positives": 32,
+      "false_negatives": 10
+    },
+    "Spanish": {
+      "total_samples": 60,
+      "precision": 0.864321608040201,
+      "recall": 0.945054945054945,
+      "f1_score": 0.9028871391076114,
+      "true_positives": 172,
+      "false_positives": 27,
+      "false_negatives": 10
+    },
+    "German": {
+      "total_samples": 60,
+      "precision": 0.817258883248731,
+      "recall": 0.8994413407821229,
+      "f1_score": 0.8563829787234043,
+      "true_positives": 161,
+      "false_positives": 36,
+      "false_negatives": 18
+    },
+    "Portuguese": {
+      "total_samples": 60,
+      "precision": 0.8934010152284264,
+      "recall": 0.9411764705882353,
+      "f1_score": 0.9166666666666666,
+      "true_positives": 176,
+      "false_positives": 21,
+      "false_negatives": 11
+    },
+    "French": {
+      "total_samples": 60,
+      "precision": 0.8686868686868687,
+      "recall": 0.9502762430939227,
+      "f1_score": 0.9076517150395779,
+      "true_positives": 172,
+      "false_positives": 26,
+      "false_negatives": 9
+    }
+  },
+  "entity_type_metrics": {
+    "person": {
+      "true_positives": 168,
+      "false_positives": 27,
+      "false_negatives": 0,
+      "precision": 0.8615384615384616,
+      "recall": 1.0,
+      "f1_score": 0.9256198347107438
+    },
+    "organization": {
+      "true_positives": 60,
+      "false_positives": 41,
+      "false_negatives": 0,
+      "precision": 0.594059405940594,
+      "recall": 1.0,
+      "f1_score": 0.7453416149068323
+    },
+    "email_address": {
+      "true_positives": 48,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0
+    },
+    "mobile_phone_number": {
+      "true_positives": 31,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0
+    },
+    "social_security_number": {
+      "true_positives": 24,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0
+    },
+    "address": {
+      "true_positives": 54,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0
+    },
+    "date_of_birth": {
+      "true_positives": 42,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0
+    },
+    "medical_condition": {
+      "true_positives": 42,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0
+    },
+    "medication": {
+      "true_positives": 42,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0
+    },
+    "tax_identification_number": {
+      "true_positives": 34,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0
+    },
+    "national_id_number": {
+      "true_positives": 27,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0
+    },
+    "transaction_number": {
+      "true_positives": 36,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0
+    },
+    "credit_card_brand": {
+      "true_positives": 31,
+      "false_positives": 3,
+      "false_negatives": 0,
+      "precision": 0.9117647058823529,
+      "recall": 1.0,
+      "f1_score": 0.9538461538461539
+    },
+    "credit_card_expiration_date": {
+      "true_positives": 35,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0
+    },
+    "credit_card_cvv": {
+      "true_positives": 19,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0
+    },
+    "username": {
+      "true_positives": 17,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0
+    },
+    "digital_signature": {
+      "true_positives": 16,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0
+    },
+    "fax_number": {
+      "true_positives": 36,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0
+    },
+    "social_media_handle": {
+      "true_positives": 36,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0
+    },
+    "iban": {
+      "true_positives": 12,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0
+    },
+    "bank_account_number": {
+      "true_positives": 17,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0
+    },
+    "passport_number": {
+      "true_positives": 41,
+      "false_positives": 1,
+      "false_negatives": 0,
+      "precision": 0.9761904761904762,
+      "recall": 1.0,
+      "f1_score": 0.9879518072289156
+    },
+    "passport_expiration_date": {
+      "true_positives": 34,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0
+    },
+    "flight_number": {
+      "true_positives": 41,
+      "false_positives": 1,
+      "false_negatives": 0,
+      "precision": 0.9761904761904762,
+      "recall": 1.0,
+      "f1_score": 0.9879518072289156
+    },
+    "landline_phone_number": {
+      "true_positives": 6,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0
+    },
+    "student_id_number": {
+      "true_positives": 0,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0
+    },
+    "credit_card_number": {
+      "true_positives": 35,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0
+    },
+    "ip_address": {
+      "true_positives": 14,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0
+    },
+    "license_plate_number": {
+      "true_positives": 20,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0
+    },
+    "vehicle_registration_number": {
+      "true_positives": 9,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0
+    }
+  },
+  "sample_failures": [
+    {
+      "index": 0,
+      "language": "English",
+      "text": "Customer profile: Sarah Wilson from TechVision Ltd, email: sarah.wilson34@example.com, phone: +5-853...",
+      "false_positives": 1,
+      "false_negatives": 0
+    },
+    {
+      "index": 2,
+      "language": "Spanish",
+      "text": "Verificación de identidad completa para Maria Garcia: NSS 815-18-7786, NIF TIN480716, ID Nacional ID...",
+      "false_positives": 1,
+      "false_negatives": 0
+    },
+    {
+      "index": 3,
+      "language": "German",
+      "text": "Quittung: Transaktion TRX-937336 abgeschlossen. Kartentyp: Discover, Nummer: 5323-8202-1117-2016, Ab...",
+      "false_positives": 1,
+      "false_negatives": 1
+    },
+    {
+      "index": 5,
+      "language": "Portuguese",
+      "text": "O funcionário João Santos da TechVision Ltd pode ser contatado em seu email de trabalho joão.santos2...",
+      "false_positives": 0,
+      "false_negatives": 1
+    },
+    {
+      "index": 6,
+      "language": "Spanish",
+      "text": "Registros oficiales: NSS 428-92-7071, NIF TIN633136, ID Gubernamental ID-751797....",
+      "false_positives": 1,
+      "false_negatives": 0
+    },
+    {
+      "index": 7,
+      "language": "French",
+      "text": "Journal d'accès: Utilisateur marie_11 connecté depuis 105.216.154.226. Signature SIG-231509 vérifiée...",
+      "false_positives": 0,
+      "false_negatives": 1
+    },
+    {
+      "index": 11,
+      "language": "English",
+      "text": "Official records show: SSN 397-81-5615, TIN TIN436232, Government ID ID-290877 for the applicant....",
+      "false_positives": 1,
+      "false_negatives": 1
+    },
+    {
+      "index": 13,
+      "language": "Spanish",
+      "text": "La exposición del museo presenta obras de arte del período del Renacimiento, mostrando obras maestra...",
+      "false_positives": 1,
+      "false_negatives": 0
+    },
+    {
+      "index": 17,
+      "language": "German",
+      "text": "Bankinformationsauszug: Die vollständigen Bankdaten des Kontoinhabers Ingrid Hoffmann lauten wie fol...",
+      "false_positives": 2,
+      "false_negatives": 0
+    },
+    {
+      "index": 18,
+      "language": "German",
+      "text": "Unser Quartalsbericht zeigt deutliche Verbesserungen der betrieblichen Effizienz, wobei die Produkti...",
+      "false_positives": 1,
+      "false_negatives": 0
+    },
+    {
+      "index": 19,
+      "language": "French",
+      "text": "Relevé d'Informations Bancaires: Les coordonnées bancaires complètes du titulaire du compte Jean Dup...",
+      "false_positives": 2,
+      "false_negatives": 0
+    },
+    {
+      "index": 21,
+      "language": "French",
+      "text": "L'employé Luc Moreau de MediHealth Solutions peut être joint à son email professionnel luc.moreau76@...",
+      "false_positives": 1,
+      "false_negatives": 0
+    },
+    {
+      "index": 23,
+      "language": "English",
+      "text": "HR Department Notice: Robert Johnson has been assigned to TechVision Ltd. Contact information: email...",
+      "false_positives": 0,
+      "false_negatives": 1
+    },
+    {
+      "index": 24,
+      "language": "German",
+      "text": "Die Bibliothek veranstaltet jeden Donnerstagabend ein Treffen des Buchclubs. Mitglieder werden ermut...",
+      "false_positives": 1,
+      "false_negatives": 0
+    },
+    {
+      "index": 25,
+      "language": "German",
+      "text": "Zahlungsbestätigungsmitteilung: Wir freuen uns, Ihnen mitteilen zu können, dass die Transaktion Numm...",
+      "false_positives": 1,
+      "false_negatives": 1
+    },
+    {
+      "index": 28,
+      "language": "German",
+      "text": "Zugriffsprotokoll: Benutzer hans_715 angemeldet von 233.120.82.171. Signatur SIG-472587 verifiziert....",
+      "false_positives": 1,
+      "false_negatives": 0
+    },
+    {
+      "index": 29,
+      "language": "French",
+      "text": "Procès-verbal: Véhicule immatriculé YSZ-5844 (NIV: VIN-BOY617) appartenant à GlobalCorp Industries....",
+      "false_positives": 2,
+      "false_negatives": 0
+    },
+    {
+      "index": 31,
+      "language": "German",
+      "text": "Identitätsüberprüfung abgeschlossen für Petra Fischer: SVN 750-87-9461, Steuer-ID TIN985850, Nationa...",
+      "false_positives": 0,
+      "false_negatives": 1
+    },
+    {
+      "index": 32,
+      "language": "Portuguese",
+      "text": "Perfil do cliente: João Santos de SmartLogistics GmbH, email: joão.santos82@company.io, telefone: +2...",
+      "false_positives": 1,
+      "false_negatives": 0
+    },
+    {
+      "index": 33,
+      "language": "Italian",
+      "text": "Avviso HR: Luca Ferrari è stato assegnato a TechVision Ltd. Contatti: email luca.ferrari83@mail.org,...",
+      "false_positives": 1,
+      "false_negatives": 0
+    },
+    {
+      "index": 35,
+      "language": "Spanish",
+      "text": "Verificación de cuenta para Ana Martinez: IBAN ES41 1316 1905 8211 49, Número de cuenta 9357724408, ...",
+      "false_positives": 0,
+      "false_negatives": 1
+    },
+    {
+      "index": 36,
+      "language": "Portuguese",
+      "text": "A nova atualização de software inclui várias correções de bugs e melhorias de desempenho. Os usuário...",
+      "false_positives": 1,
+      "false_negatives": 0
+    },
+    {
+      "index": 40,
+      "language": "French",
+      "text": "La nouvelle mise à jour logicielle comprend plusieurs corrections de bugs et améliorations de perfor...",
+      "false_positives": 1,
+      "false_negatives": 0
+    },
+    {
+      "index": 41,
+      "language": "Spanish",
+      "text": "Aviso de RRHH: Maria Garcia ha sido asignado a EuroFinance AG. Contacto: email maria.garcia52@test.n...",
+      "false_positives": 1,
+      "false_negatives": 0
+    },
+    {
+      "index": 44,
+      "language": "Italian",
+      "text": "Il nuovo aggiornamento software include diverse correzioni di bug e miglioramenti delle prestazioni....",
+      "false_positives": 1,
+      "false_negatives": 0
+    },
+    {
+      "index": 45,
+      "language": "English",
+      "text": "Official records show: SSN 741-98-9753, TIN TIN405664, Government ID ID-500767 for the applicant....",
+      "false_positives": 1,
+      "false_negatives": 1
+    },
+    {
+      "index": 46,
+      "language": "German",
+      "text": "Der Mitarbeiter Ingrid Hoffmann von CloudNet Services kann unter der Arbeits-E-Mail ingrid.hoffmann2...",
+      "false_positives": 1,
+      "false_negatives": 0
+    },
+    {
+      "index": 47,
+      "language": "Portuguese",
+      "text": "A biblioteca organizará uma reunião do clube do livro toda quinta-feira à noite. Os membros são enco...",
+      "false_positives": 2,
+      "false_negatives": 0
+    },
+    {
+      "index": 49,
+      "language": "Portuguese",
+      "text": "Aviso do RH: Maria Oliveira foi designado para TechVision Ltd. Contato: email maria.oliveira81@examp...",
+      "false_positives": 1,
+      "false_negatives": 0
+    },
+    {
+      "index": 50,
+      "language": "English",
+      "text": "For your reference, here are the contact details on file: the primary mobile phone number is +46-463...",
+      "false_positives": 1,
+      "false_negatives": 0
+    },
+    {
+      "index": 55,
+      "language": "Italian",
+      "text": "Libretto circolazione: Targa UVW-1981, VIN VIN-POQ501, intestato a Mario Rossi in Corso Italia 30, F...",
+      "false_positives": 0,
+      "false_negatives": 1
+    },
+    {
+      "index": 56,
+      "language": "Spanish",
+      "text": "Verificación de identidad completa para Ana Martinez: NSS 404-27-7974, NIF TIN126897, ID Nacional ID...",
+      "false_positives": 1,
+      "false_negatives": 0
+    },
+    {
+      "index": 57,
+      "language": "English",
+      "text": "The museum exhibition features artwork from the Renaissance period, showcasing masterpieces from var...",
+      "false_positives": 3,
+      "false_negatives": 0
+    },
+    {
+      "index": 60,
+      "language": "French",
+      "text": "Certificat d'immatriculation: Plaque QKQ-1554, NIV VIN-CWB397, enregistré au nom de Marie Curie au 1...",
+      "false_positives": 1,
+      "false_negatives": 0
+    },
+    {
+      "index": 66,
+      "language": "English",
+      "text": "Traffic citation: Vehicle with plate GHC-9535 (VIN: VIN-XGO920) owned by EuroFinance AG....",
+      "false_positives": 0,
+      "false_negatives": 1
+    },
+    {
+      "index": 69,
+      "language": "Portuguese",
+      "text": "De acordo com nossos registros da empresa, Bruno Ferreira está atualmente empregado na CloudNet Serv...",
+      "false_positives": 0,
+      "false_negatives": 1
+    },
+    {
+      "index": 71,
+      "language": "Spanish",
+      "text": "El empleado Pedro Sanchez de GreenEnergy Corp puede ser contactado en su email laboral pedro.sanchez...",
+      "false_positives": 1,
+      "false_negatives": 0
+    },
+    {
+      "index": 72,
+      "language": "Italian",
+      "text": "Registro immigrazione: Viaggiatore Mario Rossi, Passaporto N° W11479063, scade il 2029-04-18, arriva...",
+      "false_positives": 1,
+      "false_negatives": 0
+    },
+    {
+      "index": 73,
+      "language": "German",
+      "text": "Offizielle Aufzeichnungen: SVN 811-52-7393, Steuer-ID TIN544683, Regierungs-ID ID-159801....",
+      "false_positives": 1,
+      "false_negatives": 1
+    },
+    {
+      "index": 76,
+      "language": "Portuguese",
+      "text": "Aviso de Registro de Veículo: O veículo motorizado com número de placa CYV-7686 e número de identifi...",
+      "false_positives": 0,
+      "false_negatives": 1
+    },
+    {
+      "index": 83,
+      "language": "Portuguese",
+      "text": "Verificação de identidade completa para Ana Silva: NSS 723-67-4831, NIF TIN372246, ID Nacional ID-17...",
+      "false_positives": 1,
+      "false_negatives": 0
+    },
+    {
+      "index": 85,
+      "language": "German",
+      "text": "Kundenprofil: Ingrid Hoffmann von TechVision Ltd, E-Mail: ingrid.hoffmann95@company.io, Telefon: +13...",
+      "false_positives": 1,
+      "false_negatives": 1
+    },
+    {
+      "index": 86,
+      "language": "English",
+      "text": "Your order has been charged to your Mastercard card (4407-7358-8603-8843). Transaction ID: TRX-72001...",
+      "false_positives": 1,
+      "false_negatives": 0
+    },
+    {
+      "index": 88,
+      "language": "Spanish",
+      "text": "Registro vehicular: Placa SQY-1842, NIV VIN-QDI479, registrado a nombre de Carlos Lopez en Paseo de ...",
+      "false_positives": 2,
+      "false_negatives": 0
+    },
+    {
+      "index": 89,
+      "language": "Italian",
+      "text": "Verifica identità completata per Luca Ferrari: INPS 371-99-6647, Codice Fiscale TIN389677, ID Nazion...",
+      "false_positives": 1,
+      "false_negatives": 1
+    },
+    {
+      "index": 90,
+      "language": "German",
+      "text": "Reservierungsbestätigung für Anna Schmidt: Flug LH2868, Reisepass H24736011, Kontakt anna.schmidt52@...",
+      "false_positives": 1,
+      "false_negatives": 0
+    },
+    {
+      "index": 96,
+      "language": "Spanish",
+      "text": "Registros oficiales: NSS 895-60-9601, NIF TIN882682, ID Gubernamental ID-846860....",
+      "false_positives": 1,
+      "false_negatives": 1
+    },
+    {
+      "index": 97,
+      "language": "Portuguese",
+      "text": "Aviso do RH: Maria Oliveira foi designado para MediHealth Solutions. Contato: email maria.oliveira52...",
+      "false_positives": 1,
+      "false_negatives": 0
+    },
+    {
+      "index": 99,
+      "language": "Italian",
+      "text": "Il dipendente Mario Rossi di GlobalCorp Industries può essere contattato all'email aziendale mario.r...",
+      "false_positives": 1,
+      "false_negatives": 0
+    },
+    {
+      "index": 103,
+      "language": "English",
+      "text": "The conference will focus on sustainable development practices and environmental conservation strate...",
+      "false_positives": 2,
+      "false_negatives": 0
+    }
+  ]
+}
