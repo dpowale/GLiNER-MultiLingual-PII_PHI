@@ -316,12 +316,11 @@ python -m streamlit run src/streamlit_app.py
 
 ![Streamlit PII Extraction UI](screenshots/Streamlit App.png)
 
+
 The UI includes:
 - Left panel: Input text area with sample text selector
 - Right panel: Extraction results with entity details
 - Bottom: Highlighted text with color-coded entities and legend
-
-> **To add the screenshot:** Run the Streamlit app, take a screenshot, and save it as `screenshots/streamlit_app.png`
 
 </details>
 
@@ -544,6 +543,7 @@ MIT License
 - [FastAPI Documentation](https://fastapi.tiangolo.com/)
 - [Streamlit Documentation](https://docs.streamlit.io/)
 - [uv Documentation](https://github.com/astral-sh/uv)
+
 
 
 
