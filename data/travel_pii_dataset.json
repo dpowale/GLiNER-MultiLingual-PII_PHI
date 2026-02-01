@@ -1,0 +1,823 @@
+[
+  {
+    "text": "Passenger John Smith, passport number US123456789, booked flight AA1234 from New York JFK to London Heathrow on March 15, 2026. Contact email: john.smith@email.com, phone: +1-555-123-4567.",
+    "language": "English",
+    "entities": [
+      {"text": "John Smith", "label": "person", "start": 10, "end": 20},
+      {"text": "US123456789", "label": "passport_number", "start": 38, "end": 49},
+      {"text": "AA1234", "label": "flight_number", "start": 65, "end": 71},
+      {"text": "New York JFK", "label": "address", "start": 77, "end": 89},
+      {"text": "London Heathrow", "label": "address", "start": 93, "end": 108},
+      {"text": "March 15, 2026", "label": "date_of_birth", "start": 112, "end": 126},
+      {"text": "john.smith@email.com", "label": "email", "start": 144, "end": 164},
+      {"text": "+1-555-123-4567", "label": "phone_number", "start": 173, "end": 188}
+    ],
+    "source": "travel_air"
+  },
+  {
+    "text": "Mrs. Elizabeth Johnson, DOB 05/12/1978, passport P987654321, has a valid US B1/B2 visa expiring December 2028. Her American Airlines frequent flyer number is AA78945612.",
+    "language": "English",
+    "entities": [
+      {"text": "Elizabeth Johnson", "label": "person", "start": 5, "end": 22},
+      {"text": "05/12/1978", "label": "date_of_birth", "start": 28, "end": 38},
+      {"text": "P987654321", "label": "passport_number", "start": 49, "end": 59},
+      {"text": "US B1/B2 visa", "label": "identity_card_number", "start": 73, "end": 86},
+      {"text": "December 2028", "label": "passport_expiration_date", "start": 96, "end": 109},
+      {"text": "American Airlines", "label": "organization", "start": 115, "end": 132},
+      {"text": "AA78945612", "label": "identity_card_number", "start": 159, "end": 169}
+    ],
+    "source": "travel_air"
+  },
+  {
+    "text": "Booking confirmation: Robert Williams, driver's license DL-CA-12345678, rented a Toyota Camry from Hertz at Los Angeles LAX. Pickup: January 20, 2026, Return: January 27, 2026.",
+    "language": "English",
+    "entities": [
+      {"text": "Robert Williams", "label": "person", "start": 22, "end": 37},
+      {"text": "DL-CA-12345678", "label": "driver_license_number", "start": 56, "end": 70},
+      {"text": "Hertz", "label": "organization", "start": 99, "end": 104},
+      {"text": "Los Angeles LAX", "label": "address", "start": 108, "end": 123},
+      {"text": "January 20, 2026", "label": "date_of_birth", "start": 133, "end": 149},
+      {"text": "January 27, 2026", "label": "date_of_birth", "start": 159, "end": 175}
+    ],
+    "source": "travel_land"
+  },
+  {
+    "text": "Cruise reservation for Emily Davis, passport GB567890123, cabin A-205 on Royal Caribbean's Symphony of the Seas departing Miami on February 10, 2026. Emergency contact: +44-20-7946-0958.",
+    "language": "English",
+    "entities": [
+      {"text": "Emily Davis", "label": "person", "start": 24, "end": 35},
+      {"text": "GB567890123", "label": "passport_number", "start": 46, "end": 57},
+      {"text": "Royal Caribbean", "label": "organization", "start": 74, "end": 89},
+      {"text": "Miami", "label": "address", "start": 122, "end": 127},
+      {"text": "February 10, 2026", "label": "date_of_birth", "start": 131, "end": 148},
+      {"text": "+44-20-7946-0958", "label": "phone_number", "start": 169, "end": 185}
+    ],
+    "source": "travel_water"
+  },
+  {
+    "text": "Train ticket: Michael Brown, SSN 123-45-6789, Amtrak Acela Express from Washington DC to Boston, departure April 5, 2026 at 08:30. Seat 12A, Car 3. Credit card ending 4521.",
+    "language": "English",
+    "entities": [
+      {"text": "Michael Brown", "label": "person", "start": 14, "end": 27},
+      {"text": "123-45-6789", "label": "social_security_number", "start": 33, "end": 44},
+      {"text": "Amtrak", "label": "organization", "start": 46, "end": 52},
+      {"text": "Washington DC", "label": "address", "start": 73, "end": 86},
+      {"text": "Boston", "label": "address", "start": 90, "end": 96},
+      {"text": "April 5, 2026", "label": "date_of_birth", "start": 108, "end": 121},
+      {"text": "4521", "label": "credit_card_number", "start": 167, "end": 171}
+    ],
+    "source": "travel_land"
+  },
+  {
+    "text": "Ferry booking: Sarah Wilson, UK driving licence WILSO805156SM9IJ, vehicle registration AB12 CDE, crossing Dover to Calais on Brittany Ferries, March 22, 2026.",
+    "language": "English",
+    "entities": [
+      {"text": "Sarah Wilson", "label": "person", "start": 15, "end": 27},
+      {"text": "WILSO805156SM9IJ", "label": "driver_license_number", "start": 48, "end": 64},
+      {"text": "AB12 CDE", "label": "vehicle_registration_number", "start": 87, "end": 95},
+      {"text": "Dover", "label": "address", "start": 106, "end": 111},
+      {"text": "Calais", "label": "address", "start": 115, "end": 121},
+      {"text": "Brittany Ferries", "label": "organization", "start": 125, "end": 141},
+      {"text": "March 22, 2026", "label": "date_of_birth", "start": 143, "end": 157}
+    ],
+    "source": "travel_water"
+  },
+  {
+    "text": "International traveler David Chen, Chinese passport E12345678, Schengen visa type C valid until August 2027, flying Lufthansa LH456 Frankfurt to Beijing, mobile +86-138-0013-8000.",
+    "language": "English",
+    "entities": [
+      {"text": "David Chen", "label": "person", "start": 22, "end": 32},
+      {"text": "E12345678", "label": "passport_number", "start": 51, "end": 60},
+      {"text": "Schengen visa type C", "label": "identity_card_number", "start": 62, "end": 82},
+      {"text": "August 2027", "label": "passport_expiration_date", "start": 95, "end": 106},
+      {"text": "Lufthansa", "label": "organization", "start": 115, "end": 124},
+      {"text": "LH456", "label": "flight_number", "start": 125, "end": 130},
+      {"text": "Frankfurt", "label": "address", "start": 131, "end": 140},
+      {"text": "Beijing", "label": "address", "start": 144, "end": 151},
+      {"text": "+86-138-0013-8000", "label": "mobile_phone_number", "start": 161, "end": 178}
+    ],
+    "source": "travel_air"
+  },
+  {
+    "text": "Bus reservation: Jennifer Martinez, Texas DL 12345678, Greyhound from Houston to Dallas, June 15, 2026. Ticket number GH-789456123, paid via PayPal jennifer.m@gmail.com.",
+    "language": "English",
+    "entities": [
+      {"text": "Jennifer Martinez", "label": "person", "start": 17, "end": 34},
+      {"text": "12345678", "label": "driver_license_number", "start": 46, "end": 54},
+      {"text": "Greyhound", "label": "organization", "start": 56, "end": 65},
+      {"text": "Houston", "label": "address", "start": 71, "end": 78},
+      {"text": "Dallas", "label": "address", "start": 82, "end": 88},
+      {"text": "June 15, 2026", "label": "date_of_birth", "start": 90, "end": 103},
+      {"text": "GH-789456123", "label": "transaction_number", "start": 119, "end": 131},
+      {"text": "jennifer.m@gmail.com", "label": "email", "start": 149, "end": 169}
+    ],
+    "source": "travel_land"
+  },
+  {
+    "text": "Yacht charter: Mr. Thomas Anderson, passport AU789012345, Australian maritime licence ML-NSW-567890, departing Sydney Harbour July 1, 2026. Insurance policy INS-2026-78945.",
+    "language": "English",
+    "entities": [
+      {"text": "Thomas Anderson", "label": "person", "start": 19, "end": 34},
+      {"text": "AU789012345", "label": "passport_number", "start": 45, "end": 56},
+      {"text": "ML-NSW-567890", "label": "driver_license_number", "start": 87, "end": 100},
+      {"text": "Sydney Harbour", "label": "address", "start": 112, "end": 126},
+      {"text": "July 1, 2026", "label": "date_of_birth", "start": 127, "end": 139},
+      {"text": "INS-2026-78945", "label": "insurance_number", "start": 159, "end": 173}
+    ],
+    "source": "travel_water"
+  },
+  {
+    "text": "Private jet charter: CEO Amanda Roberts, diplomatic passport D456789012, departing Teterboro Airport for Geneva on corporate account CORP-99887766, flight scheduled May 30, 2026.",
+    "language": "English",
+    "entities": [
+      {"text": "Amanda Roberts", "label": "person", "start": 25, "end": 39},
+      {"text": "D456789012", "label": "passport_number", "start": 62, "end": 72},
+      {"text": "Teterboro Airport", "label": "address", "start": 84, "end": 101},
+      {"text": "Geneva", "label": "address", "start": 106, "end": 112},
+      {"text": "CORP-99887766", "label": "bank_account_number", "start": 134, "end": 147},
+      {"text": "May 30, 2026", "label": "date_of_birth", "start": 167, "end": 179}
+    ],
+    "source": "travel_air"
+  },
+  {
+    "text": "Le passager Jean-Pierre Dupont, passeport français 15AB12345, a réservé le vol AF1234 Paris CDG vers New York JFK le 20 mars 2026. Email: jp.dupont@orange.fr, téléphone: +33 6 12 34 56 78.",
+    "language": "French",
+    "entities": [
+      {"text": "Jean-Pierre Dupont", "label": "person", "start": 13, "end": 31},
+      {"text": "15AB12345", "label": "passport_number", "start": 52, "end": 61},
+      {"text": "AF1234", "label": "flight_number", "start": 79, "end": 85},
+      {"text": "Paris CDG", "label": "address", "start": 86, "end": 95},
+      {"text": "New York JFK", "label": "address", "start": 101, "end": 113},
+      {"text": "20 mars 2026", "label": "date_of_birth", "start": 117, "end": 129},
+      {"text": "jp.dupont@orange.fr", "label": "email", "start": 139, "end": 158},
+      {"text": "+33 6 12 34 56 78", "label": "phone_number", "start": 172, "end": 189}
+    ],
+    "source": "travel_air"
+  },
+  {
+    "text": "Mme Marie Lefebvre, née le 15/04/1982, permis de conduire 12AB34567, a loué une voiture chez Europcar à Lyon pour le 5 avril 2026. Numéro de réservation: EUR-789456.",
+    "language": "French",
+    "entities": [
+      {"text": "Marie Lefebvre", "label": "person", "start": 4, "end": 18},
+      {"text": "15/04/1982", "label": "date_of_birth", "start": 27, "end": 37},
+      {"text": "12AB34567", "label": "driver_license_number", "start": 58, "end": 67},
+      {"text": "Europcar", "label": "organization", "start": 93, "end": 101},
+      {"text": "Lyon", "label": "address", "start": 104, "end": 108},
+      {"text": "5 avril 2026", "label": "date_of_birth", "start": 117, "end": 129},
+      {"text": "EUR-789456", "label": "transaction_number", "start": 155, "end": 165}
+    ],
+    "source": "travel_land"
+  },
+  {
+    "text": "Réservation croisière: M. François Martin, passeport 14CD56789, cabine B-301 sur le Costa Diadema, départ Marseille le 15 juin 2026. Contact d'urgence: +33 4 91 00 00 00.",
+    "language": "French",
+    "entities": [
+      {"text": "François Martin", "label": "person", "start": 26, "end": 41},
+      {"text": "14CD56789", "label": "passport_number", "start": 53, "end": 62},
+      {"text": "Costa Diadema", "label": "organization", "start": 84, "end": 97},
+      {"text": "Marseille", "label": "address", "start": 106, "end": 115},
+      {"text": "15 juin 2026", "label": "date_of_birth", "start": 119, "end": 131},
+      {"text": "+33 4 91 00 00 00", "label": "phone_number", "start": 153, "end": 170}
+    ],
+    "source": "travel_water"
+  },
+  {
+    "text": "Billet TGV: Sophie Bernard, numéro de sécurité sociale 1 82 05 75 108 234, Paris Gare de Lyon à Marseille Saint-Charles, départ 10 février 2026 à 14h30. Place 45, voiture 8.",
+    "language": "French",
+    "entities": [
+      {"text": "Sophie Bernard", "label": "person", "start": 12, "end": 26},
+      {"text": "1 82 05 75 108 234", "label": "social_security_number", "start": 55, "end": 73},
+      {"text": "Paris Gare de Lyon", "label": "address", "start": 75, "end": 93},
+      {"text": "Marseille Saint-Charles", "label": "address", "start": 96, "end": 119},
+      {"text": "10 février 2026", "label": "date_of_birth", "start": 128, "end": 143}
+    ],
+    "source": "travel_land"
+  },
+  {
+    "text": "Traversée ferry: Pierre Moreau, permis B 13EF78901, immatriculation véhicule AB-123-CD, Calais vers Douvres avec P&O Ferries le 25 mars 2026.",
+    "language": "French",
+    "entities": [
+      {"text": "Pierre Moreau", "label": "person", "start": 17, "end": 30},
+      {"text": "13EF78901", "label": "driver_license_number", "start": 41, "end": 50},
+      {"text": "AB-123-CD", "label": "vehicle_registration_number", "start": 76, "end": 85},
+      {"text": "Calais", "label": "address", "start": 87, "end": 93},
+      {"text": "Douvres", "label": "address", "start": 99, "end": 106},
+      {"text": "P&O Ferries", "label": "organization", "start": 112, "end": 123},
+      {"text": "25 mars 2026", "label": "date_of_birth", "start": 127, "end": 139}
+    ],
+    "source": "travel_water"
+  },
+  {
+    "text": "Voyageur international: Mme Claire Dubois, passeport 16GH90123, visa Schengen valide jusqu'au décembre 2027, vol Emirates EK073 Nice vers Dubai, mobile +33 7 89 01 23 45.",
+    "language": "French",
+    "entities": [
+      {"text": "Claire Dubois", "label": "person", "start": 28, "end": 41},
+      {"text": "16GH90123", "label": "passport_number", "start": 53, "end": 62},
+      {"text": "visa Schengen", "label": "identity_card_number", "start": 64, "end": 77},
+      {"text": "décembre 2027", "label": "passport_expiration_date", "start": 94, "end": 107},
+      {"text": "Emirates", "label": "organization", "start": 113, "end": 121},
+      {"text": "EK073", "label": "flight_number", "start": 122, "end": 127},
+      {"text": "Nice", "label": "address", "start": 128, "end": 132},
+      {"text": "Dubai", "label": "address", "start": 138, "end": 143},
+      {"text": "+33 7 89 01 23 45", "label": "mobile_phone_number", "start": 153, "end": 170}
+    ],
+    "source": "travel_air"
+  },
+  {
+    "text": "Réservation autocar: Antoine Richard, carte d'identité 1234567890123, Flixbus Paris Bercy vers Bruxelles, le 8 mai 2026. Paiement par carte bancaire se terminant par 7890.",
+    "language": "French",
+    "entities": [
+      {"text": "Antoine Richard", "label": "person", "start": 21, "end": 36},
+      {"text": "1234567890123", "label": "identity_card_number", "start": 55, "end": 68},
+      {"text": "Flixbus", "label": "organization", "start": 70, "end": 77},
+      {"text": "Paris Bercy", "label": "address", "start": 78, "end": 89},
+      {"text": "Bruxelles", "label": "address", "start": 95, "end": 104},
+      {"text": "8 mai 2026", "label": "date_of_birth", "start": 109, "end": 119},
+      {"text": "7890", "label": "credit_card_number", "start": 167, "end": 171}
+    ],
+    "source": "travel_land"
+  },
+  {
+    "text": "Location yacht: M. Laurent Petit, passeport 17IJ01234, permis bateau PLB-12345, départ Port de Saint-Tropez le 1er juillet 2026. Assurance maritime MAR-2026-456.",
+    "language": "French",
+    "entities": [
+      {"text": "Laurent Petit", "label": "person", "start": 19, "end": 32},
+      {"text": "17IJ01234", "label": "passport_number", "start": 44, "end": 53},
+      {"text": "PLB-12345", "label": "driver_license_number", "start": 69, "end": 78},
+      {"text": "Port de Saint-Tropez", "label": "address", "start": 87, "end": 107},
+      {"text": "1er juillet 2026", "label": "date_of_birth", "start": 111, "end": 127},
+      {"text": "MAR-2026-456", "label": "insurance_number", "start": 148, "end": 160}
+    ],
+    "source": "travel_water"
+  },
+  {
+    "text": "Vol privé: Directrice Hélène Bonnet, passeport diplomatique 18KL23456, départ Le Bourget vers Genève, compte entreprise ENT-55667788, vol prévu le 28 mai 2026.",
+    "language": "French",
+    "entities": [
+      {"text": "Hélène Bonnet", "label": "person", "start": 22, "end": 35},
+      {"text": "18KL23456", "label": "passport_number", "start": 60, "end": 69},
+      {"text": "Le Bourget", "label": "address", "start": 78, "end": 88},
+      {"text": "Genève", "label": "address", "start": 94, "end": 100},
+      {"text": "ENT-55667788", "label": "bank_account_number", "start": 120, "end": 132},
+      {"text": "28 mai 2026", "label": "date_of_birth", "start": 147, "end": 158}
+    ],
+    "source": "travel_air"
+  },
+  {
+    "text": "Navette aéroport: Mme Catherine Roux, née le 20/09/1975, transfert Charles de Gaulle Terminal 2E, réservation NAV-123456, carte bancaire Visa 4532 **** **** 1234.",
+    "language": "French",
+    "entities": [
+      {"text": "Catherine Roux", "label": "person", "start": 22, "end": 36},
+      {"text": "20/09/1975", "label": "date_of_birth", "start": 45, "end": 55},
+      {"text": "Charles de Gaulle Terminal 2E", "label": "address", "start": 67, "end": 96},
+      {"text": "NAV-123456", "label": "transaction_number", "start": 110, "end": 120},
+      {"text": "4532 **** **** 1234", "label": "credit_card_number", "start": 142, "end": 161}
+    ],
+    "source": "travel_land"
+  },
+  {
+    "text": "El pasajero Juan García López, pasaporte español AAB123456, reservó el vuelo IB3456 Madrid Barajas a Buenos Aires el 15 de abril de 2026. Email: juan.garcia@gmail.com, móvil: +34 612 345 678.",
+    "language": "Spanish",
+    "entities": [
+      {"text": "Juan García López", "label": "person", "start": 13, "end": 30},
+      {"text": "AAB123456", "label": "passport_number", "start": 50, "end": 59},
+      {"text": "IB3456", "label": "flight_number", "start": 77, "end": 83},
+      {"text": "Madrid Barajas", "label": "address", "start": 84, "end": 98},
+      {"text": "Buenos Aires", "label": "address", "start": 101, "end": 113},
+      {"text": "15 de abril de 2026", "label": "date_of_birth", "start": 117, "end": 136},
+      {"text": "juan.garcia@gmail.com", "label": "email", "start": 145, "end": 166},
+      {"text": "+34 612 345 678", "label": "mobile_phone_number", "start": 175, "end": 190}
+    ],
+    "source": "travel_air"
+  },
+  {
+    "text": "Sra. María Fernández, DNI 12345678-A, permiso de conducir 12345678, alquiló un coche en Avis Barcelona El Prat para el 20 de marzo de 2026. Número de reservación: AVIS-789012.",
+    "language": "Spanish",
+    "entities": [
+      {"text": "María Fernández", "label": "person", "start": 5, "end": 20},
+      {"text": "12345678-A", "label": "national_id_number", "start": 26, "end": 36},
+      {"text": "12345678", "label": "driver_license_number", "start": 58, "end": 66},
+      {"text": "Avis", "label": "organization", "start": 88, "end": 92},
+      {"text": "Barcelona El Prat", "label": "address", "start": 93, "end": 110},
+      {"text": "20 de marzo de 2026", "label": "date_of_birth", "start": 119, "end": 138},
+      {"text": "AVIS-789012", "label": "transaction_number", "start": 163, "end": 174}
+    ],
+    "source": "travel_land"
+  },
+  {
+    "text": "Reserva de crucero: Sr. Pedro Sánchez, pasaporte BBB234567, camarote C-405 en el MSC Fantasia, salida de Valencia el 10 de junio de 2026. Contacto de emergencia: +34 91 123 45 67.",
+    "language": "Spanish",
+    "entities": [
+      {"text": "Pedro Sánchez", "label": "person", "start": 24, "end": 37},
+      {"text": "BBB234567", "label": "passport_number", "start": 49, "end": 58},
+      {"text": "MSC Fantasia", "label": "organization", "start": 81, "end": 93},
+      {"text": "Valencia", "label": "address", "start": 106, "end": 114},
+      {"text": "10 de junio de 2026", "label": "date_of_birth", "start": 118, "end": 137},
+      {"text": "+34 91 123 45 67", "label": "phone_number", "start": 162, "end": 178}
+    ],
+    "source": "travel_water"
+  },
+  {
+    "text": "Billete AVE: Ana Torres, número de seguridad social 28-12345678-90, Madrid Atocha a Barcelona Sants, salida 5 de febrero de 2026 a las 10:00. Asiento 14B, coche 5.",
+    "language": "Spanish",
+    "entities": [
+      {"text": "Ana Torres", "label": "person", "start": 13, "end": 23},
+      {"text": "28-12345678-90", "label": "social_security_number", "start": 52, "end": 66},
+      {"text": "Madrid Atocha", "label": "address", "start": 68, "end": 81},
+      {"text": "Barcelona Sants", "label": "address", "start": 84, "end": 99},
+      {"text": "5 de febrero de 2026", "label": "date_of_birth", "start": 108, "end": 128}
+    ],
+    "source": "travel_land"
+  },
+  {
+    "text": "Travesía en ferry: Miguel Rodríguez, permiso de conducir CCC345678, matrícula del vehículo 1234 ABC, Algeciras a Tánger con Balearia el 22 de abril de 2026.",
+    "language": "Spanish",
+    "entities": [
+      {"text": "Miguel Rodríguez", "label": "person", "start": 19, "end": 35},
+      {"text": "CCC345678", "label": "driver_license_number", "start": 57, "end": 66},
+      {"text": "1234 ABC", "label": "vehicle_registration_number", "start": 91, "end": 99},
+      {"text": "Algeciras", "label": "address", "start": 101, "end": 110},
+      {"text": "Tánger", "label": "address", "start": 113, "end": 119},
+      {"text": "Balearia", "label": "organization", "start": 125, "end": 133},
+      {"text": "22 de abril de 2026", "label": "date_of_birth", "start": 137, "end": 156}
+    ],
+    "source": "travel_water"
+  },
+  {
+    "text": "Viajero internacional: Sra. Lucía Hernández, pasaporte DDD456789, visado estadounidense B1/B2 válido hasta agosto 2027, vuelo United UA900 Madrid a Newark, tel: +34 666 777 888.",
+    "language": "Spanish",
+    "entities": [
+      {"text": "Lucía Hernández", "label": "person", "start": 28, "end": 43},
+      {"text": "DDD456789", "label": "passport_number", "start": 55, "end": 64},
+      {"text": "visado estadounidense B1/B2", "label": "identity_card_number", "start": 66, "end": 93},
+      {"text": "agosto 2027", "label": "passport_expiration_date", "start": 107, "end": 118},
+      {"text": "United", "label": "organization", "start": 126, "end": 132},
+      {"text": "UA900", "label": "flight_number", "start": 133, "end": 138},
+      {"text": "Madrid", "label": "address", "start": 139, "end": 145},
+      {"text": "Newark", "label": "address", "start": 148, "end": 154},
+      {"text": "+34 666 777 888", "label": "phone_number", "start": 161, "end": 176}
+    ],
+    "source": "travel_air"
+  },
+  {
+    "text": "Reserva de autobús: Carmen Díaz, tarjeta de identidad EEE567890123, ALSA Madrid Sur a Sevilla Plaza de Armas, el 8 de mayo de 2026. Pago con tarjeta terminada en 3456.",
+    "language": "Spanish",
+    "entities": [
+      {"text": "Carmen Díaz", "label": "person", "start": 20, "end": 31},
+      {"text": "EEE567890123", "label": "identity_card_number", "start": 54, "end": 66},
+      {"text": "ALSA", "label": "organization", "start": 68, "end": 72},
+      {"text": "Madrid Sur", "label": "address", "start": 73, "end": 83},
+      {"text": "Sevilla Plaza de Armas", "label": "address", "start": 86, "end": 108},
+      {"text": "8 de mayo de 2026", "label": "date_of_birth", "start": 113, "end": 130},
+      {"text": "3456", "label": "credit_card_number", "start": 163, "end": 167}
+    ],
+    "source": "travel_land"
+  },
+  {
+    "text": "Alquiler de yate: Sr. Alberto Gómez, pasaporte FFF678901, licencia náutica LN-ESP-12345, salida Puerto de Palma de Mallorca el 1 de julio de 2026. Seguro marítimo SEG-2026-789.",
+    "language": "Spanish",
+    "entities": [
+      {"text": "Alberto Gómez", "label": "person", "start": 22, "end": 35},
+      {"text": "FFF678901", "label": "passport_number", "start": 47, "end": 56},
+      {"text": "LN-ESP-12345", "label": "driver_license_number", "start": 75, "end": 87},
+      {"text": "Puerto de Palma de Mallorca", "label": "address", "start": 96, "end": 123},
+      {"text": "1 de julio de 2026", "label": "date_of_birth", "start": 127, "end": 145},
+      {"text": "SEG-2026-789", "label": "insurance_number", "start": 164, "end": 176}
+    ],
+    "source": "travel_water"
+  },
+  {
+    "text": "Vuelo privado: Directora Rosa Molina, pasaporte diplomático GGG789012, salida Aeropuerto de Cuatro Vientos hacia Lisboa, cuenta corporativa CORP-11223344, vuelo programado 28 de mayo de 2026.",
+    "language": "Spanish",
+    "entities": [
+      {"text": "Rosa Molina", "label": "person", "start": 25, "end": 36},
+      {"text": "GGG789012", "label": "passport_number", "start": 60, "end": 69},
+      {"text": "Aeropuerto de Cuatro Vientos", "label": "address", "start": 78, "end": 106},
+      {"text": "Lisboa", "label": "address", "start": 113, "end": 119},
+      {"text": "CORP-11223344", "label": "bank_account_number", "start": 140, "end": 153},
+      {"text": "28 de mayo de 2026", "label": "date_of_birth", "start": 172, "end": 190}
+    ],
+    "source": "travel_air"
+  },
+  {
+    "text": "Traslado aeropuerto: Sra. Elena García, fecha de nacimiento 10/05/1980, recogida Terminal 4 Barajas, reserva TRAS-654321, tarjeta Mastercard 5412 **** **** 9876.",
+    "language": "Spanish",
+    "entities": [
+      {"text": "Elena García", "label": "person", "start": 26, "end": 38},
+      {"text": "10/05/1980", "label": "date_of_birth", "start": 60, "end": 70},
+      {"text": "Terminal 4 Barajas", "label": "address", "start": 81, "end": 99},
+      {"text": "TRAS-654321", "label": "transaction_number", "start": 109, "end": 120},
+      {"text": "5412 **** **** 9876", "label": "credit_card_number", "start": 141, "end": 160}
+    ],
+    "source": "travel_land"
+  },
+  {
+    "text": "O passageiro João Silva Santos, passaporte brasileiro CD123456, reservou o voo LA8084 São Paulo Guarulhos para Lisboa no dia 20 de março de 2026. Email: joao.silva@uol.com.br, celular: +55 11 98765-4321.",
+    "language": "Portuguese",
+    "entities": [
+      {"text": "João Silva Santos", "label": "person", "start": 13, "end": 30},
+      {"text": "CD123456", "label": "passport_number", "start": 52, "end": 60},
+      {"text": "LA8084", "label": "flight_number", "start": 76, "end": 82},
+      {"text": "São Paulo Guarulhos", "label": "address", "start": 83, "end": 102},
+      {"text": "Lisboa", "label": "address", "start": 108, "end": 114},
+      {"text": "20 de março de 2026", "label": "date_of_birth", "start": 125, "end": 144},
+      {"text": "joao.silva@uol.com.br", "label": "email", "start": 153, "end": 174},
+      {"text": "+55 11 98765-4321", "label": "mobile_phone_number", "start": 185, "end": 202}
+    ],
+    "source": "travel_air"
+  },
+  {
+    "text": "A Sra. Maria Souza, CPF 123.456.789-00, CNH 12345678901, alugou um carro na Localiza em Brasília para o dia 15 de abril de 2026. Número da reserva: LOC-456789.",
+    "language": "Portuguese",
+    "entities": [
+      {"text": "Maria Souza", "label": "person", "start": 7, "end": 18},
+      {"text": "123.456.789-00", "label": "cpf", "start": 24, "end": 38},
+      {"text": "12345678901", "label": "driver_license_number", "start": 44, "end": 55},
+      {"text": "Localiza", "label": "organization", "start": 76, "end": 84},
+      {"text": "Brasília", "label": "address", "start": 88, "end": 96},
+      {"text": "15 de abril de 2026", "label": "date_of_birth", "start": 107, "end": 126},
+      {"text": "LOC-456789", "label": "transaction_number", "start": 148, "end": 158}
+    ],
+    "source": "travel_land"
+  },
+  {
+    "text": "Reserva de cruzeiro: Sr. Paulo Ferreira, passaporte EF234567, cabine D-102 no Costa Fascinosa, partida de Santos no dia 10 de junho de 2026. Contato de emergência: +55 21 3456-7890.",
+    "language": "Portuguese",
+    "entities": [
+      {"text": "Paulo Ferreira", "label": "person", "start": 25, "end": 39},
+      {"text": "EF234567", "label": "passport_number", "start": 52, "end": 60},
+      {"text": "Costa Fascinosa", "label": "organization", "start": 78, "end": 93},
+      {"text": "Santos", "label": "address", "start": 106, "end": 112},
+      {"text": "10 de junho de 2026", "label": "date_of_birth", "start": 119, "end": 138},
+      {"text": "+55 21 3456-7890", "label": "phone_number", "start": 164, "end": 180}
+    ],
+    "source": "travel_water"
+  },
+  {
+    "text": "Passagem de ônibus: Fernanda Almeida, RG 12.345.678-9, Viação Itapemirim de Belo Horizonte para Rio de Janeiro, partida 5 de fevereiro de 2026 às 22h00. Poltrona 32.",
+    "language": "Portuguese",
+    "entities": [
+      {"text": "Fernanda Almeida", "label": "person", "start": 20, "end": 36},
+      {"text": "12.345.678-9", "label": "identity_card_number", "start": 41, "end": 53},
+      {"text": "Viação Itapemirim", "label": "organization", "start": 55, "end": 72},
+      {"text": "Belo Horizonte", "label": "address", "start": 76, "end": 90},
+      {"text": "Rio de Janeiro", "label": "address", "start": 96, "end": 110},
+      {"text": "5 de fevereiro de 2026", "label": "date_of_birth", "start": 120, "end": 142}
+    ],
+    "source": "travel_land"
+  },
+  {
+    "text": "Travessia de balsa: Marcos Ribeiro, CNH 98765432100, placa do veículo ABC-1234, Guarujá para Santos com Dersa no dia 22 de abril de 2026.",
+    "language": "Portuguese",
+    "entities": [
+      {"text": "Marcos Ribeiro", "label": "person", "start": 20, "end": 34},
+      {"text": "98765432100", "label": "driver_license_number", "start": 40, "end": 51},
+      {"text": "ABC-1234", "label": "vehicle_registration_number", "start": 70, "end": 78},
+      {"text": "Guarujá", "label": "address", "start": 80, "end": 87},
+      {"text": "Santos", "label": "address", "start": 93, "end": 99},
+      {"text": "Dersa", "label": "organization", "start": 105, "end": 110},
+      {"text": "22 de abril de 2026", "label": "date_of_birth", "start": 117, "end": 136}
+    ],
+    "source": "travel_water"
+  },
+  {
+    "text": "Viajante internacional: D. Júlia Mendes, passaporte GH345678, visto americano B1/B2 válido até agosto de 2027, voo American Airlines AA8070 Rio de Janeiro para Miami, tel: +55 11 99999-8888.",
+    "language": "Portuguese",
+    "entities": [
+      {"text": "Júlia Mendes", "label": "person", "start": 27, "end": 39},
+      {"text": "GH345678", "label": "passport_number", "start": 52, "end": 60},
+      {"text": "visto americano B1/B2", "label": "identity_card_number", "start": 62, "end": 83},
+      {"text": "agosto de 2027", "label": "passport_expiration_date", "start": 96, "end": 110},
+      {"text": "American Airlines", "label": "organization", "start": 117, "end": 134},
+      {"text": "AA8070", "label": "flight_number", "start": 135, "end": 141},
+      {"text": "Rio de Janeiro", "label": "address", "start": 142, "end": 156},
+      {"text": "Miami", "label": "address", "start": 162, "end": 167},
+      {"text": "+55 11 99999-8888", "label": "phone_number", "start": 174, "end": 191}
+    ],
+    "source": "travel_air"
+  },
+  {
+    "text": "Reserva de ônibus: Antônio Castro, carteira de identidade IJ456789, Viação Cometa de São Paulo para Curitiba, no dia 8 de maio de 2026. Pagamento com cartão terminado em 5678.",
+    "language": "Portuguese",
+    "entities": [
+      {"text": "Antônio Castro", "label": "person", "start": 19, "end": 33},
+      {"text": "IJ456789", "label": "identity_card_number", "start": 58, "end": 66},
+      {"text": "Viação Cometa", "label": "organization", "start": 68, "end": 81},
+      {"text": "São Paulo", "label": "address", "start": 85, "end": 94},
+      {"text": "Curitiba", "label": "address", "start": 100, "end": 108},
+      {"text": "8 de maio de 2026", "label": "date_of_birth", "start": 117, "end": 134},
+      {"text": "5678", "label": "credit_card_number", "start": 170, "end": 174}
+    ],
+    "source": "travel_land"
+  },
+  {
+    "text": "Aluguel de lancha: Sr. Gabriel Cardoso, passaporte KL567890, habilitação náutica HN-BR-98765, partida Marina da Glória no Rio de Janeiro em 1 de julho de 2026. Seguro náutico SN-2026-321.",
+    "language": "Portuguese",
+    "entities": [
+      {"text": "Gabriel Cardoso", "label": "person", "start": 23, "end": 38},
+      {"text": "KL567890", "label": "passport_number", "start": 51, "end": 59},
+      {"text": "HN-BR-98765", "label": "driver_license_number", "start": 81, "end": 92},
+      {"text": "Marina da Glória no Rio de Janeiro", "label": "address", "start": 102, "end": 136},
+      {"text": "1 de julho de 2026", "label": "date_of_birth", "start": 140, "end": 158},
+      {"text": "SN-2026-321", "label": "insurance_number", "start": 176, "end": 187}
+    ],
+    "source": "travel_water"
+  },
+  {
+    "text": "Voo executivo: Diretora Beatriz Rocha, passaporte diplomático MN678901, partida Aeroporto de Congonhas para Buenos Aires, conta corporativa CORP-BR-99887, voo agendado para 28 de maio de 2026.",
+    "language": "Portuguese",
+    "entities": [
+      {"text": "Beatriz Rocha", "label": "person", "start": 24, "end": 37},
+      {"text": "MN678901", "label": "passport_number", "start": 62, "end": 70},
+      {"text": "Aeroporto de Congonhas", "label": "address", "start": 80, "end": 102},
+      {"text": "Buenos Aires", "label": "address", "start": 108, "end": 120},
+      {"text": "CORP-BR-99887", "label": "bank_account_number", "start": 141, "end": 154},
+      {"text": "28 de maio de 2026", "label": "date_of_birth", "start": 174, "end": 192}
+    ],
+    "source": "travel_air"
+  },
+  {
+    "text": "Transfer aeroporto: Sra. Carolina Lima, data de nascimento 15/08/1985, busca no Terminal 3 Guarulhos, reserva TRANS-123456, cartão Visa 4916 **** **** 4321.",
+    "language": "Portuguese",
+    "entities": [
+      {"text": "Carolina Lima", "label": "person", "start": 24, "end": 37},
+      {"text": "15/08/1985", "label": "date_of_birth", "start": 59, "end": 69},
+      {"text": "Terminal 3 Guarulhos", "label": "address", "start": 80, "end": 100},
+      {"text": "TRANS-123456", "label": "transaction_number", "start": 110, "end": 122},
+      {"text": "4916 **** **** 4321", "label": "credit_card_number", "start": 136, "end": 155}
+    ],
+    "source": "travel_land"
+  },
+  {
+    "text": "Il passeggero Marco Rossi, passaporto italiano YA123456, ha prenotato il volo AZ610 Roma Fiumicino per New York JFK il 15 marzo 2026. Email: marco.rossi@libero.it, cellulare: +39 333 123 4567.",
+    "language": "Italian",
+    "entities": [
+      {"text": "Marco Rossi", "label": "person", "start": 14, "end": 25},
+      {"text": "YA123456", "label": "passport_number", "start": 47, "end": 55},
+      {"text": "AZ610", "label": "flight_number", "start": 78, "end": 83},
+      {"text": "Roma Fiumicino", "label": "address", "start": 84, "end": 98},
+      {"text": "New York JFK", "label": "address", "start": 103, "end": 115},
+      {"text": "15 marzo 2026", "label": "date_of_birth", "start": 119, "end": 132},
+      {"text": "marco.rossi@libero.it", "label": "email", "start": 141, "end": 162},
+      {"text": "+39 333 123 4567", "label": "mobile_phone_number", "start": 175, "end": 191}
+    ],
+    "source": "travel_air"
+  },
+  {
+    "text": "La Sig.ra Anna Conti, codice fiscale CNTANN80A41H501X, patente di guida MI12345678, ha noleggiato un'auto da Hertz a Milano Malpensa per il 20 marzo 2026. Numero prenotazione: HZ-456789.",
+    "language": "Italian",
+    "entities": [
+      {"text": "Anna Conti", "label": "person", "start": 10, "end": 20},
+      {"text": "CNTANN80A41H501X", "label": "tax_identification_number", "start": 37, "end": 53},
+      {"text": "MI12345678", "label": "driver_license_number", "start": 72, "end": 82},
+      {"text": "Hertz", "label": "organization", "start": 109, "end": 114},
+      {"text": "Milano Malpensa", "label": "address", "start": 117, "end": 132},
+      {"text": "20 marzo 2026", "label": "date_of_birth", "start": 140, "end": 153},
+      {"text": "HZ-456789", "label": "transaction_number", "start": 177, "end": 186}
+    ],
+    "source": "travel_land"
+  },
+  {
+    "text": "Prenotazione crociera: Il Sig. Paolo Ferrari, passaporto YB234567, cabina E-203 sulla Costa Smeralda, partenza da Genova il 10 giugno 2026. Contatto emergenza: +39 02 1234 5678.",
+    "language": "Italian",
+    "entities": [
+      {"text": "Paolo Ferrari", "label": "person", "start": 31, "end": 44},
+      {"text": "YB234567", "label": "passport_number", "start": 57, "end": 65},
+      {"text": "Costa Smeralda", "label": "organization", "start": 87, "end": 101},
+      {"text": "Genova", "label": "address", "start": 114, "end": 120},
+      {"text": "10 giugno 2026", "label": "date_of_birth", "start": 124, "end": 138},
+      {"text": "+39 02 1234 5678", "label": "phone_number", "start": 161, "end": 177}
+    ],
+    "source": "travel_water"
+  },
+  {
+    "text": "Biglietto Freccia Rossa: Giulia Ricci, tessera sanitaria 80380123456789012, Milano Centrale a Roma Termini, partenza 5 febbraio 2026 alle 14:00. Posto 25A, carrozza 3.",
+    "language": "Italian",
+    "entities": [
+      {"text": "Giulia Ricci", "label": "person", "start": 25, "end": 37},
+      {"text": "80380123456789012", "label": "health_insurance_id_number", "start": 57, "end": 74},
+      {"text": "Milano Centrale", "label": "address", "start": 76, "end": 91},
+      {"text": "Roma Termini", "label": "address", "start": 94, "end": 106},
+      {"text": "5 febbraio 2026", "label": "date_of_birth", "start": 117, "end": 132}
+    ],
+    "source": "travel_land"
+  },
+  {
+    "text": "Traversata traghetto: Luigi Esposito, patente YC345678, targa veicolo AB 123 CD, Livorno a Olbia con Moby Lines il 22 aprile 2026.",
+    "language": "Italian",
+    "entities": [
+      {"text": "Luigi Esposito", "label": "person", "start": 22, "end": 36},
+      {"text": "YC345678", "label": "driver_license_number", "start": 46, "end": 54},
+      {"text": "AB 123 CD", "label": "vehicle_registration_number", "start": 70, "end": 79},
+      {"text": "Livorno", "label": "address", "start": 81, "end": 88},
+      {"text": "Olbia", "label": "address", "start": 91, "end": 96},
+      {"text": "Moby Lines", "label": "organization", "start": 102, "end": 112},
+      {"text": "22 aprile 2026", "label": "date_of_birth", "start": 116, "end": 130}
+    ],
+    "source": "travel_water"
+  },
+  {
+    "text": "Viaggiatore internazionale: La Sig.ra Sofia Martinelli, passaporto YD456789, visto USA B1/B2 valido fino a agosto 2027, volo Delta DL123 Milano a Atlanta, tel: +39 345 678 9012.",
+    "language": "Italian",
+    "entities": [
+      {"text": "Sofia Martinelli", "label": "person", "start": 38, "end": 54},
+      {"text": "YD456789", "label": "passport_number", "start": 67, "end": 75},
+      {"text": "visto USA B1/B2", "label": "identity_card_number", "start": 77, "end": 92},
+      {"text": "agosto 2027", "label": "passport_expiration_date", "start": 106, "end": 117},
+      {"text": "Delta", "label": "organization", "start": 124, "end": 129},
+      {"text": "DL123", "label": "flight_number", "start": 130, "end": 135},
+      {"text": "Milano", "label": "address", "start": 136, "end": 142},
+      {"text": "Atlanta", "label": "address", "start": 145, "end": 152},
+      {"text": "+39 345 678 9012", "label": "phone_number", "start": 159, "end": 175}
+    ],
+    "source": "travel_air"
+  },
+  {
+    "text": "Prenotazione autobus: Teresa Moretti, carta d'identità CA12345AB, Flixbus Roma Tiburtina a Napoli, l'8 maggio 2026. Pagamento con carta terminante in 7890.",
+    "language": "Italian",
+    "entities": [
+      {"text": "Teresa Moretti", "label": "person", "start": 22, "end": 36},
+      {"text": "CA12345AB", "label": "identity_card_number", "start": 55, "end": 64},
+      {"text": "Flixbus", "label": "organization", "start": 66, "end": 73},
+      {"text": "Roma Tiburtina", "label": "address", "start": 74, "end": 88},
+      {"text": "Napoli", "label": "address", "start": 91, "end": 97},
+      {"text": "8 maggio 2026", "label": "date_of_birth", "start": 102, "end": 115},
+      {"text": "7890", "label": "credit_card_number", "start": 150, "end": 154}
+    ],
+    "source": "travel_land"
+  },
+  {
+    "text": "Noleggio yacht: Il Sig. Antonio Bruno, passaporto YE567890, patente nautica PN-IT-54321, partenza Porto di Portofino il 1 luglio 2026. Assicurazione marittima AM-2026-654.",
+    "language": "Italian",
+    "entities": [
+      {"text": "Antonio Bruno", "label": "person", "start": 24, "end": 37},
+      {"text": "YE567890", "label": "passport_number", "start": 50, "end": 58},
+      {"text": "PN-IT-54321", "label": "driver_license_number", "start": 76, "end": 87},
+      {"text": "Porto di Portofino", "label": "address", "start": 98, "end": 116},
+      {"text": "1 luglio 2026", "label": "date_of_birth", "start": 120, "end": 133},
+      {"text": "AM-2026-654", "label": "insurance_number", "start": 159, "end": 170}
+    ],
+    "source": "travel_water"
+  },
+  {
+    "text": "Volo privato: Direttrice Carla Mancini, passaporto diplomatico YF678901, partenza Aeroporto di Ciampino per Zurigo, conto aziendale AZ-99887766, volo programmato 28 maggio 2026.",
+    "language": "Italian",
+    "entities": [
+      {"text": "Carla Mancini", "label": "person", "start": 25, "end": 38},
+      {"text": "YF678901", "label": "passport_number", "start": 63, "end": 71},
+      {"text": "Aeroporto di Ciampino", "label": "address", "start": 82, "end": 103},
+      {"text": "Zurigo", "label": "address", "start": 108, "end": 114},
+      {"text": "AZ-99887766", "label": "bank_account_number", "start": 132, "end": 143},
+      {"text": "28 maggio 2026", "label": "date_of_birth", "start": 163, "end": 177}
+    ],
+    "source": "travel_air"
+  },
+  {
+    "text": "Transfer aeroporto: La Sig.ra Elena Lombardi, data di nascita 10/05/1982, ritiro Terminal 1 Fiumicino, prenotazione TR-654321, carta Visa 4024 **** **** 5678.",
+    "language": "Italian",
+    "entities": [
+      {"text": "Elena Lombardi", "label": "person", "start": 29, "end": 43},
+      {"text": "10/05/1982", "label": "date_of_birth", "start": 62, "end": 72},
+      {"text": "Terminal 1 Fiumicino", "label": "address", "start": 82, "end": 102},
+      {"text": "TR-654321", "label": "transaction_number", "start": 117, "end": 126},
+      {"text": "4024 **** **** 5678", "label": "credit_card_number", "start": 139, "end": 158}
+    ],
+    "source": "travel_land"
+  },
+  {
+    "text": "Der Passagier Hans Müller, Reisepass C1234567, buchte Flug LH400 Frankfurt nach New York JFK am 15. März 2026. E-Mail: hans.mueller@web.de, Telefon: +49 170 123 4567.",
+    "language": "German",
+    "entities": [
+      {"text": "Hans Müller", "label": "person", "start": 14, "end": 25},
+      {"text": "C1234567", "label": "passport_number", "start": 37, "end": 45},
+      {"text": "LH400", "label": "flight_number", "start": 59, "end": 64},
+      {"text": "Frankfurt", "label": "address", "start": 65, "end": 74},
+      {"text": "New York JFK", "label": "address", "start": 80, "end": 92},
+      {"text": "15. März 2026", "label": "date_of_birth", "start": 96, "end": 109},
+      {"text": "hans.mueller@web.de", "label": "email", "start": 119, "end": 138},
+      {"text": "+49 170 123 4567", "label": "phone_number", "start": 149, "end": 165}
+    ],
+    "source": "travel_air"
+  },
+  {
+    "text": "Frau Maria Weber, geboren am 05.04.1978, Führerschein B-M1234567, mietete ein Auto bei Sixt am Flughafen München für den 20. März 2026. Buchungsnummer: SIXT-789012.",
+    "language": "German",
+    "entities": [
+      {"text": "Maria Weber", "label": "person", "start": 5, "end": 16},
+      {"text": "05.04.1978", "label": "date_of_birth", "start": 29, "end": 39},
+      {"text": "B-M1234567", "label": "driver_license_number", "start": 54, "end": 64},
+      {"text": "Sixt", "label": "organization", "start": 87, "end": 91},
+      {"text": "Flughafen München", "label": "address", "start": 95, "end": 112},
+      {"text": "20. März 2026", "label": "date_of_birth", "start": 121, "end": 134},
+      {"text": "SIXT-789012", "label": "transaction_number", "start": 152, "end": 163}
+    ],
+    "source": "travel_land"
+  },
+  {
+    "text": "Kreuzfahrtbuchung: Herr Peter Fischer, Reisepass C2345678, Kabine F-301 auf der AIDA Prima, Abfahrt Hamburg am 10. Juni 2026. Notfallkontakt: +49 40 1234 5678.",
+    "language": "German",
+    "entities": [
+      {"text": "Peter Fischer", "label": "person", "start": 24, "end": 37},
+      {"text": "C2345678", "label": "passport_number", "start": 49, "end": 57},
+      {"text": "AIDA Prima", "label": "organization", "start": 80, "end": 90},
+      {"text": "Hamburg", "label": "address", "start": 100, "end": 107},
+      {"text": "10. Juni 2026", "label": "date_of_birth", "start": 111, "end": 124},
+      {"text": "+49 40 1234 5678", "label": "phone_number", "start": 142, "end": 158}
+    ],
+    "source": "travel_water"
+  },
+  {
+    "text": "ICE-Ticket: Emma Wagner, Sozialversicherungsnummer 12 150478 W 123, München Hauptbahnhof nach Berlin Hauptbahnhof, Abfahrt 5. Februar 2026 um 10:00. Platz 45, Wagen 8.",
+    "language": "German",
+    "entities": [
+      {"text": "Emma Wagner", "label": "person", "start": 12, "end": 23},
+      {"text": "12 150478 W 123", "label": "social_security_number", "start": 51, "end": 66},
+      {"text": "München Hauptbahnhof", "label": "address", "start": 68, "end": 88},
+      {"text": "Berlin Hauptbahnhof", "label": "address", "start": 94, "end": 113},
+      {"text": "5. Februar 2026", "label": "date_of_birth", "start": 123, "end": 138}
+    ],
+    "source": "travel_land"
+  },
+  {
+    "text": "Fährüberfahrt: Michael Becker, Führerschein B-S2345678, Kennzeichen B-AB 1234, Puttgarden nach Rødby mit Scandlines am 22. April 2026.",
+    "language": "German",
+    "entities": [
+      {"text": "Michael Becker", "label": "person", "start": 15, "end": 29},
+      {"text": "B-S2345678", "label": "driver_license_number", "start": 44, "end": 54},
+      {"text": "B-AB 1234", "label": "vehicle_registration_number", "start": 68, "end": 77},
+      {"text": "Puttgarden", "label": "address", "start": 79, "end": 89},
+      {"text": "Rødby", "label": "address", "start": 95, "end": 100},
+      {"text": "Scandlines", "label": "organization", "start": 106, "end": 116},
+      {"text": "22. April 2026", "label": "date_of_birth", "start": 120, "end": 134}
+    ],
+    "source": "travel_water"
+  },
+  {
+    "text": "Internationale Reisende: Frau Sophie Klein, Reisepass C3456789, Schengen-Visum gültig bis August 2027, Flug Swiss LX1234 Zürich nach Singapur, Mobil: +49 151 234 5678.",
+    "language": "German",
+    "entities": [
+      {"text": "Sophie Klein", "label": "person", "start": 30, "end": 42},
+      {"text": "C3456789", "label": "passport_number", "start": 54, "end": 62},
+      {"text": "Schengen-Visum", "label": "identity_card_number", "start": 64, "end": 78},
+      {"text": "August 2027", "label": "passport_expiration_date", "start": 90, "end": 101},
+      {"text": "Swiss", "label": "organization", "start": 108, "end": 113},
+      {"text": "LX1234", "label": "flight_number", "start": 114, "end": 120},
+      {"text": "Zürich", "label": "address", "start": 121, "end": 127},
+      {"text": "Singapur", "label": "address", "start": 133, "end": 141},
+      {"text": "+49 151 234 5678", "label": "mobile_phone_number", "start": 150, "end": 166}
+    ],
+    "source": "travel_air"
+  },
+  {
+    "text": "Fernbusbuchung: Christina Schneider, Personalausweis L1234567890, Flixbus Berlin ZOB nach Hamburg ZOB, am 8. Mai 2026. Zahlung mit Karte endend auf 3456.",
+    "language": "German",
+    "entities": [
+      {"text": "Christina Schneider", "label": "person", "start": 16, "end": 35},
+      {"text": "L1234567890", "label": "identity_card_number", "start": 53, "end": 64},
+      {"text": "Flixbus", "label": "organization", "start": 66, "end": 73},
+      {"text": "Berlin ZOB", "label": "address", "start": 74, "end": 84},
+      {"text": "Hamburg ZOB", "label": "address", "start": 90, "end": 101},
+      {"text": "8. Mai 2026", "label": "date_of_birth", "start": 106, "end": 117},
+      {"text": "3456", "label": "credit_card_number", "start": 148, "end": 152}
+    ],
+    "source": "travel_land"
+  },
+  {
+    "text": "Yachtcharter: Herr Wolfgang Hartmann, Reisepass C4567890, Sportbootführerschein SBF-See-12345, Abfahrt Hafen Kiel am 1. Juli 2026. Bootsversicherung BV-2026-789.",
+    "language": "German",
+    "entities": [
+      {"text": "Wolfgang Hartmann", "label": "person", "start": 19, "end": 36},
+      {"text": "C4567890", "label": "passport_number", "start": 48, "end": 56},
+      {"text": "SBF-See-12345", "label": "driver_license_number", "start": 80, "end": 93},
+      {"text": "Hafen Kiel", "label": "address", "start": 103, "end": 113},
+      {"text": "1. Juli 2026", "label": "date_of_birth", "start": 117, "end": 129},
+      {"text": "BV-2026-789", "label": "insurance_number", "start": 148, "end": 159}
+    ],
+    "source": "travel_water"
+  },
+  {
+    "text": "Privatflug: Geschäftsführerin Helga Krause, Diplomatenpass C5678901, Abflug Flughafen Tegel nach Genf, Firmenkonto FK-99887766, Flug geplant für 28. Mai 2026.",
+    "language": "German",
+    "entities": [
+      {"text": "Helga Krause", "label": "person", "start": 30, "end": 42},
+      {"text": "C5678901", "label": "passport_number", "start": 59, "end": 67},
+      {"text": "Flughafen Tegel", "label": "address", "start": 76, "end": 91},
+      {"text": "Genf", "label": "address", "start": 97, "end": 101},
+      {"text": "FK-99887766", "label": "bank_account_number", "start": 116, "end": 127},
+      {"text": "28. Mai 2026", "label": "date_of_birth", "start": 145, "end": 157}
+    ],
+    "source": "travel_air"
+  },
+  {
+    "text": "Flughafentransfer: Frau Ingrid Schulz, Geburtsdatum 10.05.1975, Abholung Terminal 2 Frankfurt, Buchung FT-654321, Visa-Karte 4532 **** **** 1234.",
+    "language": "German",
+    "entities": [
+      {"text": "Ingrid Schulz", "label": "person", "start": 24, "end": 37},
+      {"text": "10.05.1975", "label": "date_of_birth", "start": 52, "end": 62},
+      {"text": "Terminal 2 Frankfurt", "label": "address", "start": 73, "end": 93},
+      {"text": "FT-654321", "label": "transaction_number", "start": 103, "end": 112},
+      {"text": "4532 **** **** 1234", "label": "credit_card_number", "start": 125, "end": 144}
+    ],
+    "source": "travel_land"
+  }
+]
