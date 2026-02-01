@@ -4,7 +4,7 @@ A FastAPI service for extracting Personally Identifiable Information (PII) and P
 
 ## Features
 
-- 🌍 **Multilingual Support** - English, French, German, Spanish, and Italian
+- 🌍 **Multilingual Support** - English, French, German, Spanish, Portuguese  and Italian
 - 🔍 **50+ Entity Types** - Person, email, phone, SSN, address, medical conditions, etc.
 - ⚡ **Fast API** - RESTful endpoints with automatic documentation
 - 🎨 **Streamlit UI** - UI to test entity detection and adjust confidence levels for testing 
@@ -544,5 +544,6 @@ MIT License
 - [FastAPI Documentation](https://fastapi.tiangolo.com/)
 - [Streamlit Documentation](https://docs.streamlit.io/)
 - [uv Documentation](https://github.com/astral-sh/uv)
+
 
 
