@@ -1,10 +1,20 @@
 # GLiNER MultiLingual PII/PHI Extraction Service
 
-A FastAPI service for extracting Personally Identifiable Information (PII) and Protected Health Information (PHI) from text using the [GLiNER Multi-PII Model](https://huggingface.co/urchade/gliner_multi_pii-v1).
+## Introduction
+
+[GLiNER](https://github.com/urchade/GLiNER) (Generalist Model for Named Entity Recognition) is a zero-shot NER model that can identify any entity type described in plain text at inference time. The `urchade/gliner_multi_pii-v1` model is fine-tuned specifically to detect PII & PHI across multiple languages.
+
+### Why GLiNER over LLMs for NER?
+
+- ⚡ **Efficiency** - ~300M parameters vs LLMs' 7B-175B+. Runs on modest CPUs/GPUs with low latency for real-time, high-volume processing.
+- 💰 **Cost** - No expensive A100/H100 GPUs or per-token API costs. Handles long documents predictably as an encoder-based model.
+- 🎯 **Precision** - Span-based extraction returns exact character offsets from the source text. No hallucinations, no "cleaned up" outputs, thus guarantees the exact string as it appears.
+- 🔒 **Privacy** - Lightweight model to run entirely on-premise. Data never leaves your infrastructure, avoiding GDPR/HIPAA compliance issues with LLM providers.
+- 📋 **Structured Output** - Natively returns entity text, label, and start/end indices. No complex prompting or "instructor" libraries needed.
 
 ## Features
 
-- 🌍 **Multilingual Support** - English, French, German, Spanish, Portuguese  and Italian
+- 🌍 **Multilingual Support** - English, French, German, Spanish, and Italian
 - 🔍 **50+ Entity Types** - Person, email, phone, SSN, address, medical conditions, etc.
 - ⚡ **Fast API** - RESTful endpoints with automatic documentation
 - 🎨 **Streamlit UI** - UI to test entity detection and adjust confidence levels for testing 
@@ -24,6 +34,7 @@ A FastAPI service for extracting Personally Identifiable Information (PII) and P
 | **Other** | organization, insurance_number, student_id_number, security_code, landline_phone_number |
 
 ## Quick Start
+A FastAPI service for extracting from text using the [GLiNER Multi-PII Model](https://huggingface.co/urchade/gliner_multi_pii-v1).
 
 <details>
 <summary><strong>Step 1: Setup</strong></summary>
@@ -280,7 +291,6 @@ python -m pytest tests/test_extraction.py -v --tb=short
 
 The Streamlit app provides an interactive interface for testing the PII extraction service:
 
-![Streamlit PII Extraction UI](screenshots/streamlit_app.png)
 #### Features
 
 - **Service Health Check** - Real-time connection status to the FastAPI backend
@@ -315,17 +325,18 @@ python -m streamlit run src/streamlit_app.py
 
 #### Screenshot
 
-![Streamlit PII Extraction UI](screenshots/Streamlit App.png)
-
+![Streamlit PII Extraction UI](screenshots/streamlit_app.png)
 
 The UI includes:
 - Left panel: Input text area with sample text selector
 - Right panel: Extraction results with entity details
 - Bottom: Highlighted text with color-coded entities and legend
 
+> **To add the screenshot:** Run the Streamlit app, take a screenshot, and save it as `screenshots/streamlit_app.png`
+
 </details>
 
-## Evaluations
+## Evals & Data Generation Tool 
 
 ### Performance by Language
 
@@ -341,21 +352,25 @@ NER evaluation dataset (360 samples) shows strong multilingual performance:
 | German | 60 | 50 | 10 | 0.8173 | 0.8994 | **0.8564** |
 
 **Overall:** Precision: 0.8594 | Recall: 0.9345 | F1 Score: **0.8954**
+<details>
+<summary><strong> Running Evaluation </strong></summary>
+There are two evaluation scripts with different purposes:
 
-### Running Evaluation
+- **`evaluation_service.py`** → Creates detailed `evaluation_report.json` with language breakdowns and failure analysis
+- **`evaluation.py`** → Creates per-dataset `predictions_*.csv` and `predictions_*.json` files in `data/predicted_output/` with raw predictions
 
 ```bash
-# Run the main evaluation script
+# Run the main evaluation script (generates prediction files for all datasets)
 python evals/evaluation.py
 
 # Run the NER evaluation service with detailed report
 python evals/evaluation_service.py --dataset data/ner_evaluation_dataset.json --output evals/evaluation_report.json --verbose
 ```
-
+</details>
 <details>
-<summary><strong> Evals Results & Data Generation Tool</strong></summary>
+<summary><strong> Datasets Generation</strong></summary>
 
-This project includes tool to generate synthetic test dataset.
+This project includes tools for generating synthetic test datasets.
 
 #### Data Generation (`data_gen.py`)
 
@@ -533,9 +548,11 @@ python data/data_gen.py
 
 </details>
 
+
 ## License
 
 MIT License
+
 
 ## References
 
@@ -544,9 +561,3 @@ MIT License
 - [FastAPI Documentation](https://fastapi.tiangolo.com/)
 - [Streamlit Documentation](https://docs.streamlit.io/)
 - [uv Documentation](https://github.com/astral-sh/uv)
-
-
-
-
-
-
