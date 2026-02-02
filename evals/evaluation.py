@@ -1,10 +1,12 @@
 """
-PII/PHI Evaluation Script
+Comprehensive PII/PHI Evaluation Script
 Tests all evaluation datasets with GLiNER multilingual model
 """
 
 import json
 import os
+import csv
+from datetime import datetime
 from gliner import GLiNER
 from collections import defaultdict
 
@@ -48,8 +50,8 @@ def load_csv_dataset(filepath):
                 data.append({'text': line, 'entities': entities})
     return data
 
-def evaluate_dataset(model, data, dataset_name):
-    """Evaluate a dataset and return metrics."""
+def evaluate_dataset(model, data, dataset_name, predictions_list=None):
+    """Evaluate a dataset and return metrics. Optionally collect predictions."""
     tp = defaultdict(int)
     fp = defaultdict(int)
     fn = defaultdict(int)
@@ -58,6 +60,45 @@ def evaluate_dataset(model, data, dataset_name):
         gold = {(e['text'].lower(), e['label']) for e in item['entities']}
         preds = model.predict_entities(item['text'], LABELS, threshold=0.3)
         pred = {(p['text'].lower(), p['label']) for p in preds}
+        
+        # Collect predictions for CSV output if list provided
+        if predictions_list is not None:
+            gold_entities = [{'text': e['text'], 'label': e['label']} for e in item['entities']]
+            pred_entities = [{'text': p['text'], 'label': p['label'], 'score': p.get('score', 0)} for p in preds]
+            
+            # Determine match status for each prediction
+            matched_gold = set()
+            pred_with_status = []
+            for p in preds:
+                p_key = (p['text'].lower(), p['label'])
+                if p_key in gold:
+                    status = 'TP'  # True Positive
+                    matched_gold.add(p_key)
+                else:
+                    status = 'FP'  # False Positive
+                pred_with_status.append({
+                    'text': p['text'],
+                    'label': p['label'],
+                    'score': p.get('score', 0),
+                    'status': status
+                })
+            
+            # Find missed entities (False Negatives)
+            missed = []
+            for e in item['entities']:
+                e_key = (e['text'].lower(), e['label'])
+                if e_key not in matched_gold:
+                    missed.append({'text': e['text'], 'label': e['label'], 'status': 'FN'})
+            
+            predictions_list.append({
+                'dataset': dataset_name,
+                'text': item['text'][:200] + '...' if len(item['text']) > 200 else item['text'],
+                'full_text': item['text'],
+                'ground_truth': gold_entities,
+                'predictions': pred_with_status,
+                'missed': missed,
+                'language': item.get('language', 'unknown')
+            })
         
         for label in LABELS:
             g = {t for t, l in gold if l == label}
@@ -153,6 +194,57 @@ def print_summary(all_results):
     
     avg_row = f"{'AVERAGE':<35} {total_examples:<10} {avg_p:<10.3f} {avg_r:<10.3f} {avg_f:<10.3f}"
     print(avg_row)
+    
+def save_detailed_predictions_json(predictions_list, output_path):
+    """Save  predictions to JSON for analysis."""
+    with open(output_path, 'w', encoding='utf-8') as f:
+        json.dump(predictions_list, f, ensure_ascii=False, indent=2)
+    print(f"Detailed predictions (JSON) saved to: {output_path}")
+    
+def save_predictions_to_csv(predictions_list, output_path):
+    """Save predictions to a CSV for analysis."""
+    with open(output_path, 'w', encoding='utf-8', newline='') as f:
+        writer = csv.writer(f)
+        
+        # Write header
+        writer.writerow([
+            'Dataset', 'Language', 'Text (truncated)', 
+            'Ground Truth Entities', 'Predicted Entities', 
+            'True Positives', 'False Positives', 'False Negatives (Missed)',
+            'TP Count', 'FP Count', 'FN Count'
+        ])
+        
+        for item in predictions_list:
+            # Format ground truth
+            gt_str = '; '.join([f"{e['label']}:{e['text']}" for e in item['ground_truth']])
+            
+            # Format predictions with scores
+            pred_str = '; '.join([f"{p['label']}:{p['text']}({p['score']:.2f})" for p in item['predictions']])
+            
+            # Separate by status
+            tp_list = [p for p in item['predictions'] if p['status'] == 'TP']
+            fp_list = [p for p in item['predictions'] if p['status'] == 'FP']
+            fn_list = item['missed']
+            
+            tp_str = '; '.join([f"{p['label']}:{p['text']}" for p in tp_list]) or '-'
+            fp_str = '; '.join([f"{p['label']}:{p['text']}" for p in fp_list]) or '-'
+            fn_str = '; '.join([f"{e['label']}:{e['text']}" for e in fn_list]) or '-'
+            
+            writer.writerow([
+                item['dataset'],
+                item['language'],
+                item['text'],
+                gt_str or '-',
+                pred_str or '-',
+                tp_str,
+                fp_str,
+                fn_str,
+                len(tp_list),
+                len(fp_list),
+                len(fn_list)
+            ])
+    
+    print(f"\nPredictions saved to: {output_path}")
 
 def main():
     print('=' * 75)
@@ -162,6 +254,10 @@ def main():
     
     print('\nLoading model...')
     model = GLiNER.from_pretrained('urchade/gliner_multi_pii-v1')
+    
+    # Create predicted_output folder under data
+    output_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'data', 'predicted_output')
+    os.makedirs(output_dir, exist_ok=True)
     
     # Define datasets to evaluate
     datasets = [
@@ -173,6 +269,7 @@ def main():
     ]
     
     all_results = []
+    all_predictions = []
     
     for filepath, name, filetype in datasets:
         if not os.path.exists(filepath):
@@ -181,14 +278,25 @@ def main():
         
         print(f'\nEvaluating {name}...')
         
+        # Separate predictions list for each dataset
+        dataset_predictions = []
+        
         if filetype == 'json':
             data = load_json_dataset(filepath)
         else:
             data = load_csv_dataset(filepath)
         
-        results = evaluate_dataset(model, data, name)
+        results = evaluate_dataset(model, data, name, dataset_predictions)
         all_results.append(results)
+        all_predictions.extend(dataset_predictions)
         print_results(results)
+        
+        # Save individual prediction file for this dataset to predicted_output folder
+        base_name = os.path.splitext(os.path.basename(filepath))[0]
+        output_csv = os.path.join(output_dir, f'predictions_{base_name}.csv')
+        output_json = os.path.join(output_dir, f'predictions_{base_name}.json')
+        save_predictions_to_csv(dataset_predictions, output_csv)
+        save_detailed_predictions_json(dataset_predictions, output_json)
     
     # Print summary
     if all_results:
