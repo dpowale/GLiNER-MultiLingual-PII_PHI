@@ -1,0 +1,3354 @@
+[
+  {
+    "dataset": "Mixed Language",
+    "text": "Dear Mr. Jean-Pierre Dubois, your reservation at Hotel & Spa Milano is confirmed for le 15 mars 2026. Please contact us at +39 02 1234 5678 or email reservations@milanospa.it. Merci beaucoup!",
+    "full_text": "Dear Mr. Jean-Pierre Dubois, your reservation at Hotel & Spa Milano is confirmed for le 15 mars 2026. Please contact us at +39 02 1234 5678 or email reservations@milanospa.it. Merci beaucoup!",
+    "ground_truth": [
+      {
+        "text": "Jean-Pierre Dubois",
+        "label": "person"
+      },
+      {
+        "text": "Hotel & Spa Milano",
+        "label": "organization"
+      },
+      {
+        "text": "15 mars 2026",
+        "label": "date_of_birth"
+      },
+      {
+        "text": "+39 02 1234 5678",
+        "label": "phone_number"
+      },
+      {
+        "text": "reservations@milanospa.it",
+        "label": "email"
+      }
+    ],
+    "predictions": [
+      {
+        "text": "Mr. Jean-Pierre Dubois",
+        "label": "person",
+        "score": 0.9245932698249817,
+        "status": "FP"
+      },
+      {
+        "text": "Hotel & Spa Milano",
+        "label": "organization",
+        "score": 0.9958145022392273,
+        "status": "TP"
+      },
+      {
+        "text": "15 mars 2026",
+        "label": "date",
+        "score": 0.9910945296287537,
+        "status": "FP"
+      },
+      {
+        "text": "+39 02 1234 5678",
+        "label": "phone_number",
+        "score": 0.9978693723678589,
+        "status": "TP"
+      },
+      {
+        "text": "reservations@milanospa.it",
+        "label": "email",
+        "score": 0.9995890259742737,
+        "status": "TP"
+      }
+    ],
+    "missed": [
+      {
+        "text": "Jean-Pierre Dubois",
+        "label": "person",
+        "status": "FN"
+      },
+      {
+        "text": "15 mars 2026",
+        "label": "date_of_birth",
+        "status": "FN"
+      }
+    ],
+    "language": "unknown"
+  },
+  {
+    "dataset": "Mixed Language",
+    "text": "El paciente Hans Müller, geboren am 12.05.1965, fue atendido en Krankenhaus Stuttgart. Su número de seguro es DE-789456123. The attending physician was Dr. Maria García.",
+    "full_text": "El paciente Hans Müller, geboren am 12.05.1965, fue atendido en Krankenhaus Stuttgart. Su número de seguro es DE-789456123. The attending physician was Dr. Maria García.",
+    "ground_truth": [
+      {
+        "text": "Hans Müller",
+        "label": "person"
+      },
+      {
+        "text": "12.05.1965",
+        "label": "date_of_birth"
+      },
+      {
+        "text": "Krankenhaus Stuttgart",
+        "label": "organization"
+      },
+      {
+        "text": "DE-789456123",
+        "label": "health_insurance_id_number"
+      },
+      {
+        "text": "Dr. Maria García",
+        "label": "person"
+      }
+    ],
+    "predictions": [
+      {
+        "text": "Hans Müller",
+        "label": "person",
+        "score": 0.9999088048934937,
+        "status": "TP"
+      },
+      {
+        "text": "12.05.1965",
+        "label": "date_of_birth",
+        "score": 0.9830718636512756,
+        "status": "TP"
+      },
+      {
+        "text": "Krankenhaus Stuttgart",
+        "label": "organization",
+        "score": 0.9955583810806274,
+        "status": "TP"
+      },
+      {
+        "text": "DE-789456123",
+        "label": "insurance_number",
+        "score": 0.9927632212638855,
+        "status": "FP"
+      },
+      {
+        "text": "Dr. Maria García",
+        "label": "person",
+        "score": 0.9993876218795776,
+        "status": "TP"
+      }
+    ],
+    "missed": [
+      {
+        "text": "DE-789456123",
+        "label": "health_insurance_id_number",
+        "status": "FN"
+      }
+    ],
+    "language": "unknown"
+  },
+  {
+    "dataset": "Mixed Language",
+    "text": "Bonjour! I am writing to confirm that Signora Anna Bianchi will arrive at Aeroporto de Lisboa on vuelo IB3456. Her passport number is IT12345678. Obrigado pela sua atenção.",
+    "full_text": "Bonjour! I am writing to confirm that Signora Anna Bianchi will arrive at Aeroporto de Lisboa on vuelo IB3456. Her passport number is IT12345678. Obrigado pela sua atenção.",
+    "ground_truth": [
+      {
+        "text": "Anna Bianchi",
+        "label": "person"
+      },
+      {
+        "text": "Aeroporto de Lisboa",
+        "label": "organization"
+      },
+      {
+        "text": "IB3456",
+        "label": "flight_number"
+      },
+      {
+        "text": "IT12345678",
+        "label": "passport_number"
+      }
+    ],
+    "predictions": [
+      {
+        "text": "Anna Bianchi",
+        "label": "person",
+        "score": 0.9400252103805542,
+        "status": "TP"
+      },
+      {
+        "text": "Aeroporto de Lisboa",
+        "label": "location",
+        "score": 0.9973306655883789,
+        "status": "FP"
+      },
+      {
+        "text": "vuelo IB3456",
+        "label": "flight_number",
+        "score": 0.960870623588562,
+        "status": "FP"
+      },
+      {
+        "text": "IT12345678",
+        "label": "passport_number",
+        "score": 0.9997285008430481,
+        "status": "TP"
+      }
+    ],
+    "missed": [
+      {
+        "text": "Aeroporto de Lisboa",
+        "label": "organization",
+        "status": "FN"
+      },
+      {
+        "text": "IB3456",
+        "label": "flight_number",
+        "status": "FN"
+      }
+    ],
+    "language": "unknown"
+  },
+  {
+    "dataset": "Mixed Language",
+    "text": "Customer profile: Herr Wolfgang Schmidt, residente en Calle Mayor 25, Madrid. Kontakt: wolfgang.schmidt@gmail.com, telefono +34 612 345 678. Payment via Visa ending 4521.",
+    "full_text": "Customer profile: Herr Wolfgang Schmidt, residente en Calle Mayor 25, Madrid. Kontakt: wolfgang.schmidt@gmail.com, telefono +34 612 345 678. Payment via Visa ending 4521.",
+    "ground_truth": [
+      {
+        "text": "Wolfgang Schmidt",
+        "label": "person"
+      },
+      {
+        "text": "Calle Mayor 25, Madrid",
+        "label": "address"
+      },
+      {
+        "text": "wolfgang.schmidt@gmail.com",
+        "label": "email"
+      },
+      {
+        "text": "+34 612 345 678",
+        "label": "phone_number"
+      },
+      {
+        "text": "4521",
+        "label": "credit_card_number"
+      }
+    ],
+    "predictions": [
+      {
+        "text": "Herr Wolfgang Schmidt",
+        "label": "person",
+        "score": 0.9898169040679932,
+        "status": "FP"
+      },
+      {
+        "text": "Calle Mayor 25, Madrid",
+        "label": "address",
+        "score": 0.9971318244934082,
+        "status": "TP"
+      },
+      {
+        "text": "wolfgang.schmidt@gmail.com",
+        "label": "email",
+        "score": 0.9996040463447571,
+        "status": "TP"
+      },
+      {
+        "text": "+34 612 345 678",
+        "label": "phone_number",
+        "score": 0.9990532994270325,
+        "status": "TP"
+      },
+      {
+        "text": "4521",
+        "label": "credit_card_number",
+        "score": 0.9224724173545837,
+        "status": "TP"
+      }
+    ],
+    "missed": [
+      {
+        "text": "Wolfgang Schmidt",
+        "label": "person",
+        "status": "FN"
+      }
+    ],
+    "language": "unknown"
+  },
+  {
+    "dataset": "Mixed Language",
+    "text": "O Sr. François Martin, né le 22 juin 1978, trabalha na empresa TechVision GmbH em Frankfurt. His employee ID is EMP-456789. Contacto: fmartin@techvision.de.",
+    "full_text": "O Sr. François Martin, né le 22 juin 1978, trabalha na empresa TechVision GmbH em Frankfurt. His employee ID is EMP-456789. Contacto: fmartin@techvision.de.",
+    "ground_truth": [
+      {
+        "text": "François Martin",
+        "label": "person"
+      },
+      {
+        "text": "22 juin 1978",
+        "label": "date_of_birth"
+      },
+      {
+        "text": "TechVision GmbH",
+        "label": "organization"
+      },
+      {
+        "text": "Frankfurt",
+        "label": "address"
+      },
+      {
+        "text": "EMP-456789",
+        "label": "student_id_number"
+      },
+      {
+        "text": "fmartin@techvision.de",
+        "label": "email"
+      }
+    ],
+    "predictions": [
+      {
+        "text": "François Martin",
+        "label": "person",
+        "score": 0.9965458512306213,
+        "status": "TP"
+      },
+      {
+        "text": "22 juin 1978",
+        "label": "date_of_birth",
+        "score": 0.9538624882698059,
+        "status": "TP"
+      },
+      {
+        "text": "TechVision GmbH",
+        "label": "organization",
+        "score": 0.999497652053833,
+        "status": "TP"
+      },
+      {
+        "text": "Frankfurt",
+        "label": "location",
+        "score": 0.9852141737937927,
+        "status": "FP"
+      },
+      {
+        "text": "fmartin@techvision.de",
+        "label": "email",
+        "score": 0.9988721013069153,
+        "status": "TP"
+      }
+    ],
+    "missed": [
+      {
+        "text": "Frankfurt",
+        "label": "address",
+        "status": "FN"
+      },
+      {
+        "text": "EMP-456789",
+        "label": "student_id_number",
+        "status": "FN"
+      }
+    ],
+    "language": "unknown"
+  },
+  {
+    "dataset": "Mixed Language",
+    "text": "Sehr geehrte Frau Sophie Lefèvre, grazie per la sua prenotazione. Your flight AF1234 departs from Paris CDG el 20 de marzo de 2026. Numéro de passeport: FR98765432.",
+    "full_text": "Sehr geehrte Frau Sophie Lefèvre, grazie per la sua prenotazione. Your flight AF1234 departs from Paris CDG el 20 de marzo de 2026. Numéro de passeport: FR98765432.",
+    "ground_truth": [
+      {
+        "text": "Sophie Lefèvre",
+        "label": "person"
+      },
+      {
+        "text": "AF1234",
+        "label": "flight_number"
+      },
+      {
+        "text": "Paris CDG",
+        "label": "address"
+      },
+      {
+        "text": "20 de marzo de 2026",
+        "label": "date_of_birth"
+      },
+      {
+        "text": "FR98765432",
+        "label": "passport_number"
+      }
+    ],
+    "predictions": [
+      {
+        "text": "Sophie Lefèvre",
+        "label": "person",
+        "score": 0.8512431383132935,
+        "status": "TP"
+      },
+      {
+        "text": "AF1234",
+        "label": "flight_number",
+        "score": 0.9959235191345215,
+        "status": "TP"
+      },
+      {
+        "text": "Paris CDG",
+        "label": "location",
+        "score": 0.9965846538543701,
+        "status": "FP"
+      },
+      {
+        "text": "20 de marzo de 2026",
+        "label": "date",
+        "score": 0.9955423474311829,
+        "status": "FP"
+      },
+      {
+        "text": "FR98765432",
+        "label": "passport_number",
+        "score": 0.9993240833282471,
+        "status": "TP"
+      }
+    ],
+    "missed": [
+      {
+        "text": "Paris CDG",
+        "label": "address",
+        "status": "FN"
+      },
+      {
+        "text": "20 de marzo de 2026",
+        "label": "date_of_birth",
+        "status": "FN"
+      }
+    ],
+    "language": "unknown"
+  },
+  {
+    "dataset": "Mixed Language",
+    "text": "Invoice for: Marco Rossi, indirizzo Via Roma 15, Milano. Facturación a tarjeta de crédito Mastercard ****7890, CVV 456. Total: €1,250.00. Thank you for your business!",
+    "full_text": "Invoice for: Marco Rossi, indirizzo Via Roma 15, Milano. Facturación a tarjeta de crédito Mastercard ****7890, CVV 456. Total: €1,250.00. Thank you for your business!",
+    "ground_truth": [
+      {
+        "text": "Marco Rossi",
+        "label": "person"
+      },
+      {
+        "text": "Via Roma 15, Milano",
+        "label": "address"
+      },
+      {
+        "text": "7890",
+        "label": "credit_card_number"
+      },
+      {
+        "text": "456",
+        "label": "credit_card_cvv"
+      }
+    ],
+    "predictions": [
+      {
+        "text": "Marco Rossi",
+        "label": "person",
+        "score": 0.9998725652694702,
+        "status": "TP"
+      },
+      {
+        "text": "Via Roma 15, Milano",
+        "label": "address",
+        "score": 0.9979041814804077,
+        "status": "TP"
+      },
+      {
+        "text": "Mastercard ****7890",
+        "label": "credit_card_number",
+        "score": 0.9102963805198669,
+        "status": "FP"
+      },
+      {
+        "text": "456",
+        "label": "credit_card_cvv",
+        "score": 0.997016429901123,
+        "status": "TP"
+      }
+    ],
+    "missed": [
+      {
+        "text": "7890",
+        "label": "credit_card_number",
+        "status": "FN"
+      }
+    ],
+    "language": "unknown"
+  },
+  {
+    "dataset": "Mixed Language",
+    "text": "Cher client Pierre Moreau, su reserva en Hotel Ritz Lisboa está confirmada. Ihre Buchungsnummer ist RES-789012. Contact: +351 21 123 4567 or pierre.moreau@email.fr.",
+    "full_text": "Cher client Pierre Moreau, su reserva en Hotel Ritz Lisboa está confirmada. Ihre Buchungsnummer ist RES-789012. Contact: +351 21 123 4567 or pierre.moreau@email.fr.",
+    "ground_truth": [
+      {
+        "text": "Pierre Moreau",
+        "label": "person"
+      },
+      {
+        "text": "Hotel Ritz Lisboa",
+        "label": "organization"
+      },
+      {
+        "text": "RES-789012",
+        "label": "transaction_number"
+      },
+      {
+        "text": "+351 21 123 4567",
+        "label": "phone_number"
+      },
+      {
+        "text": "pierre.moreau@email.fr",
+        "label": "email"
+      }
+    ],
+    "predictions": [
+      {
+        "text": "Pierre Moreau",
+        "label": "person",
+        "score": 0.9998278617858887,
+        "status": "TP"
+      },
+      {
+        "text": "Hotel Ritz Lisboa",
+        "label": "organization",
+        "score": 0.9894598722457886,
+        "status": "TP"
+      },
+      {
+        "text": "+351 21 123 4567",
+        "label": "phone_number",
+        "score": 0.9955874681472778,
+        "status": "TP"
+      },
+      {
+        "text": "pierre.moreau@email.fr",
+        "label": "email",
+        "score": 0.9985300302505493,
+        "status": "TP"
+      }
+    ],
+    "missed": [
+      {
+        "text": "RES-789012",
+        "label": "transaction_number",
+        "status": "FN"
+      }
+    ],
+    "language": "unknown"
+  },
+  {
+    "dataset": "Mixed Language",
+    "text": "Paziente: Giulia Ferrari, geboren am 15. März 1982, fue diagnosticada con hypertension. Traitement prescrit: Lisinopril 10mg. Please contact Dr. Klaus Weber at +49 30 9876 5432.",
+    "full_text": "Paziente: Giulia Ferrari, geboren am 15. März 1982, fue diagnosticada con hypertension. Traitement prescrit: Lisinopril 10mg. Please contact Dr. Klaus Weber at +49 30 9876 5432.",
+    "ground_truth": [
+      {
+        "text": "Giulia Ferrari",
+        "label": "person"
+      },
+      {
+        "text": "15. März 1982",
+        "label": "date_of_birth"
+      },
+      {
+        "text": "hypertension",
+        "label": "medical_condition"
+      },
+      {
+        "text": "Lisinopril",
+        "label": "medication"
+      },
+      {
+        "text": "Dr. Klaus Weber",
+        "label": "person"
+      },
+      {
+        "text": "+49 30 9876 5432",
+        "label": "phone_number"
+      }
+    ],
+    "predictions": [
+      {
+        "text": "Giulia Ferrari",
+        "label": "person",
+        "score": 0.9997945427894592,
+        "status": "TP"
+      },
+      {
+        "text": "15. März 1982",
+        "label": "date_of_birth",
+        "score": 0.9660146832466125,
+        "status": "TP"
+      },
+      {
+        "text": "hypertension",
+        "label": "medical_condition",
+        "score": 0.9957101345062256,
+        "status": "TP"
+      },
+      {
+        "text": "Lisinopril 10mg",
+        "label": "medication",
+        "score": 0.9917342662811279,
+        "status": "FP"
+      },
+      {
+        "text": "Dr. Klaus Weber",
+        "label": "person",
+        "score": 0.9967809915542603,
+        "status": "TP"
+      },
+      {
+        "text": "+49 30 9876 5432",
+        "label": "phone_number",
+        "score": 0.9948681592941284,
+        "status": "TP"
+      }
+    ],
+    "missed": [
+      {
+        "text": "Lisinopril",
+        "label": "medication",
+        "status": "FN"
+      }
+    ],
+    "language": "unknown"
+  },
+  {
+    "dataset": "Mixed Language",
+    "text": "Estimado Sr. João Santos, your IBAN PT50 0002 0123 4567 8901 234 has been verified. Ihre Überweisung von €5,000 wurde bearbeitet. Merci de votre confiance!",
+    "full_text": "Estimado Sr. João Santos, your IBAN PT50 0002 0123 4567 8901 234 has been verified. Ihre Überweisung von €5,000 wurde bearbeitet. Merci de votre confiance!",
+    "ground_truth": [
+      {
+        "text": "João Santos",
+        "label": "person"
+      },
+      {
+        "text": "PT50 0002 0123 4567 8901 234",
+        "label": "iban"
+      }
+    ],
+    "predictions": [
+      {
+        "text": "João Santos",
+        "label": "person",
+        "score": 0.83957839012146,
+        "status": "TP"
+      },
+      {
+        "text": "PT50 0002 0123 4567 8901 234",
+        "label": "iban",
+        "score": 0.9830641150474548,
+        "status": "TP"
+      }
+    ],
+    "missed": [],
+    "language": "unknown"
+  },
+  {
+    "dataset": "Mixed Language",
+    "text": "Booking confirmed for Herr Michael Braun e sua esposa Maria. Volo LH456 da Frankfurt a Roma il 25 aprile 2026. Pasaportes: DE12345678 y ES87654321. Have a nice trip!",
+    "full_text": "Booking confirmed for Herr Michael Braun e sua esposa Maria. Volo LH456 da Frankfurt a Roma il 25 aprile 2026. Pasaportes: DE12345678 y ES87654321. Have a nice trip!",
+    "ground_truth": [
+      {
+        "text": "Michael Braun",
+        "label": "person"
+      },
+      {
+        "text": "Maria",
+        "label": "person"
+      },
+      {
+        "text": "LH456",
+        "label": "flight_number"
+      },
+      {
+        "text": "Frankfurt",
+        "label": "address"
+      },
+      {
+        "text": "Roma",
+        "label": "address"
+      },
+      {
+        "text": "25 aprile 2026",
+        "label": "date_of_birth"
+      },
+      {
+        "text": "DE12345678",
+        "label": "passport_number"
+      },
+      {
+        "text": "ES87654321",
+        "label": "passport_number"
+      }
+    ],
+    "predictions": [
+      {
+        "text": "Herr Michael Braun",
+        "label": "person",
+        "score": 0.9790595769882202,
+        "status": "FP"
+      },
+      {
+        "text": "Maria",
+        "label": "person",
+        "score": 0.7535379528999329,
+        "status": "TP"
+      },
+      {
+        "text": "Volo LH456",
+        "label": "flight_number",
+        "score": 0.9366205930709839,
+        "status": "FP"
+      },
+      {
+        "text": "Frankfurt",
+        "label": "location",
+        "score": 0.9777683615684509,
+        "status": "FP"
+      },
+      {
+        "text": "Roma",
+        "label": "location",
+        "score": 0.9806095957756042,
+        "status": "FP"
+      },
+      {
+        "text": "25 aprile 2026",
+        "label": "date",
+        "score": 0.9976601600646973,
+        "status": "FP"
+      },
+      {
+        "text": "DE12345678",
+        "label": "passport_number",
+        "score": 0.9986572265625,
+        "status": "TP"
+      },
+      {
+        "text": "ES87654321",
+        "label": "passport_number",
+        "score": 0.998584508895874,
+        "status": "TP"
+      }
+    ],
+    "missed": [
+      {
+        "text": "Michael Braun",
+        "label": "person",
+        "status": "FN"
+      },
+      {
+        "text": "LH456",
+        "label": "flight_number",
+        "status": "FN"
+      },
+      {
+        "text": "Frankfurt",
+        "label": "address",
+        "status": "FN"
+      },
+      {
+        "text": "Roma",
+        "label": "address",
+        "status": "FN"
+      },
+      {
+        "text": "25 aprile 2026",
+        "label": "date_of_birth",
+        "status": "FN"
+      }
+    ],
+    "language": "unknown"
+  },
+  {
+    "dataset": "Mixed Language",
+    "text": "Le patient André Dupont, residente em Lisboa, nascido em 10/05/1970, was admitted to Ospedale San Raffaele. Diagnóstico: diabetes tipo 2. Verschriebene Medikamente: Metformin.",
+    "full_text": "Le patient André Dupont, residente em Lisboa, nascido em 10/05/1970, was admitted to Ospedale San Raffaele. Diagnóstico: diabetes tipo 2. Verschriebene Medikamente: Metformin.",
+    "ground_truth": [
+      {
+        "text": "André Dupont",
+        "label": "person"
+      },
+      {
+        "text": "Lisboa",
+        "label": "address"
+      },
+      {
+        "text": "10/05/1970",
+        "label": "date_of_birth"
+      },
+      {
+        "text": "Ospedale San Raffaele",
+        "label": "organization"
+      },
+      {
+        "text": "diabetes tipo 2",
+        "label": "medical_condition"
+      },
+      {
+        "text": "Metformin",
+        "label": "medication"
+      }
+    ],
+    "predictions": [
+      {
+        "text": "André Dupont",
+        "label": "person",
+        "score": 0.9999179840087891,
+        "status": "TP"
+      },
+      {
+        "text": "Lisboa",
+        "label": "location",
+        "score": 0.9923322200775146,
+        "status": "FP"
+      },
+      {
+        "text": "10/05/1970",
+        "label": "date_of_birth",
+        "score": 0.9870748519897461,
+        "status": "TP"
+      },
+      {
+        "text": "Ospedale San Raffaele",
+        "label": "organization",
+        "score": 0.9972121119499207,
+        "status": "TP"
+      },
+      {
+        "text": "diabetes tipo 2",
+        "label": "medical_condition",
+        "score": 0.9977512955665588,
+        "status": "TP"
+      },
+      {
+        "text": "Metformin",
+        "label": "medication",
+        "score": 0.9992293119430542,
+        "status": "TP"
+      }
+    ],
+    "missed": [
+      {
+        "text": "Lisboa",
+        "label": "address",
+        "status": "FN"
+      }
+    ],
+    "language": "unknown"
+  },
+  {
+    "dataset": "Mixed Language",
+    "text": "Caro cliente Roberto Silva, su cuenta bancaria ES91 2100 0418 4502 0005 1332 está activa. Your card ending 5678 expires le 12/28. Kontaktieren Sie uns: +34 91 555 1234.",
+    "full_text": "Caro cliente Roberto Silva, su cuenta bancaria ES91 2100 0418 4502 0005 1332 está activa. Your card ending 5678 expires le 12/28. Kontaktieren Sie uns: +34 91 555 1234.",
+    "ground_truth": [
+      {
+        "text": "Roberto Silva",
+        "label": "person"
+      },
+      {
+        "text": "ES91 2100 0418 4502 0005 1332",
+        "label": "iban"
+      },
+      {
+        "text": "5678",
+        "label": "credit_card_number"
+      },
+      {
+        "text": "12/28",
+        "label": "credit_card_expiration_date"
+      },
+      {
+        "text": "+34 91 555 1234",
+        "label": "phone_number"
+      }
+    ],
+    "predictions": [
+      {
+        "text": "Roberto Silva",
+        "label": "person",
+        "score": 0.9997487664222717,
+        "status": "TP"
+      },
+      {
+        "text": "ES91 2100 0418 4502 0005 1332",
+        "label": "bank_account_number",
+        "score": 0.9982993006706238,
+        "status": "FP"
+      },
+      {
+        "text": "5678",
+        "label": "credit_card_number",
+        "score": 0.7960817813873291,
+        "status": "TP"
+      },
+      {
+        "text": "12/28",
+        "label": "date",
+        "score": 0.9271736145019531,
+        "status": "FP"
+      },
+      {
+        "text": "+34 91 555 1234",
+        "label": "phone_number",
+        "score": 0.9977881908416748,
+        "status": "TP"
+      }
+    ],
+    "missed": [
+      {
+        "text": "ES91 2100 0418 4502 0005 1332",
+        "label": "iban",
+        "status": "FN"
+      },
+      {
+        "text": "12/28",
+        "label": "credit_card_expiration_date",
+        "status": "FN"
+      }
+    ],
+    "language": "unknown"
+  },
+  {
+    "dataset": "Mixed Language",
+    "text": "Madame Claire Bernard, née le 5 août 1985, il suo volo EK789 parte da Dubai vers Paris le 30/03/2026. Gepäckfreigabe: 2 maletas. Your e-ticket: TKT-456789012.",
+    "full_text": "Madame Claire Bernard, née le 5 août 1985, il suo volo EK789 parte da Dubai vers Paris le 30/03/2026. Gepäckfreigabe: 2 maletas. Your e-ticket: TKT-456789012.",
+    "ground_truth": [
+      {
+        "text": "Claire Bernard",
+        "label": "person"
+      },
+      {
+        "text": "5 août 1985",
+        "label": "date_of_birth"
+      },
+      {
+        "text": "EK789",
+        "label": "flight_number"
+      },
+      {
+        "text": "Dubai",
+        "label": "address"
+      },
+      {
+        "text": "Paris",
+        "label": "address"
+      },
+      {
+        "text": "30/03/2026",
+        "label": "date_of_birth"
+      },
+      {
+        "text": "TKT-456789012",
+        "label": "transaction_number"
+      }
+    ],
+    "predictions": [
+      {
+        "text": "Madame Claire Bernard",
+        "label": "person",
+        "score": 0.9436973929405212,
+        "status": "FP"
+      },
+      {
+        "text": "5 août 1985",
+        "label": "date_of_birth",
+        "score": 0.98143470287323,
+        "status": "TP"
+      },
+      {
+        "text": "EK789",
+        "label": "flight_number",
+        "score": 0.9976080656051636,
+        "status": "TP"
+      },
+      {
+        "text": "Dubai",
+        "label": "location",
+        "score": 0.9729316830635071,
+        "status": "FP"
+      },
+      {
+        "text": "Paris",
+        "label": "location",
+        "score": 0.9615099430084229,
+        "status": "FP"
+      },
+      {
+        "text": "30/03/2026",
+        "label": "date",
+        "score": 0.9961211085319519,
+        "status": "FP"
+      },
+      {
+        "text": "TKT-456789012",
+        "label": "email",
+        "score": 0.6108480095863342,
+        "status": "FP"
+      }
+    ],
+    "missed": [
+      {
+        "text": "Claire Bernard",
+        "label": "person",
+        "status": "FN"
+      },
+      {
+        "text": "Dubai",
+        "label": "address",
+        "status": "FN"
+      },
+      {
+        "text": "Paris",
+        "label": "address",
+        "status": "FN"
+      },
+      {
+        "text": "30/03/2026",
+        "label": "date_of_birth",
+        "status": "FN"
+      },
+      {
+        "text": "TKT-456789012",
+        "label": "transaction_number",
+        "status": "FN"
+      }
+    ],
+    "language": "unknown"
+  },
+  {
+    "dataset": "Mixed Language",
+    "text": "Guten Tag Herr Antonio Conti! Your reservation at Hôtel de Paris est confirmée. Check-in: 15 de junho de 2026. Contacto de emergencia: +377 93 50 65 00. Grazie mille!",
+    "full_text": "Guten Tag Herr Antonio Conti! Your reservation at Hôtel de Paris est confirmée. Check-in: 15 de junho de 2026. Contacto de emergencia: +377 93 50 65 00. Grazie mille!",
+    "ground_truth": [
+      {
+        "text": "Antonio Conti",
+        "label": "person"
+      },
+      {
+        "text": "Hôtel de Paris",
+        "label": "organization"
+      },
+      {
+        "text": "15 de junho de 2026",
+        "label": "date_of_birth"
+      },
+      {
+        "text": "+377 93 50 65 00",
+        "label": "phone_number"
+      }
+    ],
+    "predictions": [
+      {
+        "text": "Herr Antonio Conti",
+        "label": "person",
+        "score": 0.9709859490394592,
+        "status": "FP"
+      },
+      {
+        "text": "Hôtel de Paris",
+        "label": "organization",
+        "score": 0.9913171529769897,
+        "status": "TP"
+      },
+      {
+        "text": "15 de junho de 2026",
+        "label": "date",
+        "score": 0.9915217161178589,
+        "status": "FP"
+      },
+      {
+        "text": "+377 93 50 65 00",
+        "label": "phone_number",
+        "score": 0.9748311042785645,
+        "status": "TP"
+      }
+    ],
+    "missed": [
+      {
+        "text": "Antonio Conti",
+        "label": "person",
+        "status": "FN"
+      },
+      {
+        "text": "15 de junho de 2026",
+        "label": "date_of_birth",
+        "status": "FN"
+      }
+    ],
+    "language": "unknown"
+  },
+  {
+    "dataset": "Mixed Language",
+    "text": "Atención: El Sr. Thomas Fischer, permis de conduire DE-B-12345678, alugou um carro em Milano Malpensa. Rental agreement: AGR-2026-789. Please return by 10 aprile 2026.",
+    "full_text": "Atención: El Sr. Thomas Fischer, permis de conduire DE-B-12345678, alugou um carro em Milano Malpensa. Rental agreement: AGR-2026-789. Please return by 10 aprile 2026.",
+    "ground_truth": [
+      {
+        "text": "Thomas Fischer",
+        "label": "person"
+      },
+      {
+        "text": "DE-B-12345678",
+        "label": "driver_license_number"
+      },
+      {
+        "text": "Milano Malpensa",
+        "label": "address"
+      },
+      {
+        "text": "AGR-2026-789",
+        "label": "transaction_number"
+      },
+      {
+        "text": "10 aprile 2026",
+        "label": "date_of_birth"
+      }
+    ],
+    "predictions": [
+      {
+        "text": "Thomas Fischer",
+        "label": "person",
+        "score": 0.9941001534461975,
+        "status": "TP"
+      },
+      {
+        "text": "DE-B-12345678",
+        "label": "driver_license_number",
+        "score": 0.9639434814453125,
+        "status": "TP"
+      },
+      {
+        "text": "Milano Malpensa",
+        "label": "location",
+        "score": 0.9933850169181824,
+        "status": "FP"
+      },
+      {
+        "text": "10 aprile 2026",
+        "label": "date",
+        "score": 0.9941880702972412,
+        "status": "FP"
+      }
+    ],
+    "missed": [
+      {
+        "text": "Milano Malpensa",
+        "label": "address",
+        "status": "FN"
+      },
+      {
+        "text": "AGR-2026-789",
+        "label": "transaction_number",
+        "status": "FN"
+      },
+      {
+        "text": "10 aprile 2026",
+        "label": "date_of_birth",
+        "status": "FN"
+      }
+    ],
+    "language": "unknown"
+  },
+  {
+    "dataset": "Mixed Language",
+    "text": "Prezada Sra. Elena Müller, your insurance policy INS-DE-456789 cubre tratamiento médico in Italia e Francia. Kontakt: elena.mueller@versicherung.de, tel: +49 89 123 4567.",
+    "full_text": "Prezada Sra. Elena Müller, your insurance policy INS-DE-456789 cubre tratamiento médico in Italia e Francia. Kontakt: elena.mueller@versicherung.de, tel: +49 89 123 4567.",
+    "ground_truth": [
+      {
+        "text": "Elena Müller",
+        "label": "person"
+      },
+      {
+        "text": "INS-DE-456789",
+        "label": "insurance_number"
+      },
+      {
+        "text": "elena.mueller@versicherung.de",
+        "label": "email"
+      },
+      {
+        "text": "+49 89 123 4567",
+        "label": "phone_number"
+      }
+    ],
+    "predictions": [
+      {
+        "text": "Sra. Elena Müller",
+        "label": "person",
+        "score": 0.8296201825141907,
+        "status": "FP"
+      },
+      {
+        "text": "INS-DE-456789",
+        "label": "insurance_number",
+        "score": 0.976293683052063,
+        "status": "TP"
+      },
+      {
+        "text": "Italia e Francia",
+        "label": "location",
+        "score": 0.8694819808006287,
+        "status": "FP"
+      },
+      {
+        "text": "elena.mueller@versicherung.de",
+        "label": "email",
+        "score": 0.9984488487243652,
+        "status": "TP"
+      },
+      {
+        "text": "+49 89 123 4567",
+        "label": "phone_number",
+        "score": 0.9984466433525085,
+        "status": "TP"
+      }
+    ],
+    "missed": [
+      {
+        "text": "Elena Müller",
+        "label": "person",
+        "status": "FN"
+      }
+    ],
+    "language": "unknown"
+  },
+  {
+    "dataset": "Mixed Language",
+    "text": "Patient record: Monsieur Luis García, CPF 123.456.789-00, was treated at Charité Berlin für bronchitis. Medicación: Amoxicillin 500mg. Follow-up il 20 marzo 2026.",
+    "full_text": "Patient record: Monsieur Luis García, CPF 123.456.789-00, was treated at Charité Berlin für bronchitis. Medicación: Amoxicillin 500mg. Follow-up il 20 marzo 2026.",
+    "ground_truth": [
+      {
+        "text": "Luis García",
+        "label": "person"
+      },
+      {
+        "text": "123.456.789-00",
+        "label": "cpf"
+      },
+      {
+        "text": "Charité Berlin",
+        "label": "organization"
+      },
+      {
+        "text": "bronchitis",
+        "label": "medical_condition"
+      },
+      {
+        "text": "Amoxicillin",
+        "label": "medication"
+      },
+      {
+        "text": "20 marzo 2026",
+        "label": "date_of_birth"
+      }
+    ],
+    "predictions": [
+      {
+        "text": "Monsieur Luis García",
+        "label": "person",
+        "score": 0.9911391139030457,
+        "status": "FP"
+      },
+      {
+        "text": "123.456.789-00",
+        "label": "cpf",
+        "score": 0.9762327671051025,
+        "status": "TP"
+      },
+      {
+        "text": "Charité Berlin",
+        "label": "organization",
+        "score": 0.9942678213119507,
+        "status": "TP"
+      },
+      {
+        "text": "bronchitis",
+        "label": "medical_condition",
+        "score": 0.9766075015068054,
+        "status": "TP"
+      },
+      {
+        "text": "Amoxicillin 500mg",
+        "label": "medication",
+        "score": 0.9948161244392395,
+        "status": "FP"
+      },
+      {
+        "text": "20 marzo 2026",
+        "label": "date",
+        "score": 0.9962061643600464,
+        "status": "FP"
+      }
+    ],
+    "missed": [
+      {
+        "text": "Luis García",
+        "label": "person",
+        "status": "FN"
+      },
+      {
+        "text": "Amoxicillin",
+        "label": "medication",
+        "status": "FN"
+      },
+      {
+        "text": "20 marzo 2026",
+        "label": "date_of_birth",
+        "status": "FN"
+      }
+    ],
+    "language": "unknown"
+  },
+  {
+    "dataset": "Mixed Language",
+    "text": "Buongiorno! Votre commande pour Herr Peter Hoffmann, dirección Av. Paulista 1000, São Paulo, has been shipped. Tracking: BR123456789PT. Danke für Ihren Einkauf!",
+    "full_text": "Buongiorno! Votre commande pour Herr Peter Hoffmann, dirección Av. Paulista 1000, São Paulo, has been shipped. Tracking: BR123456789PT. Danke für Ihren Einkauf!",
+    "ground_truth": [
+      {
+        "text": "Peter Hoffmann",
+        "label": "person"
+      },
+      {
+        "text": "Av. Paulista 1000, São Paulo",
+        "label": "address"
+      },
+      {
+        "text": "BR123456789PT",
+        "label": "transaction_number"
+      }
+    ],
+    "predictions": [
+      {
+        "text": "Herr Peter Hoffmann",
+        "label": "person",
+        "score": 0.9924887418746948,
+        "status": "FP"
+      },
+      {
+        "text": "Av. Paulista 1000, São Paulo",
+        "label": "address",
+        "score": 0.9773040413856506,
+        "status": "TP"
+      },
+      {
+        "text": "BR123456789PT",
+        "label": "transaction_number",
+        "score": 0.5658099055290222,
+        "status": "TP"
+      }
+    ],
+    "missed": [
+      {
+        "text": "Peter Hoffmann",
+        "label": "person",
+        "status": "FN"
+      }
+    ],
+    "language": "unknown"
+  },
+  {
+    "dataset": "Mixed Language",
+    "text": "Conferma prenotazione: Madame Isabelle Petit, pasaporte FR12345678, voo TAP1234 de Lisboa para Paris. Abflug: 25. Juni 2026 um 14:30. Bon voyage!",
+    "full_text": "Conferma prenotazione: Madame Isabelle Petit, pasaporte FR12345678, voo TAP1234 de Lisboa para Paris. Abflug: 25. Juni 2026 um 14:30. Bon voyage!",
+    "ground_truth": [
+      {
+        "text": "Isabelle Petit",
+        "label": "person"
+      },
+      {
+        "text": "FR12345678",
+        "label": "passport_number"
+      },
+      {
+        "text": "TAP1234",
+        "label": "flight_number"
+      },
+      {
+        "text": "Lisboa",
+        "label": "address"
+      },
+      {
+        "text": "Paris",
+        "label": "address"
+      },
+      {
+        "text": "25. Juni 2026",
+        "label": "date_of_birth"
+      }
+    ],
+    "predictions": [
+      {
+        "text": "Madame Isabelle Petit",
+        "label": "person",
+        "score": 0.9943270087242126,
+        "status": "FP"
+      },
+      {
+        "text": "FR12345678",
+        "label": "passport_number",
+        "score": 0.9820514917373657,
+        "status": "TP"
+      },
+      {
+        "text": "TAP1234",
+        "label": "flight_number",
+        "score": 0.9189226627349854,
+        "status": "TP"
+      },
+      {
+        "text": "Lisboa",
+        "label": "location",
+        "score": 0.9262945652008057,
+        "status": "FP"
+      },
+      {
+        "text": "Paris",
+        "label": "location",
+        "score": 0.9416691064834595,
+        "status": "FP"
+      },
+      {
+        "text": "25. Juni 2026",
+        "label": "date",
+        "score": 0.9353047609329224,
+        "status": "FP"
+      }
+    ],
+    "missed": [
+      {
+        "text": "Isabelle Petit",
+        "label": "person",
+        "status": "FN"
+      },
+      {
+        "text": "Lisboa",
+        "label": "address",
+        "status": "FN"
+      },
+      {
+        "text": "Paris",
+        "label": "address",
+        "status": "FN"
+      },
+      {
+        "text": "25. Juni 2026",
+        "label": "date_of_birth",
+        "status": "FN"
+      }
+    ],
+    "language": "unknown"
+  },
+  {
+    "dataset": "Mixed Language",
+    "text": "Dear Signor Alessandro Verdi, su número de seguridad social IT-12345678901 está registrado. Votre adresse: Rua Augusta 50, Lisboa. Call us: +351 21 987 6543.",
+    "full_text": "Dear Signor Alessandro Verdi, su número de seguridad social IT-12345678901 está registrado. Votre adresse: Rua Augusta 50, Lisboa. Call us: +351 21 987 6543.",
+    "ground_truth": [
+      {
+        "text": "Alessandro Verdi",
+        "label": "person"
+      },
+      {
+        "text": "IT-12345678901",
+        "label": "social_security_number"
+      },
+      {
+        "text": "Rua Augusta 50, Lisboa",
+        "label": "address"
+      },
+      {
+        "text": "+351 21 987 6543",
+        "label": "phone_number"
+      }
+    ],
+    "predictions": [
+      {
+        "text": "Alessandro Verdi",
+        "label": "person",
+        "score": 0.9570525884628296,
+        "status": "TP"
+      },
+      {
+        "text": "IT-12345678901",
+        "label": "social_security_number",
+        "score": 0.9961507320404053,
+        "status": "TP"
+      },
+      {
+        "text": "Rua Augusta 50, Lisboa",
+        "label": "address",
+        "score": 0.9986509680747986,
+        "status": "TP"
+      },
+      {
+        "text": "+351 21 987 6543",
+        "label": "phone_number",
+        "score": 0.9980140924453735,
+        "status": "TP"
+      }
+    ],
+    "missed": [],
+    "language": "unknown"
+  },
+  {
+    "dataset": "Mixed Language",
+    "text": "Rechnung für: Señora Carmen López, codice fiscale LPZCMN80A41H501X, wohnhaft in Via Veneto 10, Roma. Payment received: €850.00. Merci beaucoup!",
+    "full_text": "Rechnung für: Señora Carmen López, codice fiscale LPZCMN80A41H501X, wohnhaft in Via Veneto 10, Roma. Payment received: €850.00. Merci beaucoup!",
+    "ground_truth": [
+      {
+        "text": "Carmen López",
+        "label": "person"
+      },
+      {
+        "text": "LPZCMN80A41H501X",
+        "label": "tax_identification_number"
+      },
+      {
+        "text": "Via Veneto 10, Roma",
+        "label": "address"
+      }
+    ],
+    "predictions": [
+      {
+        "text": "Señora Carmen López",
+        "label": "person",
+        "score": 0.9220222234725952,
+        "status": "FP"
+      },
+      {
+        "text": "LPZCMN80A41H501X",
+        "label": "tax_identification_number",
+        "score": 0.9935983419418335,
+        "status": "TP"
+      },
+      {
+        "text": "Via Veneto 10, Roma",
+        "label": "address",
+        "score": 0.9978690147399902,
+        "status": "TP"
+      }
+    ],
+    "missed": [
+      {
+        "text": "Carmen López",
+        "label": "person",
+        "status": "FN"
+      }
+    ],
+    "language": "unknown"
+  },
+  {
+    "dataset": "Mixed Language",
+    "text": "Aviso importante: O cliente Friedrich Weber, né le 10 janvier 1975, ha prenotato camera 305. Su tarjeta Visa **** 1234 fue cargada. Contact: +49 221 456 7890.",
+    "full_text": "Aviso importante: O cliente Friedrich Weber, né le 10 janvier 1975, ha prenotato camera 305. Su tarjeta Visa **** 1234 fue cargada. Contact: +49 221 456 7890.",
+    "ground_truth": [
+      {
+        "text": "Friedrich Weber",
+        "label": "person"
+      },
+      {
+        "text": "10 janvier 1975",
+        "label": "date_of_birth"
+      },
+      {
+        "text": "1234",
+        "label": "credit_card_number"
+      },
+      {
+        "text": "+49 221 456 7890",
+        "label": "phone_number"
+      }
+    ],
+    "predictions": [
+      {
+        "text": "Friedrich Weber",
+        "label": "person",
+        "score": 0.9998354911804199,
+        "status": "TP"
+      },
+      {
+        "text": "10 janvier 1975",
+        "label": "date_of_birth",
+        "score": 0.9665965437889099,
+        "status": "TP"
+      },
+      {
+        "text": "Visa **** 1234",
+        "label": "credit_card_number",
+        "score": 0.8635025024414062,
+        "status": "FP"
+      },
+      {
+        "text": "+49 221 456 7890",
+        "label": "phone_number",
+        "score": 0.9971016049385071,
+        "status": "TP"
+      }
+    ],
+    "missed": [
+      {
+        "text": "1234",
+        "label": "credit_card_number",
+        "status": "FN"
+      }
+    ],
+    "language": "unknown"
+  },
+  {
+    "dataset": "Mixed Language",
+    "text": "Appointment reminder: Dra. Sofia Costa, patiente née le 20/08/1988, tiene cita mañana at Clinica Sant'Andrea. Kontaktdaten: sofia.costa@clinica.pt, +39 06 1234 5678.",
+    "full_text": "Appointment reminder: Dra. Sofia Costa, patiente née le 20/08/1988, tiene cita mañana at Clinica Sant'Andrea. Kontaktdaten: sofia.costa@clinica.pt, +39 06 1234 5678.",
+    "ground_truth": [
+      {
+        "text": "Sofia Costa",
+        "label": "person"
+      },
+      {
+        "text": "20/08/1988",
+        "label": "date_of_birth"
+      },
+      {
+        "text": "Clinica Sant'Andrea",
+        "label": "organization"
+      },
+      {
+        "text": "sofia.costa@clinica.pt",
+        "label": "email"
+      },
+      {
+        "text": "+39 06 1234 5678",
+        "label": "phone_number"
+      }
+    ],
+    "predictions": [
+      {
+        "text": "Dra. Sofia Costa",
+        "label": "person",
+        "score": 0.9991672039031982,
+        "status": "FP"
+      },
+      {
+        "text": "20/08/1988",
+        "label": "date_of_birth",
+        "score": 0.9683371782302856,
+        "status": "TP"
+      },
+      {
+        "text": "Clinica Sant'Andrea",
+        "label": "organization",
+        "score": 0.995135486125946,
+        "status": "TP"
+      },
+      {
+        "text": "sofia.costa@clinica.pt",
+        "label": "email",
+        "score": 0.9989519119262695,
+        "status": "TP"
+      },
+      {
+        "text": "+39 06 1234 5678",
+        "label": "phone_number",
+        "score": 0.9961571097373962,
+        "status": "TP"
+      }
+    ],
+    "missed": [
+      {
+        "text": "Sofia Costa",
+        "label": "person",
+        "status": "FN"
+      }
+    ],
+    "language": "unknown"
+  },
+  {
+    "dataset": "Mixed Language",
+    "text": "Sehr geehrter Herr Carlos Fernandez, votre numéro de compte IT60 X054 2811 1010 0000 0123 456 è stato verificato. Su saldo: €12,500. Thank you for banking with us!",
+    "full_text": "Sehr geehrter Herr Carlos Fernandez, votre numéro de compte IT60 X054 2811 1010 0000 0123 456 è stato verificato. Su saldo: €12,500. Thank you for banking with us!",
+    "ground_truth": [
+      {
+        "text": "Carlos Fernandez",
+        "label": "person"
+      },
+      {
+        "text": "IT60 X054 2811 1010 0000 0123 456",
+        "label": "iban"
+      }
+    ],
+    "predictions": [
+      {
+        "text": "Carlos Fernandez",
+        "label": "person",
+        "score": 0.832782506942749,
+        "status": "TP"
+      },
+      {
+        "text": "IT60 X054 2811 1010 0000 0123 456",
+        "label": "bank_account_number",
+        "score": 0.9385969638824463,
+        "status": "FP"
+      }
+    ],
+    "missed": [
+      {
+        "text": "IT60 X054 2811 1010 0000 0123 456",
+        "label": "iban",
+        "status": "FN"
+      }
+    ],
+    "language": "unknown"
+  },
+  {
+    "dataset": "Mixed Language",
+    "text": "Bienvenue! Il passeggero Herr Daniel Schneider, passaporte DE98765432, embarca no voo BA789 de London a Madrid el 15 de mayo. Gute Reise!",
+    "full_text": "Bienvenue! Il passeggero Herr Daniel Schneider, passaporte DE98765432, embarca no voo BA789 de London a Madrid el 15 de mayo. Gute Reise!",
+    "ground_truth": [
+      {
+        "text": "Daniel Schneider",
+        "label": "person"
+      },
+      {
+        "text": "DE98765432",
+        "label": "passport_number"
+      },
+      {
+        "text": "BA789",
+        "label": "flight_number"
+      },
+      {
+        "text": "London",
+        "label": "address"
+      },
+      {
+        "text": "Madrid",
+        "label": "address"
+      },
+      {
+        "text": "15 de mayo",
+        "label": "date_of_birth"
+      }
+    ],
+    "predictions": [
+      {
+        "text": "Herr Daniel Schneider",
+        "label": "person",
+        "score": 0.9785133600234985,
+        "status": "FP"
+      },
+      {
+        "text": "DE98765432",
+        "label": "passport_number",
+        "score": 0.9904175400733948,
+        "status": "TP"
+      },
+      {
+        "text": "voo BA789",
+        "label": "flight_number",
+        "score": 0.9707323908805847,
+        "status": "FP"
+      },
+      {
+        "text": "London",
+        "label": "location",
+        "score": 0.9592708945274353,
+        "status": "FP"
+      },
+      {
+        "text": "Madrid",
+        "label": "location",
+        "score": 0.9707130193710327,
+        "status": "FP"
+      },
+      {
+        "text": "15 de mayo",
+        "label": "date",
+        "score": 0.994201123714447,
+        "status": "FP"
+      }
+    ],
+    "missed": [
+      {
+        "text": "Daniel Schneider",
+        "label": "person",
+        "status": "FN"
+      },
+      {
+        "text": "BA789",
+        "label": "flight_number",
+        "status": "FN"
+      },
+      {
+        "text": "London",
+        "label": "address",
+        "status": "FN"
+      },
+      {
+        "text": "Madrid",
+        "label": "address",
+        "status": "FN"
+      },
+      {
+        "text": "15 de mayo",
+        "label": "date_of_birth",
+        "status": "FN"
+      }
+    ],
+    "language": "unknown"
+  },
+  {
+    "dataset": "Mixed Language",
+    "text": "Notificación: La Sra. Marie Fontaine, residente en Hauptstraße 25, München, ha actualizado su teléfono. New number: +33 6 12 34 56 78. Grazie per l'aggiornamento!",
+    "full_text": "Notificación: La Sra. Marie Fontaine, residente en Hauptstraße 25, München, ha actualizado su teléfono. New number: +33 6 12 34 56 78. Grazie per l'aggiornamento!",
+    "ground_truth": [
+      {
+        "text": "Marie Fontaine",
+        "label": "person"
+      },
+      {
+        "text": "Hauptstraße 25, München",
+        "label": "address"
+      },
+      {
+        "text": "+33 6 12 34 56 78",
+        "label": "mobile_phone_number"
+      }
+    ],
+    "predictions": [
+      {
+        "text": "Marie Fontaine",
+        "label": "person",
+        "score": 0.9191187024116516,
+        "status": "TP"
+      },
+      {
+        "text": "Hauptstraße 25, München",
+        "label": "address",
+        "score": 0.9982598423957825,
+        "status": "TP"
+      },
+      {
+        "text": "+33 6 12 34 56 78",
+        "label": "phone_number",
+        "score": 0.9968158602714539,
+        "status": "FP"
+      }
+    ],
+    "missed": [
+      {
+        "text": "+33 6 12 34 56 78",
+        "label": "mobile_phone_number",
+        "status": "FN"
+      }
+    ],
+    "language": "unknown"
+  },
+  {
+    "dataset": "Mixed Language",
+    "text": "Medical alert: Patient Giuseppe Romano, né em 15 de março de 1960, diagnosed with asma. Verschriebenes Medikament: Salbutamol. Próxima cita: 10/04/2026. Please carry your inhaler.",
+    "full_text": "Medical alert: Patient Giuseppe Romano, né em 15 de março de 1960, diagnosed with asma. Verschriebenes Medikament: Salbutamol. Próxima cita: 10/04/2026. Please carry your inhaler.",
+    "ground_truth": [
+      {
+        "text": "Giuseppe Romano",
+        "label": "person"
+      },
+      {
+        "text": "15 de março de 1960",
+        "label": "date_of_birth"
+      },
+      {
+        "text": "asma",
+        "label": "medical_condition"
+      },
+      {
+        "text": "Salbutamol",
+        "label": "medication"
+      },
+      {
+        "text": "10/04/2026",
+        "label": "date_of_birth"
+      }
+    ],
+    "predictions": [
+      {
+        "text": "Giuseppe Romano",
+        "label": "person",
+        "score": 0.9990113973617554,
+        "status": "TP"
+      },
+      {
+        "text": "15 de março de 1960",
+        "label": "date_of_birth",
+        "score": 0.9581494331359863,
+        "status": "TP"
+      },
+      {
+        "text": "asma",
+        "label": "medical_condition",
+        "score": 0.9882530570030212,
+        "status": "TP"
+      },
+      {
+        "text": "Salbutamol",
+        "label": "medication",
+        "score": 0.9977620840072632,
+        "status": "TP"
+      },
+      {
+        "text": "10/04/2026",
+        "label": "date",
+        "score": 0.9955631494522095,
+        "status": "FP"
+      }
+    ],
+    "missed": [
+      {
+        "text": "10/04/2026",
+        "label": "date_of_birth",
+        "status": "FN"
+      }
+    ],
+    "language": "unknown"
+  },
+  {
+    "dataset": "Mixed Language",
+    "text": "Cher Monsieur Bruno Martins, la sua prenotazione presso Hotel Excelsior Barcelona è confermata. Datum: 20. April 2026. Contact: +34 93 123 4567, bmartins@email.pt.",
+    "full_text": "Cher Monsieur Bruno Martins, la sua prenotazione presso Hotel Excelsior Barcelona è confermata. Datum: 20. April 2026. Contact: +34 93 123 4567, bmartins@email.pt.",
+    "ground_truth": [
+      {
+        "text": "Bruno Martins",
+        "label": "person"
+      },
+      {
+        "text": "Hotel Excelsior Barcelona",
+        "label": "organization"
+      },
+      {
+        "text": "20. April 2026",
+        "label": "date_of_birth"
+      },
+      {
+        "text": "+34 93 123 4567",
+        "label": "phone_number"
+      },
+      {
+        "text": "bmartins@email.pt",
+        "label": "email"
+      }
+    ],
+    "predictions": [
+      {
+        "text": "Bruno Martins",
+        "label": "person",
+        "score": 0.9694216251373291,
+        "status": "TP"
+      },
+      {
+        "text": "Hotel Excelsior Barcelona",
+        "label": "organization",
+        "score": 0.9873966574668884,
+        "status": "TP"
+      },
+      {
+        "text": "20. April 2026",
+        "label": "date",
+        "score": 0.9896399974822998,
+        "status": "FP"
+      },
+      {
+        "text": "+34 93 123 4567",
+        "label": "phone_number",
+        "score": 0.9956969022750854,
+        "status": "TP"
+      },
+      {
+        "text": "bmartins@email.pt",
+        "label": "email",
+        "score": 0.9981716871261597,
+        "status": "TP"
+      }
+    ],
+    "missed": [
+      {
+        "text": "20. April 2026",
+        "label": "date_of_birth",
+        "status": "FN"
+      }
+    ],
+    "language": "unknown"
+  },
+  {
+    "dataset": "Mixed Language",
+    "text": "Liebe Kundin Frau Ana Oliveira, su pasaporte PT12345678 scade il 30 giugno 2027. Please renew avant la date d'expiration. Contacto: +49 30 555 1234.",
+    "full_text": "Liebe Kundin Frau Ana Oliveira, su pasaporte PT12345678 scade il 30 giugno 2027. Please renew avant la date d'expiration. Contacto: +49 30 555 1234.",
+    "ground_truth": [
+      {
+        "text": "Ana Oliveira",
+        "label": "person"
+      },
+      {
+        "text": "PT12345678",
+        "label": "passport_number"
+      },
+      {
+        "text": "30 giugno 2027",
+        "label": "passport_expiration_date"
+      },
+      {
+        "text": "+49 30 555 1234",
+        "label": "phone_number"
+      }
+    ],
+    "predictions": [
+      {
+        "text": "Frau Ana Oliveira",
+        "label": "person",
+        "score": 0.9948858618736267,
+        "status": "FP"
+      },
+      {
+        "text": "PT12345678",
+        "label": "passport_number",
+        "score": 0.9917693138122559,
+        "status": "TP"
+      },
+      {
+        "text": "30 giugno 2027",
+        "label": "passport_expiration_date",
+        "score": 0.9907351732254028,
+        "status": "TP"
+      },
+      {
+        "text": "+49 30 555 1234",
+        "label": "phone_number",
+        "score": 0.9946439266204834,
+        "status": "TP"
+      }
+    ],
+    "missed": [
+      {
+        "text": "Ana Oliveira",
+        "label": "person",
+        "status": "FN"
+      }
+    ],
+    "language": "unknown"
+  },
+  {
+    "dataset": "Mixed Language",
+    "text": "Confirmação de pedido: Herr Richard König, dirección de envío Praça do Comércio 10, Lisboa. Votre commande #ORD-2026-456789 a été expédiée. Tracking: DE123456789.",
+    "full_text": "Confirmação de pedido: Herr Richard König, dirección de envío Praça do Comércio 10, Lisboa. Votre commande #ORD-2026-456789 a été expédiée. Tracking: DE123456789.",
+    "ground_truth": [
+      {
+        "text": "Richard König",
+        "label": "person"
+      },
+      {
+        "text": "Praça do Comércio 10, Lisboa",
+        "label": "address"
+      },
+      {
+        "text": "ORD-2026-456789",
+        "label": "transaction_number"
+      },
+      {
+        "text": "DE123456789",
+        "label": "transaction_number"
+      }
+    ],
+    "predictions": [
+      {
+        "text": "Herr Richard König",
+        "label": "person",
+        "score": 0.9911841750144958,
+        "status": "FP"
+      },
+      {
+        "text": "Praça do Comércio 10, Lisboa",
+        "label": "address",
+        "score": 0.9960644841194153,
+        "status": "TP"
+      },
+      {
+        "text": "DE123456789",
+        "label": "transaction_number",
+        "score": 0.4245479106903076,
+        "status": "TP"
+      }
+    ],
+    "missed": [
+      {
+        "text": "Richard König",
+        "label": "person",
+        "status": "FN"
+      },
+      {
+        "text": "ORD-2026-456789",
+        "label": "transaction_number",
+        "status": "FN"
+      }
+    ],
+    "language": "unknown"
+  },
+  {
+    "dataset": "Mixed Language",
+    "text": "Estimado cliente Paul Dumont, sua conta no Banco Santander España, IBAN ES91 0049 1234 5678 9012 3456, è stata aggiornata. New balance: €8,750. Merci!",
+    "full_text": "Estimado cliente Paul Dumont, sua conta no Banco Santander España, IBAN ES91 0049 1234 5678 9012 3456, è stata aggiornata. New balance: €8,750. Merci!",
+    "ground_truth": [
+      {
+        "text": "Paul Dumont",
+        "label": "person"
+      },
+      {
+        "text": "Banco Santander España",
+        "label": "organization"
+      },
+      {
+        "text": "ES91 0049 1234 5678 9012 3456",
+        "label": "iban"
+      }
+    ],
+    "predictions": [
+      {
+        "text": "Paul Dumont",
+        "label": "person",
+        "score": 0.9997102618217468,
+        "status": "TP"
+      },
+      {
+        "text": "Banco Santander España",
+        "label": "organization",
+        "score": 0.9742485284805298,
+        "status": "TP"
+      },
+      {
+        "text": "ES91 0049 1234 5678 9012 3456",
+        "label": "iban",
+        "score": 0.9726521372795105,
+        "status": "TP"
+      }
+    ],
+    "missed": [],
+    "language": "unknown"
+  },
+  {
+    "dataset": "Mixed Language",
+    "text": "Hallo! La paziente Madame Laura Becker, geboren am 22.11.1992, necesita una receta para Omeprazol. Please fax to +33 1 45 67 89 00. Obrigado pela atenção!",
+    "full_text": "Hallo! La paziente Madame Laura Becker, geboren am 22.11.1992, necesita una receta para Omeprazol. Please fax to +33 1 45 67 89 00. Obrigado pela atenção!",
+    "ground_truth": [
+      {
+        "text": "Laura Becker",
+        "label": "person"
+      },
+      {
+        "text": "22.11.1992",
+        "label": "date_of_birth"
+      },
+      {
+        "text": "Omeprazol",
+        "label": "medication"
+      },
+      {
+        "text": "+33 1 45 67 89 00",
+        "label": "fax_number"
+      }
+    ],
+    "predictions": [
+      {
+        "text": "Madame Laura Becker",
+        "label": "person",
+        "score": 0.9524400234222412,
+        "status": "FP"
+      },
+      {
+        "text": "22.11.1992",
+        "label": "date_of_birth",
+        "score": 0.9763219356536865,
+        "status": "TP"
+      },
+      {
+        "text": "Omeprazol",
+        "label": "medication",
+        "score": 0.9983798265457153,
+        "status": "TP"
+      },
+      {
+        "text": "+33 1 45 67 89 00",
+        "label": "fax_number",
+        "score": 0.9945047497749329,
+        "status": "TP"
+      }
+    ],
+    "missed": [
+      {
+        "text": "Laura Becker",
+        "label": "person",
+        "status": "FN"
+      }
+    ],
+    "language": "unknown"
+  },
+  {
+    "dataset": "Mixed Language",
+    "text": "Avviso: Il Sig. Manuel Rodriguez, carteira de motorista ES-M-12345678, ha noleggiato un veicolo avec plaque d'immatriculation M-1234-AB. Return by 15 März 2026.",
+    "full_text": "Avviso: Il Sig. Manuel Rodriguez, carteira de motorista ES-M-12345678, ha noleggiato un veicolo avec plaque d'immatriculation M-1234-AB. Return by 15 März 2026.",
+    "ground_truth": [
+      {
+        "text": "Manuel Rodriguez",
+        "label": "person"
+      },
+      {
+        "text": "ES-M-12345678",
+        "label": "driver_license_number"
+      },
+      {
+        "text": "M-1234-AB",
+        "label": "license_plate_number"
+      },
+      {
+        "text": "15 März 2026",
+        "label": "date_of_birth"
+      }
+    ],
+    "predictions": [
+      {
+        "text": "Manuel Rodriguez",
+        "label": "person",
+        "score": 0.8805080652236938,
+        "status": "TP"
+      },
+      {
+        "text": "ES-M-12345678",
+        "label": "driver_license_number",
+        "score": 0.9755821228027344,
+        "status": "TP"
+      },
+      {
+        "text": "M-1234-AB",
+        "label": "license_plate_number",
+        "score": 0.8538637161254883,
+        "status": "TP"
+      },
+      {
+        "text": "15 März 2026",
+        "label": "date",
+        "score": 0.9918054342269897,
+        "status": "FP"
+      }
+    ],
+    "missed": [
+      {
+        "text": "15 März 2026",
+        "label": "date_of_birth",
+        "status": "FN"
+      }
+    ],
+    "language": "unknown"
+  },
+  {
+    "dataset": "Mixed Language",
+    "text": "Querida Sra. Ingrid Hoffmann, votre réservation sur le vol IB3456 de Madrid a Lisbonne est confirmée. Passport: DE12345678. Grazie per aver scelto Iberia!",
+    "full_text": "Querida Sra. Ingrid Hoffmann, votre réservation sur le vol IB3456 de Madrid a Lisbonne est confirmée. Passport: DE12345678. Grazie per aver scelto Iberia!",
+    "ground_truth": [
+      {
+        "text": "Ingrid Hoffmann",
+        "label": "person"
+      },
+      {
+        "text": "IB3456",
+        "label": "flight_number"
+      },
+      {
+        "text": "Madrid",
+        "label": "address"
+      },
+      {
+        "text": "Lisbonne",
+        "label": "address"
+      },
+      {
+        "text": "DE12345678",
+        "label": "passport_number"
+      },
+      {
+        "text": "Iberia",
+        "label": "organization"
+      }
+    ],
+    "predictions": [
+      {
+        "text": "Ingrid Hoffmann",
+        "label": "person",
+        "score": 0.914332926273346,
+        "status": "TP"
+      },
+      {
+        "text": "IB3456",
+        "label": "flight_number",
+        "score": 0.9944067001342773,
+        "status": "TP"
+      },
+      {
+        "text": "Madrid",
+        "label": "location",
+        "score": 0.9383541345596313,
+        "status": "FP"
+      },
+      {
+        "text": "Lisbonne",
+        "label": "location",
+        "score": 0.9469054341316223,
+        "status": "FP"
+      },
+      {
+        "text": "DE12345678",
+        "label": "passport_number",
+        "score": 0.9985017776489258,
+        "status": "TP"
+      },
+      {
+        "text": "Iberia",
+        "label": "organization",
+        "score": 0.9921293258666992,
+        "status": "TP"
+      }
+    ],
+    "missed": [
+      {
+        "text": "Madrid",
+        "label": "address",
+        "status": "FN"
+      },
+      {
+        "text": "Lisbonne",
+        "label": "address",
+        "status": "FN"
+      }
+    ],
+    "language": "unknown"
+  },
+  {
+    "dataset": "Mixed Language",
+    "text": "Gentile cliente Andrea Mancini, su seguro de salud número IT-HS-789456123 copre treatments en France, España y Deutschland. Contact: amancini@insurance.it, +39 02 8765 4321.",
+    "full_text": "Gentile cliente Andrea Mancini, su seguro de salud número IT-HS-789456123 copre treatments en France, España y Deutschland. Contact: amancini@insurance.it, +39 02 8765 4321.",
+    "ground_truth": [
+      {
+        "text": "Andrea Mancini",
+        "label": "person"
+      },
+      {
+        "text": "IT-HS-789456123",
+        "label": "health_insurance_id_number"
+      },
+      {
+        "text": "amancini@insurance.it",
+        "label": "email"
+      },
+      {
+        "text": "+39 02 8765 4321",
+        "label": "phone_number"
+      }
+    ],
+    "predictions": [
+      {
+        "text": "Andrea Mancini",
+        "label": "person",
+        "score": 0.9997683167457581,
+        "status": "TP"
+      },
+      {
+        "text": "IT-HS-789456123",
+        "label": "insurance_number",
+        "score": 0.8946244120597839,
+        "status": "FP"
+      },
+      {
+        "text": "France",
+        "label": "location",
+        "score": 0.49613624811172485,
+        "status": "FP"
+      },
+      {
+        "text": "España",
+        "label": "location",
+        "score": 0.7152926921844482,
+        "status": "FP"
+      },
+      {
+        "text": "Deutschland",
+        "label": "location",
+        "score": 0.9031854867935181,
+        "status": "FP"
+      },
+      {
+        "text": "amancini@insurance.it",
+        "label": "email",
+        "score": 0.9980491399765015,
+        "status": "TP"
+      },
+      {
+        "text": "+39 02 8765 4321",
+        "label": "phone_number",
+        "score": 0.9956197142601013,
+        "status": "TP"
+      }
+    ],
+    "missed": [
+      {
+        "text": "IT-HS-789456123",
+        "label": "health_insurance_id_number",
+        "status": "FN"
+      }
+    ],
+    "language": "unknown"
+  },
+  {
+    "dataset": "Mixed Language",
+    "text": "Dear Mr. Jean-Luc Martin, el pago de €1,500 mediante tarjeta American Express ****3456 è stato processato. Ihre Rechnung: INV-2026-789012. Obrigado!",
+    "full_text": "Dear Mr. Jean-Luc Martin, el pago de €1,500 mediante tarjeta American Express ****3456 è stato processato. Ihre Rechnung: INV-2026-789012. Obrigado!",
+    "ground_truth": [
+      {
+        "text": "Jean-Luc Martin",
+        "label": "person"
+      },
+      {
+        "text": "3456",
+        "label": "credit_card_number"
+      },
+      {
+        "text": "INV-2026-789012",
+        "label": "transaction_number"
+      }
+    ],
+    "predictions": [
+      {
+        "text": "Mr. Jean-Luc Martin",
+        "label": "person",
+        "score": 0.8410857319831848,
+        "status": "FP"
+      },
+      {
+        "text": "American Express ****3456",
+        "label": "credit_card_number",
+        "score": 0.7306387424468994,
+        "status": "FP"
+      },
+      {
+        "text": "INV-2026-789012",
+        "label": "transaction_number",
+        "score": 0.39606499671936035,
+        "status": "TP"
+      }
+    ],
+    "missed": [
+      {
+        "text": "Jean-Luc Martin",
+        "label": "person",
+        "status": "FN"
+      },
+      {
+        "text": "3456",
+        "label": "credit_card_number",
+        "status": "FN"
+      }
+    ],
+    "language": "unknown"
+  },
+  {
+    "dataset": "Mixed Language",
+    "text": "Bonjour Madame Christina Wolf, su número de identificación fiscal DE-TIN-123456789 ha sido verificado. Il suo indirizzo: Königstraße 50, Stuttgart. Thanks!",
+    "full_text": "Bonjour Madame Christina Wolf, su número de identificación fiscal DE-TIN-123456789 ha sido verificado. Il suo indirizzo: Königstraße 50, Stuttgart. Thanks!",
+    "ground_truth": [
+      {
+        "text": "Christina Wolf",
+        "label": "person"
+      },
+      {
+        "text": "DE-TIN-123456789",
+        "label": "tax_identification_number"
+      },
+      {
+        "text": "Königstraße 50, Stuttgart",
+        "label": "address"
+      }
+    ],
+    "predictions": [
+      {
+        "text": "Madame Christina Wolf",
+        "label": "person",
+        "score": 0.9093469977378845,
+        "status": "FP"
+      },
+      {
+        "text": "DE-TIN-123456789",
+        "label": "tax_identification_number",
+        "score": 0.9971298575401306,
+        "status": "TP"
+      },
+      {
+        "text": "Königstraße 50, Stuttgart",
+        "label": "address",
+        "score": 0.9974340796470642,
+        "status": "TP"
+      }
+    ],
+    "missed": [
+      {
+        "text": "Christina Wolf",
+        "label": "person",
+        "status": "FN"
+      }
+    ],
+    "language": "unknown"
+  },
+  {
+    "dataset": "Mixed Language",
+    "text": "Notification: Der Patient Henri Leroy, codice fiscale LRYHRI75M15H501X, presenta síntomas de migraine. Prescribed: Sumatriptan 50mg. Kontaktieren Sie +33 1 23 45 67 89.",
+    "full_text": "Notification: Der Patient Henri Leroy, codice fiscale LRYHRI75M15H501X, presenta síntomas de migraine. Prescribed: Sumatriptan 50mg. Kontaktieren Sie +33 1 23 45 67 89.",
+    "ground_truth": [
+      {
+        "text": "Henri Leroy",
+        "label": "person"
+      },
+      {
+        "text": "LRYHRI75M15H501X",
+        "label": "tax_identification_number"
+      },
+      {
+        "text": "migraine",
+        "label": "medical_condition"
+      },
+      {
+        "text": "Sumatriptan",
+        "label": "medication"
+      },
+      {
+        "text": "+33 1 23 45 67 89",
+        "label": "phone_number"
+      }
+    ],
+    "predictions": [
+      {
+        "text": "Henri Leroy",
+        "label": "person",
+        "score": 0.9996460676193237,
+        "status": "TP"
+      },
+      {
+        "text": "LRYHRI75M15H501X",
+        "label": "tax_identification_number",
+        "score": 0.9850701093673706,
+        "status": "TP"
+      },
+      {
+        "text": "migraine",
+        "label": "medical_condition",
+        "score": 0.9800511598587036,
+        "status": "TP"
+      },
+      {
+        "text": "Sumatriptan 50mg",
+        "label": "medication",
+        "score": 0.9945405125617981,
+        "status": "FP"
+      },
+      {
+        "text": "+33 1 23 45 67 89",
+        "label": "phone_number",
+        "score": 0.9854153394699097,
+        "status": "TP"
+      }
+    ],
+    "missed": [
+      {
+        "text": "Sumatriptan",
+        "label": "medication",
+        "status": "FN"
+      }
+    ],
+    "language": "unknown"
+  },
+  {
+    "dataset": "Mixed Language",
+    "text": "Caro Sig. Paulo Mendes, votre carte d'identité nationale PT-NID-12345678 è stata verificata. Su dirección: Paseo de la Castellana 100, Madrid. Danke!",
+    "full_text": "Caro Sig. Paulo Mendes, votre carte d'identité nationale PT-NID-12345678 è stata verificata. Su dirección: Paseo de la Castellana 100, Madrid. Danke!",
+    "ground_truth": [
+      {
+        "text": "Paulo Mendes",
+        "label": "person"
+      },
+      {
+        "text": "PT-NID-12345678",
+        "label": "national_id_number"
+      },
+      {
+        "text": "Paseo de la Castellana 100, Madrid",
+        "label": "address"
+      }
+    ],
+    "predictions": [
+      {
+        "text": "Paulo Mendes",
+        "label": "person",
+        "score": 0.8965972661972046,
+        "status": "TP"
+      },
+      {
+        "text": "PT-NID-12345678",
+        "label": "national_id_number",
+        "score": 0.9262125492095947,
+        "status": "TP"
+      },
+      {
+        "text": "Paseo de la Castellana 100, Madrid",
+        "label": "address",
+        "score": 0.9982149600982666,
+        "status": "TP"
+      }
+    ],
+    "missed": [],
+    "language": "unknown"
+  },
+  {
+    "dataset": "Mixed Language",
+    "text": "Urgente: La paciente Frau Martina Schulz, née le 08/03/1988, necessita atendimento para artrite. Medicamento prescrito: Ibuprofen 400mg. Contact: +49 711 987 6543. Gracias!",
+    "full_text": "Urgente: La paciente Frau Martina Schulz, née le 08/03/1988, necessita atendimento para artrite. Medicamento prescrito: Ibuprofen 400mg. Contact: +49 711 987 6543. Gracias!",
+    "ground_truth": [
+      {
+        "text": "Martina Schulz",
+        "label": "person"
+      },
+      {
+        "text": "08/03/1988",
+        "label": "date_of_birth"
+      },
+      {
+        "text": "artrite",
+        "label": "medical_condition"
+      },
+      {
+        "text": "Ibuprofen",
+        "label": "medication"
+      },
+      {
+        "text": "+49 711 987 6543",
+        "label": "phone_number"
+      }
+    ],
+    "predictions": [
+      {
+        "text": "Frau Martina Schulz",
+        "label": "person",
+        "score": 0.9829820990562439,
+        "status": "FP"
+      },
+      {
+        "text": "08/03/1988",
+        "label": "date_of_birth",
+        "score": 0.9778431057929993,
+        "status": "TP"
+      },
+      {
+        "text": "artrite",
+        "label": "medical_condition",
+        "score": 0.9878281354904175,
+        "status": "TP"
+      },
+      {
+        "text": "Ibuprofen 400mg",
+        "label": "medication",
+        "score": 0.9938552975654602,
+        "status": "FP"
+      },
+      {
+        "text": "+49 711 987 6543",
+        "label": "phone_number",
+        "score": 0.9934872388839722,
+        "status": "TP"
+      }
+    ],
+    "missed": [
+      {
+        "text": "Martina Schulz",
+        "label": "person",
+        "status": "FN"
+      },
+      {
+        "text": "Ibuprofen",
+        "label": "medication",
+        "status": "FN"
+      }
+    ],
+    "language": "unknown"
+  },
+  {
+    "dataset": "Mixed Language",
+    "text": "Benvenuto! Mr. Jacques Lefevre, su cuenta corriente IBAN FR76 3000 4000 0500 0006 7890 123 está activa. Kontakt: jlefevre@banque.fr, tel +33 4 56 78 90 12. Obrigado!",
+    "full_text": "Benvenuto! Mr. Jacques Lefevre, su cuenta corriente IBAN FR76 3000 4000 0500 0006 7890 123 está activa. Kontakt: jlefevre@banque.fr, tel +33 4 56 78 90 12. Obrigado!",
+    "ground_truth": [
+      {
+        "text": "Jacques Lefevre",
+        "label": "person"
+      },
+      {
+        "text": "FR76 3000 4000 0500 0006 7890 123",
+        "label": "iban"
+      },
+      {
+        "text": "jlefevre@banque.fr",
+        "label": "email"
+      },
+      {
+        "text": "+33 4 56 78 90 12",
+        "label": "phone_number"
+      }
+    ],
+    "predictions": [
+      {
+        "text": "Mr. Jacques Lefevre",
+        "label": "person",
+        "score": 0.978400707244873,
+        "status": "FP"
+      },
+      {
+        "text": "FR76 3000 4000 0500 0006 7890 123",
+        "label": "iban",
+        "score": 0.8615976572036743,
+        "status": "TP"
+      },
+      {
+        "text": "jlefevre@banque.fr",
+        "label": "email",
+        "score": 0.9968631267547607,
+        "status": "TP"
+      },
+      {
+        "text": "+33 4 56 78 90 12",
+        "label": "phone_number",
+        "score": 0.999330997467041,
+        "status": "TP"
+      }
+    ],
+    "missed": [
+      {
+        "text": "Jacques Lefevre",
+        "label": "person",
+        "status": "FN"
+      }
+    ],
+    "language": "unknown"
+  },
+  {
+    "dataset": "Mixed Language",
+    "text": "Booking update: Senhor Alberto Ricci, passport number IT98765432, vol AF789 partant de Paris vers Milano il 5 maggio 2026. Bitte kontaktieren Sie +39 06 555 1234.",
+    "full_text": "Booking update: Senhor Alberto Ricci, passport number IT98765432, vol AF789 partant de Paris vers Milano il 5 maggio 2026. Bitte kontaktieren Sie +39 06 555 1234.",
+    "ground_truth": [
+      {
+        "text": "Alberto Ricci",
+        "label": "person"
+      },
+      {
+        "text": "IT98765432",
+        "label": "passport_number"
+      },
+      {
+        "text": "AF789",
+        "label": "flight_number"
+      },
+      {
+        "text": "Paris",
+        "label": "address"
+      },
+      {
+        "text": "Milano",
+        "label": "address"
+      },
+      {
+        "text": "5 maggio 2026",
+        "label": "date_of_birth"
+      },
+      {
+        "text": "+39 06 555 1234",
+        "label": "phone_number"
+      }
+    ],
+    "predictions": [
+      {
+        "text": "Alberto Ricci",
+        "label": "person",
+        "score": 0.940534770488739,
+        "status": "TP"
+      },
+      {
+        "text": "IT98765432",
+        "label": "passport_number",
+        "score": 0.9895731806755066,
+        "status": "TP"
+      },
+      {
+        "text": "Paris",
+        "label": "location",
+        "score": 0.9462271928787231,
+        "status": "FP"
+      },
+      {
+        "text": "Milano",
+        "label": "location",
+        "score": 0.9708982110023499,
+        "status": "FP"
+      },
+      {
+        "text": "5 maggio 2026",
+        "label": "date",
+        "score": 0.9939345717430115,
+        "status": "FP"
+      },
+      {
+        "text": "+39 06 555 1234",
+        "label": "phone_number",
+        "score": 0.9890009164810181,
+        "status": "TP"
+      }
+    ],
+    "missed": [
+      {
+        "text": "AF789",
+        "label": "flight_number",
+        "status": "FN"
+      },
+      {
+        "text": "Paris",
+        "label": "address",
+        "status": "FN"
+      },
+      {
+        "text": "Milano",
+        "label": "address",
+        "status": "FN"
+      },
+      {
+        "text": "5 maggio 2026",
+        "label": "date_of_birth",
+        "status": "FN"
+      }
+    ],
+    "language": "unknown"
+  },
+  {
+    "dataset": "Mixed Language",
+    "text": "Recordatorio: O paciente Stefan Braun, nascido em 25/12/1970, ha sido diagnosticado con diabetes. Traitement: Metformine 500mg. Emergency contact: +49 30 123 4567. Merci!",
+    "full_text": "Recordatorio: O paciente Stefan Braun, nascido em 25/12/1970, ha sido diagnosticado con diabetes. Traitement: Metformine 500mg. Emergency contact: +49 30 123 4567. Merci!",
+    "ground_truth": [
+      {
+        "text": "Stefan Braun",
+        "label": "person"
+      },
+      {
+        "text": "25/12/1970",
+        "label": "date_of_birth"
+      },
+      {
+        "text": "diabetes",
+        "label": "medical_condition"
+      },
+      {
+        "text": "Metformine",
+        "label": "medication"
+      },
+      {
+        "text": "+49 30 123 4567",
+        "label": "phone_number"
+      }
+    ],
+    "predictions": [
+      {
+        "text": "Stefan Braun",
+        "label": "person",
+        "score": 0.9999425411224365,
+        "status": "TP"
+      },
+      {
+        "text": "25/12/1970",
+        "label": "date_of_birth",
+        "score": 0.9837716221809387,
+        "status": "TP"
+      },
+      {
+        "text": "diabetes",
+        "label": "medical_condition",
+        "score": 0.9946802258491516,
+        "status": "TP"
+      },
+      {
+        "text": "Metformine 500mg",
+        "label": "medication",
+        "score": 0.9954869151115417,
+        "status": "FP"
+      },
+      {
+        "text": "+49 30 123 4567",
+        "label": "phone_number",
+        "score": 0.9878562092781067,
+        "status": "TP"
+      }
+    ],
+    "missed": [
+      {
+        "text": "Metformine",
+        "label": "medication",
+        "status": "FN"
+      }
+    ],
+    "language": "unknown"
+  },
+  {
+    "dataset": "Mixed Language",
+    "text": "Attenzione: Frau Carla Sanchez, su tarjeta de crédito Visa ****7890 scade il 12/2027. Por favor, atualize seus dados. Contact: csanchez@email.es, +34 91 234 5678.",
+    "full_text": "Attenzione: Frau Carla Sanchez, su tarjeta de crédito Visa ****7890 scade il 12/2027. Por favor, atualize seus dados. Contact: csanchez@email.es, +34 91 234 5678.",
+    "ground_truth": [
+      {
+        "text": "Carla Sanchez",
+        "label": "person"
+      },
+      {
+        "text": "7890",
+        "label": "credit_card_number"
+      },
+      {
+        "text": "12/2027",
+        "label": "credit_card_expiration_date"
+      },
+      {
+        "text": "csanchez@email.es",
+        "label": "email"
+      },
+      {
+        "text": "+34 91 234 5678",
+        "label": "phone_number"
+      }
+    ],
+    "predictions": [
+      {
+        "text": "Frau Carla Sanchez",
+        "label": "person",
+        "score": 0.993653416633606,
+        "status": "FP"
+      },
+      {
+        "text": "Visa ****7890",
+        "label": "credit_card_number",
+        "score": 0.8670687079429626,
+        "status": "FP"
+      },
+      {
+        "text": "12/2027",
+        "label": "date",
+        "score": 0.9721578359603882,
+        "status": "FP"
+      },
+      {
+        "text": "csanchez@email.es",
+        "label": "email",
+        "score": 0.9978967905044556,
+        "status": "TP"
+      },
+      {
+        "text": "+34 91 234 5678",
+        "label": "phone_number",
+        "score": 0.9950076341629028,
+        "status": "TP"
+      }
+    ],
+    "missed": [
+      {
+        "text": "Carla Sanchez",
+        "label": "person",
+        "status": "FN"
+      },
+      {
+        "text": "7890",
+        "label": "credit_card_number",
+        "status": "FN"
+      },
+      {
+        "text": "12/2027",
+        "label": "credit_card_expiration_date",
+        "status": "FN"
+      }
+    ],
+    "language": "unknown"
+  },
+  {
+    "dataset": "Mixed Language",
+    "text": "Cher client Herr Michele Torres, su número de empleado EMP-IT-456789 è stato registrato. Endereço: Friedrichstraße 100, Berlin. Contact: mtorres@company.de. ¡Gracias!",
+    "full_text": "Cher client Herr Michele Torres, su número de empleado EMP-IT-456789 è stato registrato. Endereço: Friedrichstraße 100, Berlin. Contact: mtorres@company.de. ¡Gracias!",
+    "ground_truth": [
+      {
+        "text": "Michele Torres",
+        "label": "person"
+      },
+      {
+        "text": "EMP-IT-456789",
+        "label": "student_id_number"
+      },
+      {
+        "text": "Friedrichstraße 100, Berlin",
+        "label": "address"
+      },
+      {
+        "text": "mtorres@company.de",
+        "label": "email"
+      }
+    ],
+    "predictions": [
+      {
+        "text": "Herr Michele Torres",
+        "label": "person",
+        "score": 0.9691267609596252,
+        "status": "FP"
+      },
+      {
+        "text": "Friedrichstraße 100, Berlin",
+        "label": "address",
+        "score": 0.9975698590278625,
+        "status": "TP"
+      },
+      {
+        "text": "mtorres@company.de",
+        "label": "email",
+        "score": 0.9993546605110168,
+        "status": "TP"
+      }
+    ],
+    "missed": [
+      {
+        "text": "Michele Torres",
+        "label": "person",
+        "status": "FN"
+      },
+      {
+        "text": "EMP-IT-456789",
+        "label": "student_id_number",
+        "status": "FN"
+      }
+    ],
+    "language": "unknown"
+  },
+  {
+    "dataset": "Mixed Language",
+    "text": "Confirmação: La Sig.ra Helga Fischer, née le 15 juillet 1985, viaja no voo LH123 de Frankfurt a Lisboa. Passeport: DE12345678. Llegada prevista: 10:30. Grazie!",
+    "full_text": "Confirmação: La Sig.ra Helga Fischer, née le 15 juillet 1985, viaja no voo LH123 de Frankfurt a Lisboa. Passeport: DE12345678. Llegada prevista: 10:30. Grazie!",
+    "ground_truth": [
+      {
+        "text": "Helga Fischer",
+        "label": "person"
+      },
+      {
+        "text": "15 juillet 1985",
+        "label": "date_of_birth"
+      },
+      {
+        "text": "LH123",
+        "label": "flight_number"
+      },
+      {
+        "text": "Frankfurt",
+        "label": "address"
+      },
+      {
+        "text": "Lisboa",
+        "label": "address"
+      },
+      {
+        "text": "DE12345678",
+        "label": "passport_number"
+      }
+    ],
+    "predictions": [
+      {
+        "text": "Helga Fischer",
+        "label": "person",
+        "score": 0.8218631744384766,
+        "status": "TP"
+      },
+      {
+        "text": "15 juillet 1985",
+        "label": "date_of_birth",
+        "score": 0.97788405418396,
+        "status": "TP"
+      },
+      {
+        "text": "LH123",
+        "label": "flight_number",
+        "score": 0.9787488579750061,
+        "status": "TP"
+      },
+      {
+        "text": "Frankfurt",
+        "label": "location",
+        "score": 0.9517624974250793,
+        "status": "FP"
+      },
+      {
+        "text": "Lisboa",
+        "label": "location",
+        "score": 0.9533998966217041,
+        "status": "FP"
+      },
+      {
+        "text": "DE12345678",
+        "label": "passport_number",
+        "score": 0.9988419413566589,
+        "status": "TP"
+      },
+      {
+        "text": "10:30",
+        "label": "date",
+        "score": 0.848797082901001,
+        "status": "FP"
+      }
+    ],
+    "missed": [
+      {
+        "text": "Frankfurt",
+        "label": "address",
+        "status": "FN"
+      },
+      {
+        "text": "Lisboa",
+        "label": "address",
+        "status": "FN"
+      }
+    ],
+    "language": "unknown"
+  },
+  {
+    "dataset": "Mixed Language",
+    "text": "Important notice: Der Kunde Monsieur Fabio Costa, con domicilio en Piazza San Marco 1, Venezia, ha aggiornato il suo telefono. Nouveau numéro: +39 041 123 4567. Danke!",
+    "full_text": "Important notice: Der Kunde Monsieur Fabio Costa, con domicilio en Piazza San Marco 1, Venezia, ha aggiornato il suo telefono. Nouveau numéro: +39 041 123 4567. Danke!",
+    "ground_truth": [
+      {
+        "text": "Fabio Costa",
+        "label": "person"
+      },
+      {
+        "text": "Piazza San Marco 1, Venezia",
+        "label": "address"
+      },
+      {
+        "text": "+39 041 123 4567",
+        "label": "phone_number"
+      }
+    ],
+    "predictions": [
+      {
+        "text": "Monsieur Fabio Costa",
+        "label": "person",
+        "score": 0.9692285060882568,
+        "status": "FP"
+      },
+      {
+        "text": "Piazza San Marco 1, Venezia",
+        "label": "address",
+        "score": 0.9983876943588257,
+        "status": "TP"
+      },
+      {
+        "text": "+39 041 123 4567",
+        "label": "phone_number",
+        "score": 0.9958498477935791,
+        "status": "TP"
+      }
+    ],
+    "missed": [
+      {
+        "text": "Fabio Costa",
+        "label": "person",
+        "status": "FN"
+      }
+    ],
+    "language": "unknown"
+  },
+  {
+    "dataset": "Mixed Language",
+    "text": "Rappel médical: O paciente Werner Schmidt, DNI 12345678-A, fue diagnosticado con ipertensione. Medicamento: Lisinopril 20mg. Next appointment le 20 avril 2026. Obrigado!",
+    "full_text": "Rappel médical: O paciente Werner Schmidt, DNI 12345678-A, fue diagnosticado con ipertensione. Medicamento: Lisinopril 20mg. Next appointment le 20 avril 2026. Obrigado!",
+    "ground_truth": [
+      {
+        "text": "Werner Schmidt",
+        "label": "person"
+      },
+      {
+        "text": "12345678-A",
+        "label": "national_id_number"
+      },
+      {
+        "text": "ipertensione",
+        "label": "medical_condition"
+      },
+      {
+        "text": "Lisinopril",
+        "label": "medication"
+      },
+      {
+        "text": "20 avril 2026",
+        "label": "date_of_birth"
+      }
+    ],
+    "predictions": [
+      {
+        "text": "Werner Schmidt",
+        "label": "person",
+        "score": 0.9998892545700073,
+        "status": "TP"
+      },
+      {
+        "text": "DNI 12345678-A",
+        "label": "national_id_number",
+        "score": 0.8380120396614075,
+        "status": "FP"
+      },
+      {
+        "text": "ipertensione",
+        "label": "medical_condition",
+        "score": 0.9937777519226074,
+        "status": "TP"
+      },
+      {
+        "text": "Lisinopril 20mg",
+        "label": "medication",
+        "score": 0.9943861961364746,
+        "status": "FP"
+      },
+      {
+        "text": "20 avril 2026",
+        "label": "date",
+        "score": 0.9968452453613281,
+        "status": "FP"
+      }
+    ],
+    "missed": [
+      {
+        "text": "12345678-A",
+        "label": "national_id_number",
+        "status": "FN"
+      },
+      {
+        "text": "Lisinopril",
+        "label": "medication",
+        "status": "FN"
+      },
+      {
+        "text": "20 avril 2026",
+        "label": "date_of_birth",
+        "status": "FN"
+      }
+    ],
+    "language": "unknown"
+  },
+  {
+    "dataset": "Mixed Language",
+    "text": "Aggiornamento: Señor Philippe Moreau, su conto corrente IT30 N050 0001 2345 6789 0123 456 è attivo. Votre solde: €15,000. Kontakt: pmoreau@bank.it. Thanks!",
+    "full_text": "Aggiornamento: Señor Philippe Moreau, su conto corrente IT30 N050 0001 2345 6789 0123 456 è attivo. Votre solde: €15,000. Kontakt: pmoreau@bank.it. Thanks!",
+    "ground_truth": [
+      {
+        "text": "Philippe Moreau",
+        "label": "person"
+      },
+      {
+        "text": "IT30 N050 0001 2345 6789 0123 456",
+        "label": "iban"
+      },
+      {
+        "text": "pmoreau@bank.it",
+        "label": "email"
+      }
+    ],
+    "predictions": [
+      {
+        "text": "Philippe Moreau",
+        "label": "person",
+        "score": 0.969060480594635,
+        "status": "TP"
+      },
+      {
+        "text": "IT30 N050 0001 2345 6789 0123 456",
+        "label": "bank_account_number",
+        "score": 0.9900556802749634,
+        "status": "FP"
+      },
+      {
+        "text": "pmoreau@bank.it",
+        "label": "email",
+        "score": 0.9985826015472412,
+        "status": "TP"
+      }
+    ],
+    "missed": [
+      {
+        "text": "IT30 N050 0001 2345 6789 0123 456",
+        "label": "iban",
+        "status": "FN"
+      }
+    ],
+    "language": "unknown"
+  },
+  {
+    "dataset": "Mixed Language",
+    "text": "Alerta de segurança: La cliente Frau Rosa Martini, born 10/10/1978, ha perdido su tarjeta de crédito Mastercard ****4567. Please contact +49 89 876 5432. Merci de votre attention!",
+    "full_text": "Alerta de segurança: La cliente Frau Rosa Martini, born 10/10/1978, ha perdido su tarjeta de crédito Mastercard ****4567. Please contact +49 89 876 5432. Merci de votre attention!",
+    "ground_truth": [
+      {
+        "text": "Rosa Martini",
+        "label": "person"
+      },
+      {
+        "text": "10/10/1978",
+        "label": "date_of_birth"
+      },
+      {
+        "text": "4567",
+        "label": "credit_card_number"
+      },
+      {
+        "text": "+49 89 876 5432",
+        "label": "phone_number"
+      }
+    ],
+    "predictions": [
+      {
+        "text": "Frau Rosa Martini",
+        "label": "person",
+        "score": 0.9894376993179321,
+        "status": "FP"
+      },
+      {
+        "text": "10/10/1978",
+        "label": "date_of_birth",
+        "score": 0.9826756715774536,
+        "status": "TP"
+      },
+      {
+        "text": "****4567",
+        "label": "credit_card_number",
+        "score": 0.7663842439651489,
+        "status": "FP"
+      },
+      {
+        "text": "+49 89 876 5432",
+        "label": "phone_number",
+        "score": 0.9947624802589417,
+        "status": "TP"
+      }
+    ],
+    "missed": [
+      {
+        "text": "Rosa Martini",
+        "label": "person",
+        "status": "FN"
+      },
+      {
+        "text": "4567",
+        "label": "credit_card_number",
+        "status": "FN"
+      }
+    ],
+    "language": "unknown"
+  }
+]
